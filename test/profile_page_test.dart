@@ -31,7 +31,7 @@ void main() {
     expect(find.text('11/10'), findsOneWidget);
     expect(find.text('10/10'), findsOneWidget);
 
-    // Mini anatomical body diagrams
-    expect(find.byType(SymmetryBodyDiagram), findsWidgets);
+    // Mini anatomical body diagram images
+    expect(find.byType(Image), findsWidgets);
   });
 }

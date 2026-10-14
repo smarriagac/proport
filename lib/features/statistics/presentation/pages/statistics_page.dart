@@ -9,7 +9,6 @@ import '../bloc/statistics_event.dart';
 import '../bloc/statistics_state.dart';
 import '../widgets/rank_progress_bar.dart';
 import '../widgets/muscle_heatmap_chart.dart';
-import '../widgets/symmetry_body_painter.dart';
 
 class StatisticsPage extends StatefulWidget {
   const StatisticsPage({super.key});
@@ -380,7 +379,11 @@ class _StatisticsPageState extends State<StatisticsPage> {
       width: double.infinity,
       color: Colors.black,
       alignment: Alignment.center,
-      child: const SymmetryBodyDiagram(height: 375),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      child: Image.asset(
+        AppAssets.symmetryRankedBodyDiagram,
+        fit: BoxFit.contain,
+      ),
     );
   }
 

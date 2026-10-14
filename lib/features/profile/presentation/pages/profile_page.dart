@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../../../core/constants/app_constants.dart';
 import '../../../../core/theme/app_theme.dart';
-import '../../../statistics/presentation/widgets/symmetry_body_painter.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -16,68 +16,32 @@ class _ProfilePageState extends State<ProfilePage> {
     _WorkoutHistoryCardData(
       date: 'Ayer',
       duration: '3h',
-      viewMode: BodyViewMode.frontOnly,
-      trainedMuscles: {
-        'biceps_outer': Color(0xFF4A90E2),
-        'biceps_inner': Color(0xFF4A90E2),
-        'forearms': Color(0xFF4A90E2),
-        'quads_outer': Color(0xFF82B1FF),
-        'quads_inner': Color(0xFF82B1FF),
-      },
+      assetImage: AppAssets.workoutBody0,
     ),
     _WorkoutHistoryCardData(
       date: '11/10',
       duration: '1h53m',
-      viewMode: BodyViewMode.backOnly,
-      trainedMuscles: {
-        'triceps': Color(0xFF4A90E2),
-        'glutes': Color(0xFF82B1FF),
-        'hamstrings': Color(0xFF4A90E2),
-        'calves': Color(0xFF4A90E2),
-      },
+      assetImage: AppAssets.workoutBody1,
     ),
     _WorkoutHistoryCardData(
       date: '10/10',
       duration: '1h38m',
-      viewMode: BodyViewMode.frontOnly,
-      trainedMuscles: {
-        'shoulders': Color(0xFF3875FF),
-        'chest': Color(0xFF4A90E2),
-        'quads_outer': Color(0xFF82B1FF),
-        'quads_inner': Color(0xFF82B1FF),
-      },
+      assetImage: AppAssets.workoutBody2,
     ),
     _WorkoutHistoryCardData(
       date: '09/10',
       duration: '1h39m',
-      viewMode: BodyViewMode.backOnly,
-      trainedMuscles: {
-        'traps': Color(0xFF82B1FF),
-        'rear_delts': Color(0xFF4A90E2),
-        'infraspinatus': Color(0xFF4A90E2),
-        'lats': Color(0xFF3875FF),
-      },
+      assetImage: AppAssets.workoutBody3,
     ),
     _WorkoutHistoryCardData(
       date: '08/10',
       duration: '1h41m',
-      viewMode: BodyViewMode.frontOnly,
-      trainedMuscles: {
-        'forearms': Color(0xFF4A90E2),
-        'quads_outer': Color(0xFF3875FF),
-        'quads_inner': Color(0xFF4A90E2),
-        'calves': Color(0xFF82B1FF),
-      },
+      assetImage: AppAssets.workoutBody4,
     ),
     _WorkoutHistoryCardData(
       date: '07/10',
       duration: '1h43m',
-      viewMode: BodyViewMode.frontOnly,
-      trainedMuscles: {
-        'shoulders': Color(0xFF4A90E2),
-        'chest': Color(0xFF3875FF),
-        'abs': Color(0xFF82B1FF),
-      },
+      assetImage: AppAssets.workoutBody5,
     ),
   ];
 
@@ -406,10 +370,10 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget _buildWorkoutGridCard(_WorkoutHistoryCardData card) {
     return Container(
       decoration: BoxDecoration(
-        color: const Color(0xFF111113),
+        color: const Color(0xFF1E1E1E),
         borderRadius: BorderRadius.circular(10),
         border: Border.all(
-          color: const Color(0xFF222225),
+          color: const Color(0xFF2C2C2E),
           width: 0.8,
         ),
       ),
@@ -430,14 +394,12 @@ class _ProfilePageState extends State<ProfilePage> {
 
           const SizedBox(height: 4),
 
-          // Center: Mini Anatomical Body Silhouette
+          // Center: Authentic Mini Anatomical Body Silhouette
           Expanded(
             child: Center(
-              child: SymmetryBodyDiagram(
-                viewMode: card.viewMode,
-                muscleColors: card.trainedMuscles,
-                highlightMode: true,
-                height: 120,
+              child: Image.asset(
+                card.assetImage,
+                fit: BoxFit.contain,
               ),
             ),
           ),
@@ -463,13 +425,11 @@ class _ProfilePageState extends State<ProfilePage> {
 class _WorkoutHistoryCardData {
   final String date;
   final String duration;
-  final BodyViewMode viewMode;
-  final Map<String, Color> trainedMuscles;
+  final String assetImage;
 
   const _WorkoutHistoryCardData({
     required this.date,
     required this.duration,
-    required this.viewMode,
-    required this.trainedMuscles,
+    required this.assetImage,
   });
 }

@@ -91,6 +91,12 @@ class AppAssets {
       'assets/icons/ranking/symmetry_gold3_wings_badge.png';
   static const String symmetryMuscleHexBadge =
       'assets/icons/ranking/symmetry_muscle_hex_badge.png';
+  static const String workoutBody0 = 'assets/icons/ranking/workout_body_0.png';
+  static const String workoutBody1 = 'assets/icons/ranking/workout_body_1.png';
+  static const String workoutBody2 = 'assets/icons/ranking/workout_body_2.png';
+  static const String workoutBody3 = 'assets/icons/ranking/workout_body_3.png';
+  static const String workoutBody4 = 'assets/icons/ranking/workout_body_4.png';
+  static const String workoutBody5 = 'assets/icons/ranking/workout_body_5.png';
 
   // Data Assets
   static const String predefinedPlansExampleJson =
