@@ -78,6 +78,12 @@ class AppAssets {
   static const String streakFlameGrey = 'assets/icons/streak/flame_grey.svg';
   static const String notificationIcon = 'assets/icons/notification_icon.svg';
 
+  // Library Icons
+  static const String libraryExplorePrograms =
+      'assets/icons/library/explore_programs.svg';
+  static const String libraryCreateProgram =
+      'assets/icons/library/create_program.svg';
+
   // Symmetry Authentic Ranking Assets
   static const String symmetryRankedBodyDiagram =
       'assets/icons/ranking/symmetry_ranked_body_diagram.png';

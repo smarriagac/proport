@@ -8,10 +8,10 @@ import '../../features/training/domain/entities/workout_plan.dart';
 import '../../features/training/presentation/pages/training_dashboard_page.dart';
 import '../../features/training/presentation/pages/workout_detail_page.dart';
 import '../../features/training/presentation/pages/active_workout_page.dart';
-import '../../features/intelligence/presentation/pages/ai_coach_page.dart';
 import '../../features/intelligence/presentation/pages/ai_workout_generator_page.dart';
 import '../../features/statistics/presentation/pages/statistics_page.dart';
 import '../../features/profile/presentation/pages/profile_page.dart';
+import '../../features/library/presentation/pages/library_page.dart';
 
 final GlobalKey<NavigatorState> _rootNavigatorKey =
     GlobalKey<NavigatorState>(debugLabel: 'root');
@@ -97,7 +97,7 @@ final appRouter = GoRouter(
           routes: [
             GoRoute(
               path: '/library',
-              builder: (context, state) => const AICoachPage(),
+              builder: (context, state) => const LibraryPage(),
               routes: [
                 GoRoute(
                   path: 'generator',

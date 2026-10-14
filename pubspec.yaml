@@ -51,6 +51,8 @@ flutter:
     - assets/icons/ranking/base/
     - assets/icons/ranking/tiered/
     - assets/icons/ranking/muscle_drawer/
+    - assets/icons/library/
+    - assets/icons/workout_plan_management/
     - assets/workout_plan_templates/
     - assets/data/
     - assets/quick_workouts/
