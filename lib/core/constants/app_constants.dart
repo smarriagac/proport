@@ -97,6 +97,8 @@ class AppAssets {
   static const String workoutBody3 = 'assets/icons/ranking/workout_body_3.png';
   static const String workoutBody4 = 'assets/icons/ranking/workout_body_4.png';
   static const String workoutBody5 = 'assets/icons/ranking/workout_body_5.png';
+  static const String symmetryCalculatorHeroBadges =
+      'assets/icons/ranking/symmetry_calculator_hero_badges.png';
 
   // Data Assets
   static const String predefinedPlansExampleJson =

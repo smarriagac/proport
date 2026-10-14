@@ -9,6 +9,7 @@ import '../bloc/statistics_event.dart';
 import '../bloc/statistics_state.dart';
 import '../widgets/rank_progress_bar.dart';
 import '../widgets/muscle_heatmap_chart.dart';
+import '../widgets/rank_calculator_tab_content.dart';
 
 class StatisticsPage extends StatefulWidget {
   const StatisticsPage({super.key});
@@ -108,7 +109,7 @@ class _StatisticsPageState extends State<StatisticsPage> {
           Expanded(
             child: _selectedSubTab == 0
                 ? _buildRangosTabContent()
-                : _buildCalculadoraTabContent(),
+                : const RankCalculatorTabContent(),
           ),
         ],
       ),
@@ -576,77 +577,6 @@ class _StatisticsPageState extends State<StatisticsPage> {
           ],
         ],
       ),
-    );
-  }
-
-  Widget _buildCalculadoraTabContent() {
-    return ListView(
-      padding: const EdgeInsets.all(16),
-      children: [
-        Container(
-          padding: const EdgeInsets.all(20),
-          decoration: BoxDecoration(
-            color: const Color(0xFF131315),
-            borderRadius: BorderRadius.circular(20),
-            border: Border.all(color: const Color(0xFF26262B)),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Row(
-                children: [
-                  Icon(Icons.calculate_outlined, color: AppColors.primaryBlue),
-                  SizedBox(width: 8),
-                  Text(
-                    'CALCULADORA DE 1RM & RANGO',
-                    style: TextStyle(
-                      fontFamily: AppTheme.fontAlbert,
-                      fontWeight: FontWeight.w800,
-                      fontSize: 13,
-                      letterSpacing: 0.8,
-                      color: AppColors.primaryBlue,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 12),
-              const Text(
-                'Calcula tu repetición máxima estimada y averigua a qué rango pertenecerías en cada ejercicio básico.',
-                style: TextStyle(
-                  fontFamily: AppTheme.fontDM,
-                  fontSize: 13,
-                  color: AppColors.textSecondary,
-                  height: 1.4,
-                ),
-              ),
-              const SizedBox(height: 18),
-              const TextField(
-                decoration: InputDecoration(
-                  labelText: 'Peso levantado (kg)',
-                  hintText: 'Ej. 100',
-                ),
-                keyboardType: TextInputType.number,
-              ),
-              const SizedBox(height: 12),
-              const TextField(
-                decoration: InputDecoration(
-                  labelText: 'Repeticiones completadas',
-                  hintText: 'Ej. 5',
-                ),
-                keyboardType: TextInputType.number,
-              ),
-              const SizedBox(height: 16),
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () {},
-                  child: const Text('CALCULAR 1RM'),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ],
     );
   }
 }
