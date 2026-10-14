@@ -21,6 +21,70 @@ class $AssetsDataGen {
   List<String> get values => [exerciseRankingMock];
 }
 
+class $AssetsFontsGen {
+  const $AssetsFontsGen();
+
+  /// File path: assets/fonts/AlbertSans-Bold.ttf
+  String get albertSansBold => 'assets/fonts/AlbertSans-Bold.ttf';
+
+  /// File path: assets/fonts/AlbertSans-ExtraBold.ttf
+  String get albertSansExtraBold => 'assets/fonts/AlbertSans-ExtraBold.ttf';
+
+  /// File path: assets/fonts/AlbertSans-Medium.ttf
+  String get albertSansMedium => 'assets/fonts/AlbertSans-Medium.ttf';
+
+  /// File path: assets/fonts/AlbertSans-Regular.ttf
+  String get albertSansRegular => 'assets/fonts/AlbertSans-Regular.ttf';
+
+  /// File path: assets/fonts/DMMono-Light.ttf
+  String get dMMonoLight => 'assets/fonts/DMMono-Light.ttf';
+
+  /// File path: assets/fonts/DMMono-Medium.ttf
+  String get dMMonoMedium => 'assets/fonts/DMMono-Medium.ttf';
+
+  /// File path: assets/fonts/DMMono-Regular.ttf
+  String get dMMonoRegular => 'assets/fonts/DMMono-Regular.ttf';
+
+  /// File path: assets/fonts/DMSans-Black.ttf
+  String get dMSansBlack => 'assets/fonts/DMSans-Black.ttf';
+
+  /// File path: assets/fonts/DMSans-Bold.ttf
+  String get dMSansBold => 'assets/fonts/DMSans-Bold.ttf';
+
+  /// File path: assets/fonts/DMSans-ExtraBold.ttf
+  String get dMSansExtraBold => 'assets/fonts/DMSans-ExtraBold.ttf';
+
+  /// File path: assets/fonts/DMSans-Light.ttf
+  String get dMSansLight => 'assets/fonts/DMSans-Light.ttf';
+
+  /// File path: assets/fonts/DMSans-Medium.ttf
+  String get dMSansMedium => 'assets/fonts/DMSans-Medium.ttf';
+
+  /// File path: assets/fonts/DMSans-Regular.ttf
+  String get dMSansRegular => 'assets/fonts/DMSans-Regular.ttf';
+
+  /// File path: assets/fonts/DMSans-SemiBold.ttf
+  String get dMSansSemiBold => 'assets/fonts/DMSans-SemiBold.ttf';
+
+  /// List of all assets
+  List<String> get values => [
+    albertSansBold,
+    albertSansExtraBold,
+    albertSansMedium,
+    albertSansRegular,
+    dMMonoLight,
+    dMMonoMedium,
+    dMMonoRegular,
+    dMSansBlack,
+    dMSansBold,
+    dMSansExtraBold,
+    dMSansLight,
+    dMSansMedium,
+    dMSansRegular,
+    dMSansSemiBold,
+  ];
+}
+
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
@@ -467,6 +531,10 @@ class $AssetsIconsGen {
   /// File path: assets/icons/moon_icon_outline.svg
   String get moonIconOutline => 'assets/icons/moon_icon_outline.svg';
 
+  /// Directory path: assets/icons/navigation_bar
+  $AssetsIconsNavigationBarGen get navigationBar =>
+      const $AssetsIconsNavigationBarGen();
+
   /// File path: assets/icons/newroutine.svg
   String get newroutine => 'assets/icons/newroutine.svg';
 
@@ -500,6 +568,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/question_icon_calendar.svg
   String get questionIconCalendar => 'assets/icons/question_icon_calendar.svg';
+
+  /// Directory path: assets/icons/ranking
+  $AssetsIconsRankingGen get ranking => const $AssetsIconsRankingGen();
 
   /// File path: assets/icons/ranks_icon.svg
   String get ranksIcon => 'assets/icons/ranks_icon.svg';
@@ -543,6 +614,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/spinning_arrow_counter_clockwise.svg
   String get spinningArrowCounterClockwise =>
       'assets/icons/spinning_arrow_counter_clockwise.svg';
+
+  /// Directory path: assets/icons/streak
+  $AssetsIconsStreakGen get streak => const $AssetsIconsStreakGen();
 
   /// List of all assets
   List<dynamic> get values => [
@@ -772,8 +846,456 @@ class $AssetsWorkoutPlanTemplatesGen {
   ];
 }
 
+class $AssetsIconsNavigationBarGen {
+  const $AssetsIconsNavigationBarGen();
+
+  /// File path: assets/icons/navigation_bar/finish_session_icon.svg
+  String get finishSessionIcon =>
+      'assets/icons/navigation_bar/finish_session_icon.svg';
+
+  /// File path: assets/icons/navigation_bar/home_icon.svg
+  String get homeIcon => 'assets/icons/navigation_bar/home_icon.svg';
+
+  /// File path: assets/icons/navigation_bar/plans_icon.svg
+  String get plansIcon => 'assets/icons/navigation_bar/plans_icon.svg';
+
+  /// File path: assets/icons/navigation_bar/profile_icon.svg
+  String get profileIcon => 'assets/icons/navigation_bar/profile_icon.svg';
+
+  /// Directory path: assets/icons/navigation_bar/redesign
+  $AssetsIconsNavigationBarRedesignGen get redesign =>
+      const $AssetsIconsNavigationBarRedesignGen();
+
+  /// File path: assets/icons/navigation_bar/social_media_icon.svg
+  String get socialMediaIcon =>
+      'assets/icons/navigation_bar/social_media_icon.svg';
+
+  /// File path: assets/icons/navigation_bar/start_training_icon.svg
+  String get startTrainingIcon =>
+      'assets/icons/navigation_bar/start_training_icon.svg';
+
+  /// File path: assets/icons/navigation_bar/weekly_objectives_icon.svg
+  String get weeklyObjectivesIcon =>
+      'assets/icons/navigation_bar/weekly_objectives_icon.svg';
+
+  /// List of all assets
+  List<String> get values => [
+    finishSessionIcon,
+    homeIcon,
+    plansIcon,
+    profileIcon,
+    socialMediaIcon,
+    startTrainingIcon,
+    weeklyObjectivesIcon,
+  ];
+}
+
+class $AssetsIconsRankingGen {
+  const $AssetsIconsRankingGen();
+
+  /// File path: assets/icons/ranking/arrow_ranks.svg
+  String get arrowRanks => 'assets/icons/ranking/arrow_ranks.svg';
+
+  /// Directory path: assets/icons/ranking/base
+  $AssetsIconsRankingBaseGen get base => const $AssetsIconsRankingBaseGen();
+
+  /// Directory path: assets/icons/ranking/muscle_drawer
+  $AssetsIconsRankingMuscleDrawerGen get muscleDrawer =>
+      const $AssetsIconsRankingMuscleDrawerGen();
+
+  /// File path: assets/icons/ranking/muscle_group_hexagon_bg.svg
+  String get muscleGroupHexagonBg =>
+      'assets/icons/ranking/muscle_group_hexagon_bg.svg';
+
+  /// File path: assets/icons/ranking/symmetry_gold3_wings_badge.png
+  AssetGenImage get symmetryGold3WingsBadge => const AssetGenImage(
+    'assets/icons/ranking/symmetry_gold3_wings_badge.png',
+  );
+
+  /// File path: assets/icons/ranking/symmetry_muscle_hex_badge.png
+  AssetGenImage get symmetryMuscleHexBadge =>
+      const AssetGenImage('assets/icons/ranking/symmetry_muscle_hex_badge.png');
+
+  /// File path: assets/icons/ranking/symmetry_ranked_body_diagram.png
+  AssetGenImage get symmetryRankedBodyDiagram => const AssetGenImage(
+    'assets/icons/ranking/symmetry_ranked_body_diagram.png',
+  );
+
+  /// Directory path: assets/icons/ranking/tiered
+  $AssetsIconsRankingTieredGen get tiered =>
+      const $AssetsIconsRankingTieredGen();
+
+  /// File path: assets/icons/ranking/unranked_icon.svg
+  String get unrankedIcon => 'assets/icons/ranking/unranked_icon.svg';
+
+  /// File path: assets/icons/ranking/unranked_icon_next.svg
+  String get unrankedIconNext => 'assets/icons/ranking/unranked_icon_next.svg';
+
+  /// List of all assets
+  List<dynamic> get values => [
+    arrowRanks,
+    muscleGroupHexagonBg,
+    symmetryGold3WingsBadge,
+    symmetryMuscleHexBadge,
+    symmetryRankedBodyDiagram,
+    unrankedIcon,
+    unrankedIconNext,
+  ];
+}
+
+class $AssetsIconsStreakGen {
+  const $AssetsIconsStreakGen();
+
+  /// File path: assets/icons/streak/at_risk_badge.svg
+  String get atRiskBadge => 'assets/icons/streak/at_risk_badge.svg';
+
+  /// File path: assets/icons/streak/check.svg
+  String get check => 'assets/icons/streak/check.svg';
+
+  /// File path: assets/icons/streak/close.svg
+  String get close => 'assets/icons/streak/close.svg';
+
+  /// File path: assets/icons/streak/dumbbell.svg
+  String get dumbbell => 'assets/icons/streak/dumbbell.svg';
+
+  /// File path: assets/icons/streak/dumbbell_small.svg
+  String get dumbbellSmall => 'assets/icons/streak/dumbbell_small.svg';
+
+  /// File path: assets/icons/streak/flame_grey.svg
+  String get flameGrey => 'assets/icons/streak/flame_grey.svg';
+
+  /// File path: assets/icons/streak/flame_lit.svg
+  String get flameLit => 'assets/icons/streak/flame_lit.svg';
+
+  /// File path: assets/icons/streak/flame_outline.svg
+  String get flameOutline => 'assets/icons/streak/flame_outline.svg';
+
+  /// File path: assets/icons/streak/help.svg
+  String get help => 'assets/icons/streak/help.svg';
+
+  /// File path: assets/icons/streak/moon.svg
+  String get moon => 'assets/icons/streak/moon.svg';
+
+  /// List of all assets
+  List<String> get values => [
+    atRiskBadge,
+    check,
+    close,
+    dumbbell,
+    dumbbellSmall,
+    flameGrey,
+    flameLit,
+    flameOutline,
+    help,
+    moon,
+  ];
+}
+
+class $AssetsIconsNavigationBarRedesignGen {
+  const $AssetsIconsNavigationBarRedesignGen();
+
+  /// File path: assets/icons/navigation_bar/redesign/drop_new_training.svg
+  String get dropNewTraining =>
+      'assets/icons/navigation_bar/redesign/drop_new_training.svg';
+
+  /// File path: assets/icons/navigation_bar/redesign/drop_planning.svg
+  String get dropPlanning =>
+      'assets/icons/navigation_bar/redesign/drop_planning.svg';
+
+  /// File path: assets/icons/navigation_bar/redesign/drop_template.svg
+  String get dropTemplate =>
+      'assets/icons/navigation_bar/redesign/drop_template.svg';
+
+  /// File path: assets/icons/navigation_bar/redesign/five_tabs_library.svg
+  String get fiveTabsLibrary =>
+      'assets/icons/navigation_bar/redesign/five_tabs_library.svg';
+
+  /// File path: assets/icons/navigation_bar/redesign/five_tabs_profile.svg
+  String get fiveTabsProfile =>
+      'assets/icons/navigation_bar/redesign/five_tabs_profile.svg';
+
+  /// File path: assets/icons/navigation_bar/redesign/five_tabs_train.svg
+  String get fiveTabsTrain =>
+      'assets/icons/navigation_bar/redesign/five_tabs_train.svg';
+
+  /// File path: assets/icons/navigation_bar/redesign/friends.svg
+  String get friends => 'assets/icons/navigation_bar/redesign/friends.svg';
+
+  /// File path: assets/icons/navigation_bar/redesign/library.svg
+  String get library => 'assets/icons/navigation_bar/redesign/library.svg';
+
+  /// File path: assets/icons/navigation_bar/redesign/plus.svg
+  String get plus => 'assets/icons/navigation_bar/redesign/plus.svg';
+
+  /// File path: assets/icons/navigation_bar/redesign/profile.svg
+  String get profile => 'assets/icons/navigation_bar/redesign/profile.svg';
+
+  /// File path: assets/icons/navigation_bar/redesign/ranks.svg
+  String get ranks => 'assets/icons/navigation_bar/redesign/ranks.svg';
+
+  /// File path: assets/icons/navigation_bar/redesign/session_bar_expand.svg
+  String get sessionBarExpand =>
+      'assets/icons/navigation_bar/redesign/session_bar_expand.svg';
+
+  /// File path: assets/icons/navigation_bar/redesign/session_bar_training.svg
+  String get sessionBarTraining =>
+      'assets/icons/navigation_bar/redesign/session_bar_training.svg';
+
+  /// File path: assets/icons/navigation_bar/redesign/train.svg
+  String get train => 'assets/icons/navigation_bar/redesign/train.svg';
+
+  /// List of all assets
+  List<String> get values => [
+    dropNewTraining,
+    dropPlanning,
+    dropTemplate,
+    fiveTabsLibrary,
+    fiveTabsProfile,
+    fiveTabsTrain,
+    friends,
+    library,
+    plus,
+    profile,
+    ranks,
+    sessionBarExpand,
+    sessionBarTraining,
+    train,
+  ];
+}
+
+class $AssetsIconsRankingBaseGen {
+  const $AssetsIconsRankingBaseGen();
+
+  /// File path: assets/icons/ranking/base/rank=bronze.svg
+  String get rankBronze => 'assets/icons/ranking/base/rank=bronze.svg';
+
+  /// File path: assets/icons/ranking/base/rank=champion.svg
+  String get rankChampion => 'assets/icons/ranking/base/rank=champion.svg';
+
+  /// File path: assets/icons/ranking/base/rank=diamond.svg
+  String get rankDiamond => 'assets/icons/ranking/base/rank=diamond.svg';
+
+  /// File path: assets/icons/ranking/base/rank=emerald.svg
+  String get rankEmerald => 'assets/icons/ranking/base/rank=emerald.svg';
+
+  /// File path: assets/icons/ranking/base/rank=gold.svg
+  String get rankGold => 'assets/icons/ranking/base/rank=gold.svg';
+
+  /// File path: assets/icons/ranking/base/rank=iron.svg
+  String get rankIron => 'assets/icons/ranking/base/rank=iron.svg';
+
+  /// File path: assets/icons/ranking/base/rank=ruby.svg
+  String get rankRuby => 'assets/icons/ranking/base/rank=ruby.svg';
+
+  /// File path: assets/icons/ranking/base/rank=silver.svg
+  String get rankSilver => 'assets/icons/ranking/base/rank=silver.svg';
+
+  /// File path: assets/icons/ranking/base/rank=symmetric.svg
+  String get rankSymmetric => 'assets/icons/ranking/base/rank=symmetric.svg';
+
+  /// List of all assets
+  List<String> get values => [
+    rankBronze,
+    rankChampion,
+    rankDiamond,
+    rankEmerald,
+    rankGold,
+    rankIron,
+    rankRuby,
+    rankSilver,
+    rankSymmetric,
+  ];
+}
+
+class $AssetsIconsRankingMuscleDrawerGen {
+  const $AssetsIconsRankingMuscleDrawerGen();
+
+  /// File path: assets/icons/ranking/muscle_drawer/abdominales.svg
+  String get abdominales =>
+      'assets/icons/ranking/muscle_drawer/abdominales.svg';
+
+  /// File path: assets/icons/ranking/muscle_drawer/abductores.svg
+  String get abductores => 'assets/icons/ranking/muscle_drawer/abductores.svg';
+
+  /// File path: assets/icons/ranking/muscle_drawer/aductores.svg
+  String get aductores => 'assets/icons/ranking/muscle_drawer/aductores.svg';
+
+  /// File path: assets/icons/ranking/muscle_drawer/antebrazos.svg
+  String get antebrazos => 'assets/icons/ranking/muscle_drawer/antebrazos.svg';
+
+  /// File path: assets/icons/ranking/muscle_drawer/biceps.svg
+  String get biceps => 'assets/icons/ranking/muscle_drawer/biceps.svg';
+
+  /// File path: assets/icons/ranking/muscle_drawer/cuadriceps.svg
+  String get cuadriceps => 'assets/icons/ranking/muscle_drawer/cuadriceps.svg';
+
+  /// File path: assets/icons/ranking/muscle_drawer/cuelo.svg
+  String get cuelo => 'assets/icons/ranking/muscle_drawer/cuelo.svg';
+
+  /// File path: assets/icons/ranking/muscle_drawer/dorsales.svg
+  String get dorsales => 'assets/icons/ranking/muscle_drawer/dorsales.svg';
+
+  /// File path: assets/icons/ranking/muscle_drawer/espaldasuperior.svg
+  String get espaldasuperior =>
+      'assets/icons/ranking/muscle_drawer/espaldasuperior.svg';
+
+  /// File path: assets/icons/ranking/muscle_drawer/femorales.svg
+  String get femorales => 'assets/icons/ranking/muscle_drawer/femorales.svg';
+
+  /// File path: assets/icons/ranking/muscle_drawer/gemelos.svg
+  String get gemelos => 'assets/icons/ranking/muscle_drawer/gemelos.svg';
+
+  /// File path: assets/icons/ranking/muscle_drawer/gluteos.svg
+  String get gluteos => 'assets/icons/ranking/muscle_drawer/gluteos.svg';
+
+  /// File path: assets/icons/ranking/muscle_drawer/hombros.svg
+  String get hombros => 'assets/icons/ranking/muscle_drawer/hombros.svg';
+
+  /// File path: assets/icons/ranking/muscle_drawer/lumbar.svg
+  String get lumbar => 'assets/icons/ranking/muscle_drawer/lumbar.svg';
+
+  /// File path: assets/icons/ranking/muscle_drawer/pecho.svg
+  String get pecho => 'assets/icons/ranking/muscle_drawer/pecho.svg';
+
+  /// File path: assets/icons/ranking/muscle_drawer/trapecio.svg
+  String get trapecio => 'assets/icons/ranking/muscle_drawer/trapecio.svg';
+
+  /// File path: assets/icons/ranking/muscle_drawer/triceps.svg
+  String get triceps => 'assets/icons/ranking/muscle_drawer/triceps.svg';
+
+  /// List of all assets
+  List<String> get values => [
+    abdominales,
+    abductores,
+    aductores,
+    antebrazos,
+    biceps,
+    cuadriceps,
+    cuelo,
+    dorsales,
+    espaldasuperior,
+    femorales,
+    gemelos,
+    gluteos,
+    hombros,
+    lumbar,
+    pecho,
+    trapecio,
+    triceps,
+  ];
+}
+
+class $AssetsIconsRankingTieredGen {
+  const $AssetsIconsRankingTieredGen();
+
+  /// File path: assets/icons/ranking/tiered/rank=bronze1.svg
+  String get rankBronze1 => 'assets/icons/ranking/tiered/rank=bronze1.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=bronze2.svg
+  String get rankBronze2 => 'assets/icons/ranking/tiered/rank=bronze2.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=bronze3.svg
+  String get rankBronze3 => 'assets/icons/ranking/tiered/rank=bronze3.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=champion.svg
+  String get rankChampion => 'assets/icons/ranking/tiered/rank=champion.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=champion2.svg
+  String get rankChampion2 => 'assets/icons/ranking/tiered/rank=champion2.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=champion3.svg
+  String get rankChampion3 => 'assets/icons/ranking/tiered/rank=champion3.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=diamond1.svg
+  String get rankDiamond1 => 'assets/icons/ranking/tiered/rank=diamond1.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=diamond2.svg
+  String get rankDiamond2 => 'assets/icons/ranking/tiered/rank=diamond2.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=diamond3.svg
+  String get rankDiamond3 => 'assets/icons/ranking/tiered/rank=diamond3.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=emerald1.svg
+  String get rankEmerald1 => 'assets/icons/ranking/tiered/rank=emerald1.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=emerald2.svg
+  String get rankEmerald2 => 'assets/icons/ranking/tiered/rank=emerald2.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=emerald3.svg
+  String get rankEmerald3 => 'assets/icons/ranking/tiered/rank=emerald3.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=gold1.svg
+  String get rankGold1 => 'assets/icons/ranking/tiered/rank=gold1.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=gold2.svg
+  String get rankGold2 => 'assets/icons/ranking/tiered/rank=gold2.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=gold3.svg
+  String get rankGold3 => 'assets/icons/ranking/tiered/rank=gold3.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=iron1.svg
+  String get rankIron1 => 'assets/icons/ranking/tiered/rank=iron1.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=iron2.svg
+  String get rankIron2 => 'assets/icons/ranking/tiered/rank=iron2.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=iron3.svg
+  String get rankIron3 => 'assets/icons/ranking/tiered/rank=iron3.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=ruby1.svg
+  String get rankRuby1 => 'assets/icons/ranking/tiered/rank=ruby1.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=ruby2.svg
+  String get rankRuby2 => 'assets/icons/ranking/tiered/rank=ruby2.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=ruby3.svg
+  String get rankRuby3 => 'assets/icons/ranking/tiered/rank=ruby3.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=silver1.svg
+  String get rankSilver1 => 'assets/icons/ranking/tiered/rank=silver1.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=silver2.svg
+  String get rankSilver2 => 'assets/icons/ranking/tiered/rank=silver2.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=silver3.svg
+  String get rankSilver3 => 'assets/icons/ranking/tiered/rank=silver3.svg';
+
+  /// File path: assets/icons/ranking/tiered/rank=symmetric.svg
+  String get rankSymmetric => 'assets/icons/ranking/tiered/rank=symmetric.svg';
+
+  /// List of all assets
+  List<String> get values => [
+    rankBronze1,
+    rankBronze2,
+    rankBronze3,
+    rankChampion,
+    rankChampion2,
+    rankChampion3,
+    rankDiamond1,
+    rankDiamond2,
+    rankDiamond3,
+    rankEmerald1,
+    rankEmerald2,
+    rankEmerald3,
+    rankGold1,
+    rankGold2,
+    rankGold3,
+    rankIron1,
+    rankIron2,
+    rankIron3,
+    rankRuby1,
+    rankRuby2,
+    rankRuby3,
+    rankSilver1,
+    rankSilver2,
+    rankSilver3,
+    rankSymmetric,
+  ];
+}
+
 abstract final class Assets {
   static const $AssetsDataGen data = $AssetsDataGen();
+  static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsQuickWorkoutsGen quickWorkouts =
       $AssetsQuickWorkoutsGen();

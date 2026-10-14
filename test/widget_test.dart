@@ -1,13 +1,19 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:drift/native.dart';
 import 'package:symmetry/app/app.dart';
+import 'package:symmetry/core/database/app_database.dart';
 import 'package:symmetry/core/di/injection.dart';
 
 void main() {
+  late AppDatabase testDb;
+
   setUp(() async {
-    await configureDependencies();
+    testDb = AppDatabase(NativeDatabase.memory());
+    await configureDependencies(database: testDb);
   });
 
   tearDown(() async {
+    await testDb.close();
     await getIt.reset();
   });
 

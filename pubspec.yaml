@@ -19,6 +19,11 @@ dependencies:
   google_fonts: ^6.2.1
   equatable: ^2.0.5
   intl: ^0.20.2
+  drift: ^2.35.2
+  drift_flutter: ^0.3.1
+  sqlite3_flutter_libs: ^0.6.0+eol
+  path_provider: ^2.1.6
+  path: ^1.9.1
 
 dev_dependencies:
   flutter_test:
@@ -28,6 +33,7 @@ dev_dependencies:
   freezed: ^4.0.2
   json_serializable: ^6.14.1
   flutter_gen_runner: ^5.15.0
+  drift_dev: ^2.35.1
 
 dependency_overrides:
   build_config: ^1.4.0

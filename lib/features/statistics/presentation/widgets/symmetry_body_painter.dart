@@ -1,16 +1,22 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
+enum BodyViewMode { both, frontOnly, backOnly }
+
 /// Native CustomPainter that renders the authentic Symmetry Front & Back
 /// anatomical body heatmap with muscle cuts, tier colors, and white contour strokes.
 class SymmetryBodyDiagram extends StatelessWidget {
   final Map<String, Color>? muscleColors;
   final double height;
+  final BodyViewMode viewMode;
+  final bool highlightMode;
 
   const SymmetryBodyDiagram({
     super.key,
     this.muscleColors,
     this.height = 370,
+    this.viewMode = BodyViewMode.both,
+    this.highlightMode = false,
   });
 
   @override
@@ -19,7 +25,11 @@ class SymmetryBodyDiagram extends StatelessWidget {
       height: height,
       width: double.infinity,
       child: CustomPaint(
-        painter: SymmetryBodyPainter(muscleColors: muscleColors),
+        painter: SymmetryBodyPainter(
+          muscleColors: muscleColors,
+          viewMode: viewMode,
+          highlightMode: highlightMode,
+        ),
       ),
     );
   }
@@ -27,8 +37,14 @@ class SymmetryBodyDiagram extends StatelessWidget {
 
 class SymmetryBodyPainter extends CustomPainter {
   final Map<String, Color>? muscleColors;
+  final BodyViewMode viewMode;
+  final bool highlightMode;
 
-  const SymmetryBodyPainter({this.muscleColors});
+  const SymmetryBodyPainter({
+    this.muscleColors,
+    this.viewMode = BodyViewMode.both,
+    this.highlightMode = false,
+  });
 
   // Authentic Symmetry Muscle Colors from Screenshot
   static const Color colorAmber = Color(0xFFF5A623); // Gold / Amber
@@ -41,8 +57,7 @@ class SymmetryBodyPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    // Reference coordinate space: 360 x 380
-    const double refWidth = 360.0;
+    final double refWidth = viewMode == BodyViewMode.both ? 360.0 : 130.0;
     const double refHeight = 380.0;
 
     final double scale = math.min(size.width / refWidth, size.height / refHeight);
@@ -72,68 +87,124 @@ class SymmetryBodyPainter extends CustomPainter {
       ..color = colorBlack
       ..style = PaintingStyle.fill;
 
-    // Muscle Fills (Overridable via muscleColors map)
-    final shoulderFill = Paint()..color = muscleColors?['shoulders'] ?? colorAmber;
-    final chestFill = Paint()..color = muscleColors?['chest'] ?? colorRed;
-    final bicepOuterFill = Paint()..color = muscleColors?['biceps_outer'] ?? colorAmber;
-    final bicepInnerFill = Paint()..color = muscleColors?['biceps_inner'] ?? colorRed;
-    final forearmFill = Paint()..color = muscleColors?['forearms'] ?? colorBronze;
-    final absFill = Paint()..color = muscleColors?['abs'] ?? colorGreen;
-    final quadsOuterFill = Paint()..color = muscleColors?['quads_outer'] ?? colorAmber;
-    final quadsInnerFill = Paint()..color = muscleColors?['quads_inner'] ?? colorRed;
-    final calfFill = Paint()..color = muscleColors?['calves'] ?? colorGreen;
+    // Muscle Fills (Overridable via muscleColors map or black if in highlightMode)
+    final shoulderFill = Paint()
+      ..color = muscleColors?['shoulders'] ?? (highlightMode ? colorBlack : colorAmber);
+    final chestFill = Paint()
+      ..color = muscleColors?['chest'] ?? (highlightMode ? colorBlack : colorRed);
+    final bicepOuterFill = Paint()
+      ..color = muscleColors?['biceps_outer'] ?? (highlightMode ? colorBlack : colorAmber);
+    final bicepInnerFill = Paint()
+      ..color = muscleColors?['biceps_inner'] ?? (highlightMode ? colorBlack : colorRed);
+    final forearmFill = Paint()
+      ..color = muscleColors?['forearms'] ?? (highlightMode ? colorBlack : colorBronze);
+    final absFill = Paint()
+      ..color = muscleColors?['abs'] ?? (highlightMode ? colorBlack : colorGreen);
+    final quadsOuterFill = Paint()
+      ..color = muscleColors?['quads_outer'] ?? (highlightMode ? colorBlack : colorAmber);
+    final quadsInnerFill = Paint()
+      ..color = muscleColors?['quads_inner'] ?? (highlightMode ? colorBlack : colorRed);
+    final calfFill = Paint()
+      ..color = muscleColors?['calves'] ?? (highlightMode ? colorBlack : colorGreen);
 
-    final trapFill = Paint()..color = muscleColors?['traps'] ?? colorBronze;
-    final rearDeltFill = Paint()..color = muscleColors?['rear_delts'] ?? colorAmber;
-    final infraspinatusFill = Paint()..color = muscleColors?['infraspinatus'] ?? colorRed;
-    final tricepFill = Paint()..color = muscleColors?['triceps'] ?? colorAmber;
-    final latsFill = Paint()..color = muscleColors?['lats'] ?? colorGreen;
-    final lumbarFill = Paint()..color = muscleColors?['lumbar'] ?? colorRed;
-    final glutesFill = Paint()..color = muscleColors?['glutes'] ?? colorGlutes;
-    final hamstringsFill = Paint()..color = muscleColors?['hamstrings'] ?? colorAmber;
+    final trapFill = Paint()
+      ..color = muscleColors?['traps'] ?? (highlightMode ? colorBlack : colorBronze);
+    final rearDeltFill = Paint()
+      ..color = muscleColors?['rear_delts'] ?? (highlightMode ? colorBlack : colorAmber);
+    final infraspinatusFill = Paint()
+      ..color = muscleColors?['infraspinatus'] ?? (highlightMode ? colorBlack : colorRed);
+    final tricepFill = Paint()
+      ..color = muscleColors?['triceps'] ?? (highlightMode ? colorBlack : colorAmber);
+    final latsFill = Paint()
+      ..color = muscleColors?['lats'] ?? (highlightMode ? colorBlack : colorGreen);
+    final lumbarFill = Paint()
+      ..color = muscleColors?['lumbar'] ?? (highlightMode ? colorBlack : colorRed);
+    final glutesFill = Paint()
+      ..color = muscleColors?['glutes'] ?? (highlightMode ? colorBlack : colorGlutes);
+    final hamstringsFill = Paint()
+      ..color = muscleColors?['hamstrings'] ?? (highlightMode ? colorBlack : colorAmber);
 
-    // -------------------------------------------------------------
-    // 1. FRONT VIEW SILHOUETTE (Center x = 95, y = 10)
-    // -------------------------------------------------------------
-    _drawFrontFigure(
-      canvas: canvas,
-      cx: 95.0,
-      cy: 10.0,
-      stroke: strokePaint,
-      thinStroke: thinStrokePaint,
-      blackFill: blackFill,
-      shoulderFill: shoulderFill,
-      chestFill: chestFill,
-      bicepOuterFill: bicepOuterFill,
-      bicepInnerFill: bicepInnerFill,
-      forearmFill: forearmFill,
-      absFill: absFill,
-      quadsOuterFill: quadsOuterFill,
-      quadsInnerFill: quadsInnerFill,
-      calfFill: calfFill,
-    );
+    if (viewMode == BodyViewMode.both) {
+      // -------------------------------------------------------------
+      // 1. FRONT VIEW SILHOUETTE (Center x = 95, y = 10)
+      // -------------------------------------------------------------
+      _drawFrontFigure(
+        canvas: canvas,
+        cx: 95.0,
+        cy: 10.0,
+        stroke: strokePaint,
+        thinStroke: thinStrokePaint,
+        blackFill: blackFill,
+        shoulderFill: shoulderFill,
+        chestFill: chestFill,
+        bicepOuterFill: bicepOuterFill,
+        bicepInnerFill: bicepInnerFill,
+        forearmFill: forearmFill,
+        absFill: absFill,
+        quadsOuterFill: quadsOuterFill,
+        quadsInnerFill: quadsInnerFill,
+        calfFill: calfFill,
+      );
 
-    // -------------------------------------------------------------
-    // 2. BACK VIEW SILHOUETTE (Center x = 265, y = 10)
-    // -------------------------------------------------------------
-    _drawBackFigure(
-      canvas: canvas,
-      cx: 265.0,
-      cy: 10.0,
-      stroke: strokePaint,
-      thinStroke: thinStrokePaint,
-      blackFill: blackFill,
-      trapFill: trapFill,
-      rearDeltFill: rearDeltFill,
-      infraspinatusFill: infraspinatusFill,
-      tricepFill: tricepFill,
-      forearmFill: forearmFill,
-      latsFill: latsFill,
-      lumbarFill: lumbarFill,
-      glutesFill: glutesFill,
-      hamstringsFill: hamstringsFill,
-      calfFill: calfFill,
-    );
+      // -------------------------------------------------------------
+      // 2. BACK VIEW SILHOUETTE (Center x = 265, y = 10)
+      // -------------------------------------------------------------
+      _drawBackFigure(
+        canvas: canvas,
+        cx: 265.0,
+        cy: 10.0,
+        stroke: strokePaint,
+        thinStroke: thinStrokePaint,
+        blackFill: blackFill,
+        trapFill: trapFill,
+        rearDeltFill: rearDeltFill,
+        infraspinatusFill: infraspinatusFill,
+        tricepFill: tricepFill,
+        forearmFill: forearmFill,
+        latsFill: latsFill,
+        lumbarFill: lumbarFill,
+        glutesFill: glutesFill,
+        hamstringsFill: hamstringsFill,
+        calfFill: calfFill,
+      );
+    } else if (viewMode == BodyViewMode.frontOnly) {
+      _drawFrontFigure(
+        canvas: canvas,
+        cx: 65.0,
+        cy: 10.0,
+        stroke: strokePaint,
+        thinStroke: thinStrokePaint,
+        blackFill: blackFill,
+        shoulderFill: shoulderFill,
+        chestFill: chestFill,
+        bicepOuterFill: bicepOuterFill,
+        bicepInnerFill: bicepInnerFill,
+        forearmFill: forearmFill,
+        absFill: absFill,
+        quadsOuterFill: quadsOuterFill,
+        quadsInnerFill: quadsInnerFill,
+        calfFill: calfFill,
+      );
+    } else {
+      _drawBackFigure(
+        canvas: canvas,
+        cx: 65.0,
+        cy: 10.0,
+        stroke: strokePaint,
+        thinStroke: thinStrokePaint,
+        blackFill: blackFill,
+        trapFill: trapFill,
+        rearDeltFill: rearDeltFill,
+        infraspinatusFill: infraspinatusFill,
+        tricepFill: tricepFill,
+        forearmFill: forearmFill,
+        latsFill: latsFill,
+        lumbarFill: lumbarFill,
+        glutesFill: glutesFill,
+        hamstringsFill: hamstringsFill,
+        calfFill: calfFill,
+      );
+    }
 
     canvas.restore();
   }
@@ -885,6 +956,7 @@ class SymmetryBodyPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant SymmetryBodyPainter oldDelegate) {
-    return oldDelegate.muscleColors != muscleColors;
+    return oldDelegate.muscleColors != muscleColors ||
+        oldDelegate.viewMode != viewMode;
   }
 }

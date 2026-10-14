@@ -1,3 +1,6 @@
+import 'package:drift/drift.dart';
+import '../../../../core/database/app_database.dart';
+import '../../../../core/di/injection.dart';
 import '../models/user_rank_model.dart';
 import '../models/muscle_volume_model.dart';
 
@@ -5,74 +8,118 @@ abstract class StatisticsLocalDataSource {
   Future<List<UserRankModel>> getUserRanks();
   Future<List<MuscleVolumeModel>> getMuscleVolumes();
   Future<double> getOverallSymmetryScore();
+  Future<void> updateUserRank({
+    required String muscleGroup,
+    required String currentRank,
+    required int tierLevel,
+    required double estimated1Rm,
+    required double percentile,
+    DateTime? lastTrained,
+  });
 }
 
 class StatisticsLocalDataSourceImpl implements StatisticsLocalDataSource {
+  final AppDatabase db;
+
+  StatisticsLocalDataSourceImpl([AppDatabase? database])
+      : db = database ?? getIt<AppDatabase>();
+
   @override
   Future<List<UserRankModel>> getUserRanks() async {
-    // Benchmark exercises calibrated against Symmetry rankThresholds
-    return const [
-      UserRankModel(
-        exerciseId: 1,
-        exerciseName: 'Sentadilla (Barra Alta)',
-        currentWeight: 110.0,
-        bodyweight: 78.0,
-        ratio: 1.41,
-        rankTier: 'Advanced (Platino)',
-        tierIndex: 4,
-        nextTierRatio: 1.60,
-        progressPercentage: 0.82,
-        percentile: 84,
-      ),
-      UserRankModel(
-        exerciseId: 740,
-        exerciseName: 'Press De Banca (Barra)',
-        currentWeight: 95.0,
-        bodyweight: 78.0,
-        ratio: 1.22,
-        rankTier: 'Proficient (Oro)',
-        tierIndex: 3,
-        nextTierRatio: 1.35,
-        progressPercentage: 0.65,
-        percentile: 74,
-      ),
-      UserRankModel(
-        exerciseId: 1896,
-        exerciseName: 'Peso Muerto Convencional',
-        currentWeight: 155.0,
-        bodyweight: 78.0,
-        ratio: 1.98,
-        rankTier: 'Advanced (Platino)',
-        tierIndex: 4,
-        nextTierRatio: 2.10,
-        progressPercentage: 0.88,
-        percentile: 89,
-      ),
-      UserRankModel(
-        exerciseId: 1834,
-        exerciseName: 'Press Militar (Barra)',
-        currentWeight: 62.5,
-        bodyweight: 78.0,
-        ratio: 0.80,
-        rankTier: 'Proficient (Oro)',
-        tierIndex: 3,
-        nextTierRatio: 0.90,
-        progressPercentage: 0.70,
-        percentile: 76,
-      ),
-      UserRankModel(
-        exerciseId: 25,
-        exerciseName: 'Curl De Bíceps (Mancuerna)',
-        currentWeight: 22.0,
-        bodyweight: 78.0,
-        ratio: 0.28,
-        rankTier: 'Proficient (Oro)',
-        tierIndex: 3,
-        nextTierRatio: 0.32,
-        progressPercentage: 0.60,
-        percentile: 71,
-      ),
-    ];
+    // 1. Query Drift UserRanksTable
+    var rows = await db.select(db.userRanksTable).get();
+
+    // 2. Seed initial benchmark ranks if table is empty
+    if (rows.isEmpty) {
+      final defaultRanks = [
+        UserRanksTableCompanion.insert(
+          muscleGroup: 'Sentadilla (Barra Alta)',
+          currentRank: 'Advanced (Platino)',
+          tierLevel: 4,
+          estimated1Rm: 110.0,
+          percentile: 84.0,
+          lastTrained: Value(DateTime.now().subtract(const Duration(days: 3))),
+        ),
+        UserRanksTableCompanion.insert(
+          muscleGroup: 'Press De Banca (Barra)',
+          currentRank: 'Proficient (Oro)',
+          tierLevel: 3,
+          estimated1Rm: 95.0,
+          percentile: 74.0,
+          lastTrained: Value(DateTime.now().subtract(const Duration(days: 1))),
+        ),
+        UserRanksTableCompanion.insert(
+          muscleGroup: 'Peso Muerto Convencional',
+          currentRank: 'Advanced (Platino)',
+          tierLevel: 4,
+          estimated1Rm: 155.0,
+          percentile: 89.0,
+          lastTrained: Value(DateTime.now().subtract(const Duration(days: 2))),
+        ),
+        UserRanksTableCompanion.insert(
+          muscleGroup: 'Press Militar (Barra)',
+          currentRank: 'Proficient (Oro)',
+          tierLevel: 3,
+          estimated1Rm: 62.5,
+          percentile: 76.0,
+          lastTrained: Value(DateTime.now().subtract(const Duration(days: 4))),
+        ),
+        UserRanksTableCompanion.insert(
+          muscleGroup: 'Curl De Bíceps (Mancuerna)',
+          currentRank: 'Proficient (Oro)',
+          tierLevel: 3,
+          estimated1Rm: 22.0,
+          percentile: 71.0,
+          lastTrained: Value(DateTime.now().subtract(const Duration(days: 1))),
+        ),
+      ];
+
+      for (final rank in defaultRanks) {
+        await db.into(db.userRanksTable).insert(rank);
+      }
+
+      rows = await db.select(db.userRanksTable).get();
+    }
+
+    // 3. Map Drift rows to UserRankModel
+    const double bodyweight = 78.0;
+    return rows.map((r) {
+      final id = _getExerciseIdForMuscle(r.muscleGroup);
+      final ratio = double.parse((r.estimated1Rm / bodyweight).toStringAsFixed(2));
+      return UserRankModel(
+        exerciseId: id,
+        exerciseName: r.muscleGroup,
+        currentWeight: r.estimated1Rm,
+        bodyweight: bodyweight,
+        ratio: ratio,
+        rankTier: r.currentRank,
+        tierIndex: r.tierLevel,
+        nextTierRatio: double.parse((ratio * 1.15).toStringAsFixed(2)),
+        progressPercentage: r.percentile / 100.0,
+        percentile: r.percentile.round(),
+      );
+    }).toList();
+  }
+
+  @override
+  Future<void> updateUserRank({
+    required String muscleGroup,
+    required String currentRank,
+    required int tierLevel,
+    required double estimated1Rm,
+    required double percentile,
+    DateTime? lastTrained,
+  }) async {
+    await db.into(db.userRanksTable).insertOnConflictUpdate(
+          UserRanksTableCompanion.insert(
+            muscleGroup: muscleGroup,
+            currentRank: currentRank,
+            tierLevel: tierLevel,
+            estimated1Rm: estimated1Rm,
+            percentile: percentile,
+            lastTrained: Value(lastTrained ?? DateTime.now()),
+          ),
+        );
   }
 
   @override
@@ -132,5 +179,15 @@ class StatisticsLocalDataSourceImpl implements StatisticsLocalDataSource {
   @override
   Future<double> getOverallSymmetryScore() async {
     return 89.2;
+  }
+
+  int _getExerciseIdForMuscle(String name) {
+    final lower = name.toLowerCase();
+    if (lower.contains('sentadilla') || lower.contains('squat')) return 1;
+    if (lower.contains('banca') || lower.contains('bench')) return 740;
+    if (lower.contains('muerto') || lower.contains('deadlift')) return 1896;
+    if (lower.contains('militar') || lower.contains('overhead')) return 1834;
+    if (lower.contains('curl') || lower.contains('bicep')) return 25;
+    return 100;
   }
 }

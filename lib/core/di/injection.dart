@@ -31,20 +31,28 @@ import '../../features/bodyscan/domain/repositories/bodyscan_repository.dart';
 import '../../features/bodyscan/domain/usecases/get_body_measurements_usecase.dart';
 import '../../features/bodyscan/presentation/bloc/bodyscan_bloc.dart';
 
-final getIt = GetIt.instance;
+import '../database/app_database.dart';
 
-Future<void> configureDependencies() async {
+final getIt = GetIt.instance;
+final sl = getIt;
+
+Future<void> configureDependencies({AppDatabase? database}) async {
+  // -------------------------------------------------------------
+  // Database
+  // -------------------------------------------------------------
+  getIt.registerLazySingleton<AppDatabase>(() => database ?? AppDatabase());
+
   // -------------------------------------------------------------
   // Data Sources
   // -------------------------------------------------------------
   getIt.registerLazySingleton<TrainingLocalDataSource>(
-    () => TrainingLocalDataSourceImpl(),
+    () => TrainingLocalDataSourceImpl(getIt()),
   );
   getIt.registerLazySingleton<IntelligenceLocalDataSource>(
     () => IntelligenceLocalDataSourceImpl(),
   );
   getIt.registerLazySingleton<StatisticsLocalDataSource>(
-    () => StatisticsLocalDataSourceImpl(),
+    () => StatisticsLocalDataSourceImpl(getIt()),
   );
   getIt.registerLazySingleton<BodyscanLocalDataSource>(
     () => BodyscanLocalDataSourceImpl(),

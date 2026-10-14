@@ -11,7 +11,7 @@ import '../../features/training/presentation/pages/active_workout_page.dart';
 import '../../features/intelligence/presentation/pages/ai_coach_page.dart';
 import '../../features/intelligence/presentation/pages/ai_workout_generator_page.dart';
 import '../../features/statistics/presentation/pages/statistics_page.dart';
-import '../../features/bodyscan/presentation/pages/bodyscan_page.dart';
+import '../../features/profile/presentation/pages/profile_page.dart';
 
 final GlobalKey<NavigatorState> _rootNavigatorKey =
     GlobalKey<NavigatorState>(debugLabel: 'root');
@@ -114,7 +114,7 @@ final appRouter = GoRouter(
           routes: [
             GoRoute(
               path: '/profile',
-              builder: (context, state) => const BodyscanPage(),
+              builder: (context, state) => const ProfilePage(),
             ),
           ],
         ),
