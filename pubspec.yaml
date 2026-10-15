@@ -25,6 +25,7 @@ dependencies:
   path_provider: ^2.1.6
   path: ^1.9.1
   extended_image: ^10.1.0
+  shared_preferences: ^2.5.6
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +69,14 @@ flutter:
     - assets/new_icons/
     - assets/translations/
     - assets/specializations/
+    - assets/icons/onboarding/
+    - assets/images/onboarding/
+    - assets/images/onboarding/main_fitness_objective/
+    - assets/images/onboarding/training_experience/
+    - assets/images/onboarding/physiques/
+    - assets/images/onboarding/body_goal_reason/
+    - assets/images/onboarding/show_functionality/
+    - assets/images/onboarding/calculating_rank/
 
   fonts:
     - family: DMSans

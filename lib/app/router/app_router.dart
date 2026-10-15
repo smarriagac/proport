@@ -14,14 +14,26 @@ import '../../features/intelligence/presentation/pages/ai_workout_generator_page
 import '../../features/statistics/presentation/pages/statistics_page.dart';
 import '../../features/profile/presentation/pages/profile_page.dart';
 import '../../features/library/presentation/pages/library_page.dart';
+import '../../features/splash/presentation/pages/splash_page.dart';
+import '../../features/onboarding/presentation/pages/onboarding_page.dart';
 
 final GlobalKey<NavigatorState> _rootNavigatorKey =
     GlobalKey<NavigatorState>(debugLabel: 'root');
 
 final appRouter = GoRouter(
   navigatorKey: _rootNavigatorKey,
-  initialLocation: '/ranks',
+  initialLocation: '/splash',
   routes: [
+    GoRoute(
+      path: '/splash',
+      parentNavigatorKey: _rootNavigatorKey,
+      builder: (context, state) => const SplashPage(),
+    ),
+    GoRoute(
+      path: '/onboarding',
+      parentNavigatorKey: _rootNavigatorKey,
+      builder: (context, state) => const OnboardingPage(),
+    ),
     // Compatibility aliases
     GoRoute(
       path: '/statistics',
