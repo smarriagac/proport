@@ -142,6 +142,14 @@ class AppAssets {
       'assets/images/muscles/distribution_triceps.png';
   static const String muscleDistributionPecho =
       'assets/images/muscles/distribution_pecho.png';
+  static const String muscleDistributionBack =
+      'assets/images/empty_workout/muscles/back.svg';
+  static const String muscleDistributionArms =
+      'assets/images/empty_workout/muscles/arms.svg';
+  static const String muscleDistributionLegs =
+      'assets/images/empty_workout/muscles/legs.svg';
+  static const String muscleDistributionAbs =
+      'assets/images/empty_workout/muscles/abs.svg';
 
   // Authentic Symmetry Exercise Animated GIFs
   static const String gifTreadmill =

@@ -58,6 +58,8 @@ flutter:
     - assets/icons/workout_plan_management/
     - assets/images/
     - assets/images/muscles/
+    - assets/images/empty_workout/muscles/
+    - assets/images/ai_session_form/muscles/
     - assets/images/exercises/
     - assets/images/plans/
     - assets/images/quick_workouts/

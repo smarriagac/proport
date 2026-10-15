@@ -535,7 +535,9 @@ class TrainingLocalDataSourceImpl implements TrainingLocalDataSource {
               sessionId: sessionId,
               exerciseTemplateId: ex.exerciseTemplateId,
               exerciseName: ex.name,
-              muscleGroup: ex.muscleGroup.isNotEmpty
+              muscleGroup: (ex.muscleGroup.isNotEmpty &&
+                      ex.muscleGroup != 'General' &&
+                      ex.muscleGroup != 'Core & Other')
                   ? ex.muscleGroup
                   : _inferMuscleGroup(ex.name),
               orderIndex: i,
@@ -837,35 +839,82 @@ class TrainingLocalDataSourceImpl implements TrainingLocalDataSource {
     if (lower.contains('squat') ||
         lower.contains('sentadilla') ||
         lower.contains('prensa') ||
-        lower.contains('quad')) {
-      return 'Quads';
-    } else if (lower.contains('deadlift') ||
-        lower.contains('muerto') ||
-        lower.contains('curl femoral') ||
-        lower.contains('glute')) {
-      return 'Hamstrings & Glutes';
+        lower.contains('quad') ||
+        lower.contains('pierna') ||
+        lower.contains('femoral') ||
+        lower.contains('isquio') ||
+        lower.contains('glute') ||
+        lower.contains('calf') ||
+        lower.contains('gemelo') ||
+        lower.contains('bulgarian') ||
+        lower.contains('búlgara') ||
+        lower.contains('zancada') ||
+        lower.contains('deadlift') ||
+        lower.contains('muerto')) {
+      return 'Piernas';
     } else if (lower.contains('press') ||
         lower.contains('push') ||
         lower.contains('pecho') ||
-        lower.contains('banco')) {
-      return 'Chest';
+        lower.contains('chest') ||
+        lower.contains('banca') ||
+        lower.contains('inclinado') ||
+        lower.contains('apertura') ||
+        lower.contains('cruce')) {
+      return 'Pecho';
     } else if (lower.contains('row') ||
         lower.contains('remo') ||
         lower.contains('jalon') ||
-        lower.contains('espalda')) {
-      return 'Back';
-    } else if (lower.contains('curl') ||
-        lower.contains('tricep') ||
-        lower.contains('katana') ||
-        lower.contains('bicep')) {
-      return 'Arms';
-    } else if (lower.contains('pike') ||
-        lower.contains('deltoid') ||
+        lower.contains('jalón') ||
+        lower.contains('espalda') ||
+        lower.contains('pull') ||
+        lower.contains('lat') ||
+        lower.contains('dominada') ||
+        lower.contains('trapecio') ||
+        lower.contains('dorsal')) {
+      return 'Espalda';
+    } else if (lower.contains('hombro') ||
+        lower.contains('shoulder') ||
         lower.contains('militar') ||
-        lower.contains('hombro')) {
-      return 'Shoulders';
+        lower.contains('lateral') ||
+        lower.contains('elevacion') ||
+        lower.contains('elevación') ||
+        lower.contains('deltoid') ||
+        lower.contains('pájaro') ||
+        lower.contains('pajaro') ||
+        lower.contains('facepull')) {
+      return 'Hombros';
+    } else if (lower.contains('tricep') ||
+        lower.contains('trícep') ||
+        lower.contains('fondo') ||
+        lower.contains('dip') ||
+        lower.contains('katana') ||
+        lower.contains('cuerda') ||
+        lower.contains('pushdown') ||
+        lower.contains('frances') ||
+        lower.contains('francés')) {
+      return 'Tríceps';
+    } else if (lower.contains('curl') ||
+        lower.contains('bicep') ||
+        lower.contains('bícep') ||
+        lower.contains('martillo') ||
+        lower.contains('predicador')) {
+      return 'Bíceps';
+    } else if (lower.contains('plank') ||
+        lower.contains('plancha') ||
+        lower.contains('crunch') ||
+        lower.contains('core') ||
+        lower.contains('abs') ||
+        lower.contains('abdomen') ||
+        lower.contains('abdominal')) {
+      return 'Core';
+    } else if (lower.contains('cinta') ||
+        lower.contains('correr') ||
+        lower.contains('cardio') ||
+        lower.contains('andar') ||
+        lower.contains('treadmill')) {
+      return 'Cardio';
     }
-    return 'Core & Other';
+    return 'Espalda'; // Sensible default for pull/back movements if unmatched
   }
 
   List<WorkoutPlanModel> _getFallbackPlans() {
