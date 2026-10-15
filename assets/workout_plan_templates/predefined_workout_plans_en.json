@@ -1,7 +1,7 @@
 [
     {
         "name": "Bodyweight Aesthetics",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/estetica_con_peso_corporal.webp",
+        "thumbnailURL": "assets/images/plans/estetica_con_peso_corporal.webp",
         "durationPerSession": 90,
         "description": "5-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 90 minutes. The goal is to achieve an aesthetic, proportional, and symmetrical physique.\n\n\nWeekly structure:\n\n• Push and Core - Metabolic: Training focused on pushes, triceps and abs, with little recovery and high intensity.\n\n• Legs and Glutes - Relative Strength: Focus on lower body and glutes, high volume and unilateral emphasis for maximum stimulus without external load.\n\n• Push and Core with Deltoid Emphasis: Focus on push for shoulders and triceps, combined with advanced core and metabolic intensity.\n\n• Legs and Core - Maximum Density: Unilateral and bilateral variety in leg, glute and oblique abdomen. Emphasis on technique before speed.\n\n• Push and Core - Powerful Finish: Advanced push and abs to close the week, high frequency and accumulated fatigue control.\n\nDesigned for intermediates who want to progress and improve their body composition.",
         "equipmentCategory": "noEquipment",
@@ -230,7 +230,7 @@
     },
     {
         "name": "Total Strength at Home",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/fuerza_total_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/fuerza_total_en_casa.webp",
         "durationPerSession": 90,
         "description": "4-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 90 minutes. The goal is to build strength and develop muscle progressively.\n\n\nWeekly structure:\n\n• Push and Core - Hypertrophy: Push training (chest, triceps, anterior deltoids and core). A session that prioritizes range of motion and repetition quality.\n\n• Legs and Glutes - Bodyweight Knockout: Dominant focus on legs and glute area, ensuring global recruitment and strategic muscle fatigue in lower limbs.\n\n• Explosive Push and Abs: Advanced push and abs session, with eccentric loads and emphasis on explosive variants.\n\n• Legs and Glutes Variant - Hypertrophy: Lower body dominant training. New stimulus of variants to ensure global growth and muscle balance.\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "noEquipment",
@@ -420,7 +420,7 @@
     },
     {
         "name": "Home Toning",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tonificacion_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/tonificacion_en_casa.webp",
         "durationPerSession": 90,
         "description": "3-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 90 minutes. The main goal is to develop and tone the lower body, with special attention to glutes, hamstrings, and quads.\n\n\nWeekly structure:\n\n• Full Body - Aesthetic Base: Full body training with key exercises for chest, legs, glutes and core. Control and quality in each repetition are fundamental.\n\n• Full Body - Polish and Volume: Secondary emphasis on pushes and legs, focus on details for even hypertrophy and strong stabilizer core.\n\n• Full Body - Athletic Finish: Focus on advanced full body techniques to finish the week with maximum muscle congestion, emphasis on core, glutes and shoulders.\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "noEquipment",
@@ -595,7 +595,7 @@
     },
     {
         "name": "Equipment-Free Transformation",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/transformacion_sin_equipo.webp",
+        "thumbnailURL": "assets/images/plans/transformacion_sin_equipo.webp",
         "durationPerSession": 90,
         "description": "6-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 90 minutes. The goal is to build muscle mass and volume through high-intensity training.\n\n\nWeekly structure:\n\n• Push Day - Chest, Triceps and Core: Push training focused on pectorals, triceps, anterior deltoids and abdominal work. Use of supersets for maximum congestion and metabolic work.\n\n• Pull Day - Back, Biceps and Core: Pull and core day where towel row variants and bodyweight are used, emphasizing back, biceps and central stability work.\n\n• Leg Day - Total Lower Body: Lower body training: quadriceps, glutes, hamstrings and calves through unilateral variants and posterior chain movements.\n\n• Push & Core - Shoulders, Triceps and Abs: Second focus on pushes and abs. Same metabolic focus and rep density to stimulate hypertrophy and muscular endurance.\n\n• Pull & Core Day - Back, Biceps and Abs: Pull, dorsal and core day, repeating patterns and variants for maximum weekly frequency.\n\n• Total Lower Body - Legs and Glutes: Second round of lower body, repetitions and variants for hypertrophy and strength-endurance. High frequency for maximum adaptation.\n\nDesigned for intermediates who want to progress and improve their body composition.",
         "equipmentCategory": "noEquipment",
@@ -871,7 +871,7 @@
     },
     {
         "name": "Aesthetic Push Pull Legs",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/push_pull_legs_estetico.webp",
+        "thumbnailURL": "assets/images/plans/push_pull_legs_estetico.webp",
         "durationPerSession": 90,
         "description": "6-day per week routine, for a commercial gym with full access to machines, barbells, cables, and dumbbells. Each session lasts approximately 90 minutes. The goal is to build muscle mass and volume through high-intensity training.\n\n\nWeekly structure:\n\n• Pulls - Back and Biceps: Session focused on back and biceps work through pull exercises. Strength and hypertrophy of the posterior chain are prioritized.\n\n• Pushes - Chest, Shoulders and Triceps: Training aimed at strengthening chest, shoulders and triceps with pushing movements. Compound and isolation exercises are combined for balanced development.\n\n• Leg - Quadriceps, Hamstrings, Glutes and Calves: Session focused on quadriceps, hamstrings, glutes and calves. Multi-joint and accessory exercises are used to stimulate strength and muscle growth in the legs.\n\n• Pulls - Back and Biceps: Session focused on back and biceps work through pull exercises. Strength and hypertrophy of the posterior chain are prioritized.\n\n• Pushes - Chest, Shoulders and Triceps: Training aimed at strengthening chest, shoulders and triceps with pushing movements. Compound and isolation exercises are combined for balanced development.\n\n• Leg - Quadriceps, Hamstrings, Glutes and Calves: Session focused on quadriceps, hamstrings, glutes and calves. Multi-joint and accessory exercises are used to stimulate strength and muscle growth in the legs.\n\nDesigned for advanced athletes seeking maximum performance and muscle development.",
         "equipmentCategory": "commercialGym",
@@ -1235,7 +1235,7 @@
     },
     {
         "name": "Strength Upper Lower",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/upper_lower_de_fuerza.webp",
+        "thumbnailURL": "assets/images/plans/upper_lower_de_fuerza.webp",
         "durationPerSession": 90,
         "description": "4-day per week routine, for a commercial gym with full access to machines, barbells, cables, and dumbbells. Each session lasts approximately 90 minutes. The goal is to build muscle mass and volume through high-intensity training.\n\n\nWeekly structure:\n\n• Upper Body - Chest, Back and Arms: Session focused on complete upper body work, combining presses, pulldowns and isolation exercises for pectorals, back, shoulders and arms.\n\n• Lower Body - Legs and Glutes: Comprehensive lower body training, with emphasis on quadriceps, hamstrings and glutes through compound and isolation exercises.\n\n• Upper Body - Chest, Back and Arms: Day oriented to strength and volume development in the upper body, alternating multi-joint and accessory movements for muscle balance.\n\n• Lower Body - Legs and Glutes: Session focused on lower body, prioritizing technique and control in leg and glute exercises, with variety of stimuli.\n\nDesigned for intermediates who want to progress and improve their body composition.",
         "equipmentCategory": "commercialGym",
@@ -1497,7 +1497,7 @@
     },
     {
         "name": "Gym Full Body",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/full_body_en_el_gym.webp",
+        "thumbnailURL": "assets/images/plans/full_body_en_el_gym.webp",
         "durationPerSession": 90,
         "description": "3-day per week routine, for a commercial gym with full access to machines, barbells, cables, and dumbbells. Each session lasts approximately 90 minutes. The goal is to achieve an aesthetic, proportional, and symmetrical physique.\n\n\nWeekly structure:\n\n• Full Body - Squat and Push: Global training with emphasis on squats and pushes, combining multi-joint and accessory exercises for overall strength and volume.\n\n• Push and Pull - Upper Body: Session focused on upper body, alternating presses, pulldowns and isolations for pectorals, back, shoulders and arms.\n\n• Legs and Core - Lower Body: Main lower body work with compound and isolation exercises for quadriceps, hamstrings and glutes, plus abs and shoulders accessories.\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "commercialGym",
@@ -1704,7 +1704,7 @@
     },
     {
         "name": "Hypertrophy Hybrid",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/hibrido_de_hipertrofia.webp",
+        "thumbnailURL": "assets/images/plans/hibrido_de_hipertrofia.webp",
         "durationPerSession": 90,
         "description": "5-day per week routine, for a commercial gym with full access to machines, barbells, cables, and dumbbells. Each session lasts approximately 90 minutes. The goal is to build muscle mass and volume through high-intensity training.\n\n\nWeekly structure:\n\n• Upper Body - Full Upper: Upper body day, balanced focus on strength and volume. Prioritize chest and shoulders at the start to give them maximum freshness.\n\n• Lower Body - Full Legs: Emphasis on leg volume and technique. Alternating compound and isolation exercises for complete lower body work.\n\n• Pull - Back and Biceps: Pure pull session with focus on lats, rear deltoids and biceps. Strategic exercises for dorsal density and width.\n\n• Push - Chest, Shoulders and Triceps: Pure push: emphasis on chest and shoulders by priority and exercise selection. Includes a superset for maximum middle/rear deltoid fatigue.\n\n• Legs - Final Hypertrophy: Legs and glutes, prioritizing safe movement and full ranges. Ideal session to close the week strong.\n\nDesigned for advanced athletes seeking maximum performance and muscle development.",
         "equipmentCategory": "commercialGym",
@@ -2013,7 +2013,7 @@
     },
     {
         "name": "Strength with Basic Equipment",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/fuerza_con_equipo_basico.webp",
+        "thumbnailURL": "assets/images/plans/fuerza_con_equipo_basico.webp",
         "durationPerSession": 90,
         "description": "5-day per week routine, designed for a small or apartment gym with dumbbells, barbell, and basic equipment. Each session lasts approximately 90 minutes. The goal is to build strength and develop muscle progressively.\n\n\nWeekly structure:\n\n• Upper Body - Push and Lateral Deltoids: Session focused on upper body development, starting with lateral deltoids for maximum activation and followed by push, pull and arm exercises for complete stimulus of shoulders, chest, back and arms.\n\n• Complete Lower Body: Comprehensive leg training, prioritizing quadriceps, glutes and hamstrings. Includes compound and accessory movements to stimulate strength, volume and symmetry throughout the lower body.\n\n• Upper Body - Pull and Rear Deltoids: Session focused on pull exercises for back and biceps, with special emphasis on rear deltoid work and improvement of posture and dorsal width.\n\n• Pushes - Aesthetic Chest and Shoulder: Push training focused on pectoral and shoulder development, combining presses, flys and specific work for lateral deltoids and triceps, to achieve an aesthetic and proportionate upper appearance.\n\n• Legs - Total Volume: Leg session oriented to volume and variety, working quadriceps, glutes, hamstrings and calves with multi-joint and isolation exercises for complete and balanced lower body musculature.\n\nDesigned for intermediates who want to progress and improve their body composition.",
         "equipmentCategory": "smallGym",
@@ -2290,7 +2290,7 @@
     },
     {
         "name": "Small Gym Aesthetics",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/estetica_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/estetica_en_gym_pequeno.webp",
         "durationPerSession": 90,
         "description": "4-day per week routine, designed for a small or apartment gym with dumbbells, barbell, and basic equipment. Each session lasts approximately 90 minutes. The goal is to achieve an aesthetic, proportional, and symmetrical physique.\n\n\nWeekly structure:\n\n• Upper Body - Focus on Pectoral: Session to maximize pectoral development and, to a lesser extent, shoulders and back. Stimulus will start with pushing movements.\n\n• Lower Body - Volume and Power: Comprehensive leg focus, working quadriceps, hamstrings and glutes followed by calves for muscle-tendon balance.\n\n• Complete Upper Body - Push, Pull and Arms: Re-emphasize chest stimulus, adding detailed work for rear shoulder, biceps and triceps.\n\n• Lower Body - Volume and Final Detail: We reinforce volume and variety in legs and close the week with direct core work.\n\nDesigned for intermediates who want to progress and improve their body composition.",
         "equipmentCategory": "smallGym",
@@ -2536,7 +2536,7 @@
     },
     {
         "name": "Small Gym Full Body",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/full_body_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/full_body_en_gym_pequeno.webp",
         "durationPerSession": 90,
         "description": "3-day per week routine, designed for a small or apartment gym with dumbbells, barbell, and basic equipment. Each session lasts approximately 90 minutes. The goal is to build strength and develop muscle progressively.\n\n\nWeekly structure:\n\n• Full Body 1 - Functional Efficiency: Comprehensive session focused on effectively activating the entire body through functional and isolated movements, suitable for maximizing efficiency in a small environment.\n\n• Full Body 2 - Global Potentiation: Full body session with emphasis on posterior chains and upper region, optimizing time and resources.\n\n• Full Body 3 - Athletic Density: Activates all muscle chains with high work density, excellent for closing the week with global stimulus and quality.\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "smallGym",
@@ -2743,7 +2743,7 @@
     },
     {
         "name": "Volume Push Pull Legs",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/push_pull_legs_de_volumen.webp",
+        "thumbnailURL": "assets/images/plans/push_pull_legs_de_volumen.webp",
         "durationPerSession": 90,
         "description": "6-day per week routine, for a commercial gym with full access to machines, barbells, cables, and dumbbells. Each session lasts approximately 90 minutes. The goal is to build muscle mass and volume through high-intensity training.\n\n\nWeekly structure:\n\n• Push A: Push with Emphasis on Lateral Shoulder: Pure push: absolute priority in lateral shoulder development, followed by upper pectoral and triceps. High density and controlled volume.\n\n• Pull A: Pull with Emphasis on Back and Rear Shoulder: Upper body pull: Complete back and biceps, with good horizontal and vertical volume. Facepull for joint health and rear shoulder.\n\n• Legs A: Legs and Glutes: Complete legs: combining functional strength and strategic isolation. Stable core throughout the block, focus on glutes and hamstrings.\n\n• Push B: Push with Focus on Pectoral: Second push block, less incline plane and more mid-lower pectoral. We return to prioritize lateral shoulder and execute classic exercises with control.\n\n• Pull B: Alternative Pull with Rear Focus: Alternative pull: Horizontal and vertical row, emphasis on rear deltoid and biceps. Integrating angles different from Tuesday's session.\n\n• Legs B: Glute Dominant and Unilateral Legs: Alternative legs: Quadriceps and glute work with variants, emphasis on unilaterality and complete stimulus. Demanding volume and efficient time management.\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "commercialGym",
@@ -3059,7 +3059,7 @@
     },
     {
         "name": "Hypertrophy with Calisthenics",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/hipertrofia_con_calistenia.webp",
+        "thumbnailURL": "assets/images/plans/hipertrofia_con_calistenia.webp",
         "durationPerSession": 60,
         "description": "5-day per week routine, based on calisthenics with pull-up bars, parallel bars, and your own bodyweight. Each session lasts approximately 60 minutes. The goal is to maximize your muscle development with advanced training techniques.\n\n\nWeekly structure:\n\n• Push - Pectorals, Shoulders and Triceps: Emphasis on upper body pushes, especially pectorals, shoulders and triceps. The goal is to accumulate volume and metabolic stress, compensating for lack of ballast with advanced variants and supersets.\n\n• Pull - Back and Biceps: Pull for lats, biceps and posterior trunk. High frequency to vertical and horizontal pull, with integration of supersets to provoke additional fatigue and stimulate fast-twitch fibers.\n\n• Legs and Core: Complete lower body day with focus on quadriceps, glutes and hamstrings, maximizing unilateral work and continuous tension.\n\n• Advanced Push - Upper Pectoral and Shoulder: Additional push day, emphasizing upper pectoral, triceps and deltoids, we increase intensity with explosive movements and advanced methods.\n\n• Advanced Pull - Back, Biceps and Core: Another pull day to stimulate maximum growth in back, biceps and core using variants and metabolic methods. Superset pattern repeats to fatigue fibers in depth.\n\nDesigned for advanced athletes seeking maximum performance and muscle development.",
         "equipmentCategory": "calisthenics",
@@ -3320,7 +3320,7 @@
     },
     {
         "name": "Advanced Full Body & Splits",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_extrema.webp",
+        "thumbnailURL": "assets/images/plans/calistenia_extrema.webp",
         "durationPerSession": 60,
         "description": "6-day per week routine, based on calisthenics with pull-up bars, parallel bars, and your own bodyweight. Each session lasts approximately 60 minutes. The goal is to push your performance to the limit with advanced progressions and maximum intensity.\n\n\nWeekly structure:\n\n• Upper Body - Push and Pull: First very complete weekly stimulus to upper body and core with basic and advanced calisthenics variants.\n\n• Lower Body - Explosive Calisthenics: First of two weekly specific stimuli for leg and glutes with core integration.\n\n• Full Body + Arms: Hybrid session with full body movements and emphasis on core and arms.\n\n• Upper Body - Dorsal and Core Focus: Second weekly emphasis on pushes, lats and deltoids; intense core work.\n\n• Leg and Core - Total Hypertrophy: Second stimulus for leg and glutes, ensuring high frequency for hypertrophy.\n\n• Full Body - Advanced Calisthenics: Advanced Saturday: difficult variants of push, pull and core for continuous muscular progression.\n\nDesigned for advanced athletes seeking maximum performance and muscle development.",
         "equipmentCategory": "calisthenics",
@@ -3628,7 +3628,7 @@
     },
     {
         "name": "Calisthenic Body Control",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/control_corporal_calistenico.webp",
+        "thumbnailURL": "assets/images/plans/control_corporal_calistenico.webp",
         "durationPerSession": 60,
         "description": "4-day per week routine, based on calisthenics with pull-up bars, parallel bars, and your own bodyweight. Each session lasts approximately 60 minutes. The goal is to develop balanced strength across the whole body with a solid movement foundation.\n\n\nWeekly structure:\n\n• Upper Body - Lats, Chest and Core: Day oriented to work relative strength and torso hypertrophy (back, chest, shoulders, triceps and core). Compensation between pull and push to maximize aesthetics and functional development.\n\n• Lower Body and Core - Functional Calisthenics: Session dedicated to lower body with emphasis on glutes, quadriceps, and stabilizing core. Movement control and bilateral symmetry are prioritized.\n\n• Pull and Vertical Push - Back, Shoulders and Abs: Focus on pull, vertical pushes, shoulder and core work. Use of advanced variants to stimulate deltoids and back.\n\n• Legs and Core - Unilateral Strength and Control: Lower body work with emphasis on unilateral strength, glute, core and calves. Seek both symmetry and muscle congestion.\n\nDesigned for intermediates who want to progress and improve their body composition.",
         "equipmentCategory": "calisthenics",
@@ -3826,7 +3826,7 @@
     },
     {
         "name": "Push Pull Legs with Calisthenics",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/trilogia_calistenica.webp",
+        "thumbnailURL": "assets/images/plans/trilogia_calistenica.webp",
         "durationPerSession": 55,
         "description": "3-day per week routine, based on calisthenics with pull-up bars, parallel bars, and your own bodyweight. Each session lasts approximately 55 minutes. The goal is to build muscle mass and volume through high-intensity training.\n\n\nWeekly structure:\n\n• Push & Core: Fondos, flexiones y abdominales\n\n• Pull & Core: Dominadas, remo y abdominales\n\n• Legs & Core: Pierna completa y core\n\nDesigned for intermediates who want to progress and improve their body composition.",
         "equipmentCategory": "calisthenics",
@@ -3977,7 +3977,7 @@
     },
     {
         "name": "Classic and Aesthetic",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/clasico_y_estetico.webp",
+        "thumbnailURL": "assets/images/plans/clasico_y_estetico.webp",
         "durationPerSession": 60,
         "description": "5-day per week routine, for a commercial gym with full access to machines, barbells, cables, and dumbbells. Each session lasts approximately 60 minutes. The goal is to achieve an aesthetic, proportional, and symmetrical physique.\n\n\nWeekly structure:\n\n• Upper Body - Push and Lateral Deltoids: Session focused on upper body development, starting with lateral deltoids for maximum activation and followed by push, pull and arm exercises for complete stimulus of shoulders, chest, back and arms.\n\n• Complete Lower Body: Comprehensive leg training, prioritizing quadriceps, glutes and hamstrings. Includes compound and accessory movements to stimulate strength, volume and symmetry throughout the lower body.\n\n• Upper Body - Pull and Rear Deltoids: Session focused on pull exercises for back and biceps, with special emphasis on rear deltoid work and improvement of posture and dorsal width.\n\n• Pushes - Aesthetic Chest and Shoulder: Push training focused on pectoral and shoulder development, combining presses, flys and specific work for lateral deltoids and triceps, to achieve an aesthetic and proportionate upper appearance.\n\n• Legs - Total Volume: Leg session oriented to volume and variety, working quadriceps, glutes, hamstrings and calves with multi-joint and isolation exercises for complete and balanced lower body musculature.\n\nDesigned for intermediates who want to progress and improve their body composition.",
         "equipmentCategory": "commercialGym",
@@ -4254,7 +4254,7 @@
     },
     {
         "name": "Small Gym Definition",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/definicion_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/definicion_en_gym_pequeno.webp",
         "durationPerSession": 60,
         "description": "4-day per week routine, designed for a small or apartment gym with dumbbells, barbell, and basic equipment. Each session lasts approximately 60 minutes. The goal is to burn fat and define your muscles while maintaining muscle mass.\n\n\nWeekly structure:\n\n• Upper Body - Focus on Pectoral: Session to maximize pectoral development and, to a lesser extent, shoulders and back. Stimulus will start with pushing movements.\n\n• Lower Body - Volume and Power: Comprehensive leg focus, working quadriceps, hamstrings and glutes followed by calves for muscle-tendon balance.\n\n• Complete Upper Body - Push, Pull and Arms: Re-emphasize chest stimulus, adding detailed work for rear shoulder, biceps and triceps.\n\n• Lower Body - Volume and Final Detail: We reinforce volume and variety in legs and close the week with direct core work.\n\nDesigned for intermediates who want to progress and improve their body composition.",
         "equipmentCategory": "smallGym",
@@ -4500,7 +4500,7 @@
     },
     {
         "name": "Start at Small Gym",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/empieza_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/empieza_en_gym_pequeno.webp",
         "durationPerSession": 60,
         "description": "3-day per week routine, designed for a small or apartment gym with dumbbells, barbell, and basic equipment. Each session lasts approximately 60 minutes. The goal is to learn fundamental movements, build confidence, and create a training habit.\n\n\nWeekly structure:\n\n• Full Body 1 - Functional Efficiency: Comprehensive session focused on effectively activating the entire body through functional and isolated movements, suitable for maximizing efficiency in a small environment.\n\n• Full Body 2 - Global Potentiation: Full body session with emphasis on posterior chains and upper region, optimizing time and resources.\n\n• Full Body 3 - Athletic Density: Activates all muscle chains with high work density, excellent for closing the week with global stimulus and quality.\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "smallGym",
@@ -4707,7 +4707,7 @@
     },
     {
         "name": "Small Gym Push Pull Legs",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/push_pull_legs_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/push_pull_legs_en_gym_pequeno.webp",
         "durationPerSession": 60,
         "description": "6-day per week routine, designed for a small or apartment gym with dumbbells, barbell, and basic equipment. Each session lasts approximately 60 minutes. The goal is to build muscle mass and volume through high-intensity training.\n\n\nWeekly structure:\n\n• Push A: Push with Emphasis on Lateral Shoulder: Pure push: absolute priority on lateral shoulder development, followed by upper pectoral and triceps. High density and controlled volume.\n\n• Pull A: Pull with Emphasis on Back and Rear Shoulder: Upper body pull: Complete back and biceps, with good horizontal and vertical volume. Facepull for joint health and rear shoulder.\n\n• Legs A: Legs and Glutes: Complete legs: combining functional strength and strategic isolation. Stable core throughout the block, focus on glute and hamstring.\n\n• Push B: Push with Focus on Pectoral: Second push block, less incline plane and more mid-lower pectoral. We return to prioritize lateral shoulder and execute classic exercises with control.\n\n• Pull B: Alternative Pull with Posterior Focus: Alternative pull: Horizontal and vertical row, emphasis on rear deltoid and biceps. Integrating different angles from Tuesday's session.\n\n• Legs B: Legs Dominant in Glute and Unilaterals: Alternative legs: Quadriceps and glute work with variants, emphasis on unilaterality and complete stimulus. Demanding volume and efficient time management.\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "smallGym",
@@ -5023,7 +5023,7 @@
     },
     {
         "name": "Classic Bodybuilding",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/culturismo_clasico.webp",
+        "thumbnailURL": "assets/images/plans/culturismo_clasico.webp",
         "durationPerSession": 60,
         "description": "6-day per week routine, for a commercial gym with full access to machines, barbells, cables, and dumbbells. Each session lasts approximately 60 minutes. The goal is to achieve an aesthetic, proportional, and symmetrical physique.\n\n\nWeekly structure:\n\n• Pull - Back and Biceps: Focused on pull exercises for back and biceps. We work rows, pulldowns and curls to develop strength and volume in the upper back.\n\n• Push - Chest, Shoulder and Triceps: Push session focused on chest, shoulders and triceps. Includes presses, flys and shoulder work to stimulate the anterior upper body.\n\n• Legs - Quadriceps and Glutes: Complete leg day. Quadriceps, hamstrings, glutes and calves are worked with compound and isolation exercises.\n\n• Pull - Back and Biceps: Focused on pull exercises for back and biceps. Variation of rows, pull-ups and curls to stimulate the posterior upper body.\n\n• Push - Chest, Shoulder and Triceps: Varied push session for chest, shoulders and triceps. Includes presses, flys and unilateral work for balanced development.\n\n• Legs - Quadriceps and Glutes: Leg day focused on strength and technique. All lower body muscles are worked with emphasis on depth and control.\n\nDesigned for advanced athletes seeking maximum performance and muscle development.",
         "equipmentCategory": "commercialGym",
@@ -5403,7 +5403,7 @@
     },
     {
         "name": "Aesthetic Upper Lower",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/upper_lower_estetico.webp",
+        "thumbnailURL": "assets/images/plans/upper_lower_estetico.webp",
         "durationPerSession": 60,
         "description": "4-day per week routine, for a commercial gym with full access to machines, barbells, cables, and dumbbells. Each session lasts approximately 60 minutes. The goal is to achieve an aesthetic, proportional, and symmetrical physique.\n\n\nWeekly structure:\n\n• Upper Body - Chest, Back and Arms: Technical session for complete upper body development, combining presses, pulldowns and isolation exercises for pectorals, back, shoulders and arms.\n\n• Lower Body - Legs and Glutes: Comprehensive lower body training, with emphasis on quadriceps, hamstrings and glutes through compound and isolation exercises.\n\n• Upper Body - Chest, Back and Arms: Day oriented to strength and volume development in upper body, alternating multi-joint and accessory movements for muscle balance.\n\n• Lower Body - Legs and Glutes: Session focused on lower body, prioritizing technique and control in leg and glute exercises, with variety of stimuli.\n\nDesigned for intermediates who want to progress and improve their body composition.",
         "equipmentCategory": "commercialGym",
@@ -5665,7 +5665,7 @@
     },
     {
         "name": "Gym Full Body to Start",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/full_body_para_empezar_en_el_gym.webp",
+        "thumbnailURL": "assets/images/plans/full_body_para_empezar_en_el_gym.webp",
         "durationPerSession": 60,
         "description": "3-day per week routine, for a commercial gym with full access to machines, barbells, cables, and dumbbells. Each session lasts approximately 60 minutes. The goal is to build strength and develop muscle progressively.\n\n\nWeekly structure:\n\n• Push - Legs, Chest and Shoulders: Focused on push and leg exercises. We work squats, chest and shoulders to stimulate strength and muscle mass throughout the body.\n\n• Pull - Back and Arms: Pull and arms day. Movements for back, biceps and rear deltoids are prioritized, improving strength and volume in upper body.\n\n• Legs and Core: Session focused on legs and core. Includes exercises for quadriceps, hamstrings, glutes and abs for complete lower body development.\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "commercialGym",
@@ -5880,7 +5880,7 @@
     },
     {
         "name": "Strength & Volume Hybrid",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/hibrido_de_fuerza_y_volumen.webp",
+        "thumbnailURL": "assets/images/plans/hibrido_de_fuerza_y_volumen.webp",
         "durationPerSession": 60,
         "description": "5-day per week routine, for a commercial gym with full access to machines, barbells, cables, and dumbbells. Each session lasts approximately 60 minutes. The goal is to build muscle mass and volume through high-intensity training.\n\n\nWeekly structure:\n\n• Upper Body - Full Upper: Upper body day, balanced focus on strength and volume. Prioritize chest and shoulders at the beginning for maximum freshness.\n\n• Lower Body - Full Legs: Emphasis on leg volume and technique. Alternating compound and isolation exercises for complete lower body work.\n\n• Pull - Back and Biceps: Pure pull session focused on lats, rear delts and biceps. Strategic exercises for back density and width.\n\n• Push - Chest, Shoulders and Triceps: Pure push: emphasis on chest and shoulders by priority and exercise selection. Includes a superset for maximum mid/rear deltoid fatigue.\n\n• Legs - Final Hypertrophy: Legs and glutes, prioritizing safe movement and full ranges. Ideal session to close the week strong.\n\nDesigned for intermediates who want to progress and improve their body composition.",
         "equipmentCategory": "commercialGym",
@@ -6189,7 +6189,7 @@
     },
     {
         "name": "First Steps at Home",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/primeros_pasos_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/primeros_pasos_en_casa.webp",
         "durationPerSession": 21,
         "description": "2-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 21 minutes. The goal is to learn fundamental movements, build confidence, and create a training habit.\n\n\nWeekly structure:\n\n• Full Body A: Push, lower, core\n\n• Full Body B: Push, lower, core\n\nPerfect for those who have never trained and want to take the first step with safety and confidence.",
         "equipmentCategory": "noEquipment",
@@ -6277,7 +6277,7 @@
     },
     {
         "name": "Your First Routine",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tu_primera_rutina.webp",
+        "thumbnailURL": "assets/images/plans/tu_primera_rutina.webp",
         "durationPerSession": 21,
         "description": "3-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 21 minutes. The goal is to learn fundamental movements, build confidence, and create a training habit.\n\n\nWeekly structure:\n\n• Full Body A (Push + Lower): Push y tren inferior\n\n• Full Body B (Pull + Lower): Pull y tren inferior\n\n• Full Body C (Mix): Mezcla de empuje, pierna y core\n\nPerfect for those who have never trained and want to take the first step with safety and confidence.",
         "equipmentCategory": "noEquipment",
@@ -6404,7 +6404,7 @@
     },
     {
         "name": "Build Your Training Habit",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/habito_de_entrenar_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/habito_de_entrenar_en_casa.webp",
         "durationPerSession": 21,
         "description": "4-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 21 minutes. The goal is to learn fundamental movements, build confidence, and create a training habit.\n\n\nWeekly structure:\n\n• Upper A: Empuje, pull y core\n\n• Lower A: Squats, glutes, calves\n\n• Upper B: Empuje, pull y core\n\n• Lower B: Squats, glutes, calves\n\nPerfect for those who have never trained and want to take the first step with safety and confidence.",
         "equipmentCategory": "noEquipment",
@@ -6570,7 +6570,7 @@
     },
     {
         "name": "Daily Movement",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/movimiento_diario.webp",
+        "thumbnailURL": "assets/images/plans/movimiento_diario.webp",
         "durationPerSession": 17,
         "description": "5-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 17 minutes. The goal is to stay active every day with short sessions that improve your mobility and overall fitness.\n\n\nWeekly structure:\n\n• Push: Push and core\n\n• Lower A: Squats and glutes\n\n• Pull + Core: Pull y abdominales\n\n• Lower B: Legs and glutes variant\n\n• Mix: Full body ligero\n\nPerfect for those who have never trained and want to take the first step with safety and confidence.",
         "equipmentCategory": "noEquipment",
@@ -6735,7 +6735,7 @@
     },
     {
         "name": "Basic Home Strength",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/fuerza_basica_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/fuerza_basica_en_casa.webp",
         "durationPerSession": 50,
         "description": "2-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 50 minutes. The goal is to build strength and develop muscle progressively.\n\n\nWeekly structure:\n\n• Full Body A: Empuje, pierna y core\n\n• Full Body B: Empuje, pierna y core\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "noEquipment",
@@ -6839,7 +6839,7 @@
     },
     {
         "name": "Home Muscle Building",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/musculo_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/musculo_en_casa.webp",
         "durationPerSession": 50,
         "description": "5-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 50 minutes. The goal is to build muscle mass and volume through high-intensity training.\n\n\nWeekly structure:\n\n• Push: Pecho, hombros y core\n\n• Lower A: Legs and glutes\n\n• Pull & Core: Espalda y abdominales\n\n• Lower B: Legs and glutes variant\n\n• Full Body: Full body session\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "noEquipment",
@@ -7084,7 +7084,7 @@
     },
     {
         "name": "Home Double Push Pull Legs",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/transformacion_total_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/transformacion_total_en_casa.webp",
         "durationPerSession": 45,
         "description": "6-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 45 minutes. The goal is complete muscle development, working all muscle groups in a balanced way.\n\n\nWeekly structure:\n\n• Push A: Pecho, hombros y core\n\n• Pull A: Espalda y core\n\n• Legs A: Legs and glutes\n\n• Push B: Pecho, hombros y core variante\n\n• Pull B: Espalda y core variante\n\n• Legs B: Legs and glutes variant\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "noEquipment",
@@ -7360,7 +7360,7 @@
     },
     {
         "name": "Express Strength at Home",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/intensidad_concentrada_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/intensidad_concentrada_en_casa.webp",
         "durationPerSession": 60,
         "description": "2-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 60 minutes. The goal is to build strength and develop muscle progressively.\n\n\nWeekly structure:\n\n• Full Body A: Push, lower y core\n\n• Full Body B: Push, lower y core variante\n\nDesigned for intermediates who want to progress and improve their body composition.",
         "equipmentCategory": "noEquipment",
@@ -7480,7 +7480,7 @@
     },
     {
         "name": "Home Definition",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/definicion_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/definicion_en_casa.webp",
         "durationPerSession": 60,
         "description": "3-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 60 minutes. The goal is to burn fat and define your muscles while maintaining muscle mass.\n\n\nWeekly structure:\n\n• Push & Core: Pecho, hombros y abdominales\n\n• Pull & Core: Espalda y abdominales\n\n• Legs & Core: Pierna y abdominales\n\nDesigned for intermediates who want to progress and improve their body composition.",
         "equipmentCategory": "noEquipment",
@@ -7647,7 +7647,7 @@
     },
     {
         "name": "Balanced Strength at Home",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/equilibrio_de_fuerza_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/equilibrio_de_fuerza_en_casa.webp",
         "durationPerSession": 60,
         "description": "4-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 60 minutes. The goal is to build strength and develop muscle progressively.\n\n\nWeekly structure:\n\n• Upper A: Empuje, pull y core\n\n• Lower A: Legs and glutes\n\n• Upper B: Empuje, pull y core variante\n\n• Lower B: Legs and glutes variant\n\nDesigned for intermediates who want to progress and improve their body composition.",
         "equipmentCategory": "noEquipment",
@@ -7877,7 +7877,7 @@
     },
     {
         "name": "Concentrated Power at Home",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/potencia_concentrada_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/potencia_concentrada_en_casa.webp",
         "durationPerSession": 75,
         "description": "2-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 75 minutes. The goal is to develop explosive strength and power with high-intensity exercises.\n\n\nWeekly structure:\n\n• Full Body A: Push, pull, lower y core\n\n• Full Body B: Push, pull, lower y core variante\n\nDesigned for advanced athletes seeking maximum performance and muscle development.",
         "equipmentCategory": "noEquipment",
@@ -8013,7 +8013,7 @@
     },
     {
         "name": "Triple Impact at Home",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/triple_impacto_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/triple_impacto_en_casa.webp",
         "durationPerSession": 70,
         "description": "3-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 70 minutes. The goal is to develop power and functional strength with high-performance exercises.\n\n\nWeekly structure:\n\n• Push: Pecho, hombros y core\n\n• Pull & Core: Espalda y abdominales\n\n• Legs: Pierna completa\n\nDesigned for advanced athletes seeking maximum performance and muscle development.",
         "equipmentCategory": "noEquipment",
@@ -8180,7 +8180,7 @@
     },
     {
         "name": "Strength & Aesthetics at Home",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/fuerza_y_estetica_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/fuerza_y_estetica_en_casa.webp",
         "durationPerSession": 65,
         "description": "4-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 65 minutes. The goal is to achieve an aesthetic, proportional, and symmetrical physique.\n\n\nWeekly structure:\n\n• Upper A: Push, pull y core\n\n• Lower A: Legs and glutes\n\n• Upper B: Push, pull y core variante\n\n• Lower B: Legs and glutes variant\n\nDesigned for advanced athletes seeking maximum performance and muscle development.",
         "equipmentCategory": "noEquipment",
@@ -8410,7 +8410,7 @@
     },
     {
         "name": "Total Performance at Home",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/rendimiento_total_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/rendimiento_total_en_casa.webp",
         "durationPerSession": 60,
         "description": "5-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 60 minutes. The goal is to increase muscular endurance and work capacity with high volume.\n\n\nWeekly structure:\n\n• Push: Pecho, hombros y core\n\n• Pull: Espalda y core\n\n• Legs: Pierna completa\n\n• Upper: Push, pull y core\n\n• Lower: Legs and glutes\n\nDesigned for advanced athletes seeking maximum performance and muscle development.",
         "equipmentCategory": "noEquipment",
@@ -8687,7 +8687,7 @@
     },
     {
         "name": "Total Domination at Home",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/dominacion_total_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/dominacion_total_en_casa.webp",
         "durationPerSession": 60,
         "description": "6-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 60 minutes. The goal is to push your performance to the limit with advanced progressions and maximum intensity.\n\n\nWeekly structure:\n\n• Push A: Pecho, hombros y core\n\n• Pull A: Espalda y core\n\n• Legs A: Legs and glutes\n\n• Push B: Pecho, hombros y core variante\n\n• Pull B: Espalda y core variante\n\n• Legs B: Legs and glutes variant\n\nDesigned for advanced athletes seeking maximum performance and muscle development.",
         "equipmentCategory": "noEquipment",
@@ -8995,7 +8995,7 @@
     },
     {
         "name": "Your First Pull-up",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tu_primera_dominada.webp",
+        "thumbnailURL": "assets/images/plans/tu_primera_dominada.webp",
         "durationPerSession": 40,
         "description": "2-day per week routine, based on calisthenics with pull-up bars, parallel bars, and your own bodyweight. Each session lasts approximately 40 minutes. The goal is to learn fundamental movements, build confidence, and create a training habit.\n\n\nWeekly structure:\n\n• Full Body A: Pull, push, lower y core\n\n• Full Body B: Pull, push, lower y core\n\nPerfect for those who have never trained and want to take the first step with safety and confidence.",
         "equipmentCategory": "calisthenics",
@@ -9083,7 +9083,7 @@
     },
     {
         "name": "Calisthenics From Zero",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_desde_cero.webp",
+        "thumbnailURL": "assets/images/plans/calistenia_desde_cero.webp",
         "durationPerSession": 40,
         "description": "3-day per week routine, based on calisthenics with pull-up bars, parallel bars, and your own bodyweight. Each session lasts approximately 40 minutes. The goal is to introduce you to training safely and progressively.\n\n\nWeekly structure:\n\n• Full Body A: Pull, push, lower y core\n\n• Full Body B: Pull, push, lower y core\n\n• Full Body C: Pull, push, lower y core\n\nPerfect for those who have never trained and want to take the first step with safety and confidence.",
         "equipmentCategory": "calisthenics",
@@ -9210,7 +9210,7 @@
     },
     {
         "name": "Basic Pull-ups & Dips",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/dominadas_y_fondos_basicos.webp",
+        "thumbnailURL": "assets/images/plans/dominadas_y_fondos_basicos.webp",
         "durationPerSession": 50,
         "description": "2-day per week routine, based on calisthenics with pull-up bars, parallel bars, and your own bodyweight. Each session lasts approximately 50 minutes. The goal is to learn fundamental movements, build confidence, and create a training habit.\n\n\nWeekly structure:\n\n• Full Body A: Pull, push, lower y core\n\n• Full Body B: Push, pull, lower y core\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "calisthenics",
@@ -9314,7 +9314,7 @@
     },
     {
         "name": "Calisthenics Foundations",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/bases_de_la_calistenia.webp",
+        "thumbnailURL": "assets/images/plans/bases_de_la_calistenia.webp",
         "durationPerSession": 50,
         "description": "3-day per week routine, based on calisthenics with pull-up bars, parallel bars, and your own bodyweight. Each session lasts approximately 50 minutes. The goal is to build strength and develop muscle progressively.\n\n\nWeekly structure:\n\n• Full Body A: Pull, push, lower y core\n\n• Full Body B: Push, pull, lower y core\n\n• Full Body C: Pull, push, lower y core\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "calisthenics",
@@ -9465,7 +9465,7 @@
     },
     {
         "name": "Calisthenics Progression",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/progresion_calistenica.webp",
+        "thumbnailURL": "assets/images/plans/progresion_calistenica.webp",
         "durationPerSession": 50,
         "description": "4-day per week routine, based on calisthenics with pull-up bars, parallel bars, and your own bodyweight. Each session lasts approximately 50 minutes. The goal is to build strength, improve your technique, and start seeing results.\n\n\nWeekly structure:\n\n• Upper A: Pull, push y core\n\n• Lower A: Legs and glutes\n\n• Upper B: Pull, push y core variante\n\n• Lower B: Legs and glutes variant\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "calisthenics",
@@ -9663,7 +9663,7 @@
     },
     {
         "name": "Calisthenics Development",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/desarrollo_calistenico.webp",
+        "thumbnailURL": "assets/images/plans/desarrollo_calistenico.webp",
         "durationPerSession": 45,
         "description": "5-day per week routine, based on calisthenics with pull-up bars, parallel bars, and your own bodyweight. Each session lasts approximately 45 minutes. The goal is to build strength and develop muscle progressively.\n\n\nWeekly structure:\n\n• Push: Pecho y core\n\n• Pull: Espalda y core\n\n• Legs: Legs and glutes\n\n• Upper: Push, pull y core\n\n• Lower: Legs and glutes variant\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "calisthenics",
@@ -9908,7 +9908,7 @@
     },
     {
         "name": "High Frequency Calisthenics",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_de_alta_frecuencia.webp",
+        "thumbnailURL": "assets/images/plans/calistenia_de_alta_frecuencia.webp",
         "durationPerSession": 45,
         "description": "6-day per week routine, based on calisthenics with pull-up bars, parallel bars, and your own bodyweight. Each session lasts approximately 45 minutes. The goal is to build strength, improve your technique, and start seeing results.\n\n\nWeekly structure:\n\n• Push A: Pecho y core\n\n• Pull A: Espalda y core\n\n• Legs A: Legs and glutes\n\n• Push B: Pecho y core variante\n\n• Pull B: Espalda y core variante\n\n• Legs B: Legs and glutes variant\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "calisthenics",
@@ -10184,7 +10184,7 @@
     },
     {
         "name": "Calisthenics Intensity",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/intensidad_calistenica.webp",
+        "thumbnailURL": "assets/images/plans/intensidad_calistenica.webp",
         "durationPerSession": 60,
         "description": "2-day per week routine, based on calisthenics with pull-up bars, parallel bars, and your own bodyweight. Each session lasts approximately 60 minutes. The goal is to improve your fitness and develop a stronger, more defined physique.\n\n\nWeekly structure:\n\n• Full Body A: Pull, push, lower y core\n\n• Full Body B: Pull, push, lower y core\n\nDesigned for intermediates who want to progress and improve their body composition.",
         "equipmentCategory": "calisthenics",
@@ -10304,7 +10304,7 @@
     },
     {
         "name": "Integral Calisthenics",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_integral.webp",
+        "thumbnailURL": "assets/images/plans/calistenia_integral.webp",
         "durationPerSession": 55,
         "description": "5-day per week routine, based on calisthenics with pull-up bars, parallel bars, and your own bodyweight. Each session lasts approximately 55 minutes. The goal is complete muscle development, working all muscle groups in a balanced way.\n\n\nWeekly structure:\n\n• Push: Fondos, flexiones y core\n\n• Pull: Dominadas y espalda\n\n• Legs: Pierna completa\n\n• Upper: Push, pull y core\n\n• Lower: Legs and glutes\n\nDesigned for intermediates who want to progress and improve their body composition.",
         "equipmentCategory": "calisthenics",
@@ -10557,7 +10557,7 @@
     },
     {
         "name": "Volume Push Pull Legs",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/dominio_corporal_total.webp",
+        "thumbnailURL": "assets/images/plans/dominio_corporal_total.webp",
         "durationPerSession": 55,
         "description": "6-day per week routine, based on calisthenics with pull-up bars, parallel bars, and your own bodyweight. Each session lasts approximately 55 minutes. The goal is to improve your fitness and develop a stronger, more defined physique.\n\n\nWeekly structure:\n\n• Push A: Fondos, flexiones y core\n\n• Pull A: Dominadas y espalda\n\n• Legs A: Pierna completa\n\n• Push B: Flexiones y core variante\n\n• Pull B: Dominadas y core variante\n\n• Legs B: Legs and glutes variant\n\nDesigned for intermediates who want to progress and improve their body composition.",
         "equipmentCategory": "calisthenics",
@@ -10849,7 +10849,7 @@
     },
     {
         "name": "Calisthenics Power",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/potencia_calistenica.webp",
+        "thumbnailURL": "assets/images/plans/potencia_calistenica.webp",
         "durationPerSession": 75,
         "description": "2-day per week routine, based on calisthenics with pull-up bars, parallel bars, and your own bodyweight. Each session lasts approximately 75 minutes. The goal is to develop power and functional strength with high-performance exercises.\n\n\nWeekly structure:\n\n• Full Body A: Pull, push, lower y core\n\n• Full Body B: Pull, push, lower y core\n\nDesigned for advanced athletes seeking maximum performance and muscle development.",
         "equipmentCategory": "calisthenics",
@@ -10985,7 +10985,7 @@
     },
     {
         "name": "Strength Push Pull Legs",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/fuerza_bruta_calistenica.webp",
+        "thumbnailURL": "assets/images/plans/fuerza_bruta_calistenica.webp",
         "durationPerSession": 65,
         "description": "3-day per week routine, based on calisthenics with pull-up bars, parallel bars, and your own bodyweight. Each session lasts approximately 65 minutes. The goal is to build strength and develop muscle progressively.\n\n\nWeekly structure:\n\n• Push & Core: Fondos, flexiones y abdominales\n\n• Pull & Core: Dominadas y abdominales\n\n• Legs: Pierna completa\n\nDesigned for advanced athletes seeking maximum performance and muscle development.",
         "equipmentCategory": "calisthenics",
@@ -11160,7 +11160,7 @@
     },
     {
         "name": "Power Upper Lower",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/maestria_corporal_avanzada.webp",
+        "thumbnailURL": "assets/images/plans/maestria_corporal_avanzada.webp",
         "durationPerSession": 60,
         "description": "4-day per week routine, based on calisthenics with pull-up bars, parallel bars, and your own bodyweight. Each session lasts approximately 60 minutes. The goal is to push your performance to the limit with advanced progressions and maximum intensity.\n\n\nWeekly structure:\n\n• Upper A: Pull, push y core\n\n• Lower A: Legs and glutes\n\n• Upper B: Pull, push y core variante\n\n• Lower B: Legs and glutes variant\n\nDesigned for advanced athletes seeking maximum performance and muscle development.",
         "equipmentCategory": "calisthenics",
@@ -11390,7 +11390,7 @@
     },
     {
         "name": "Glutes & Legs",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/gluteos_y_pierna.webp",
+        "thumbnailURL": "assets/images/plans/gluteos_y_pierna.webp",
         "durationPerSession": 60,
         "description": "4-day per week routine, for a commercial gym with full access to machines, barbells, cables, and dumbbells. Each session lasts approximately 60 minutes. The main goal is to develop and tone the lower body, with special attention to glutes, hamstrings, and quads.\n\n\nWeekly structure:\n\n• Glutes & Hamstrings: Focus on glute and posterior chain development with compound and isolation movements.\n\n• Quads & Core: Focus on the front of the leg and intense abdominal work.\n\n• Glutes & Upper Body: Mixed session: glutes with light upper body work to maintain muscle balance.\n\n• Complete Leg Day: Final complete leg session with emphasis on volume and accumulated fatigue.\n\nDesigned for intermediates who want to progress and improve their body composition.",
         "equipmentCategory": "commercialGym",
@@ -11620,7 +11620,7 @@
     },
     {
         "name": "Small Gym Toning",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tonificacion_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/tonificacion_gym_pequeno.webp",
         "durationPerSession": 50,
         "description": "3-day per week routine, designed for a small or apartment gym with dumbbells, barbell, and basic equipment. Each session lasts approximately 50 minutes. The main goal is to develop and tone the lower body, with special attention to glutes, hamstrings, and quads.\n\n\nWeekly structure:\n\n• Lower Body: Focus on legs and glutes with dumbbells and barbell.\n\n• Upper Body: Chest, back, shoulders, and arms work with dumbbells.\n\n• Full Body: Full body session to close the week hitting all muscle groups.\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "smallGym",
@@ -11795,7 +11795,7 @@
     },
     {
         "name": "Your First Day at the Gym",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tu_primer_dia_en_el_gym.webp",
+        "thumbnailURL": "assets/images/plans/tu_primer_dia_en_el_gym.webp",
         "durationPerSession": 45,
         "description": "3-day per week routine, for a commercial gym with full access to machines, barbells, cables, and dumbbells. Each session lasts approximately 45 minutes. The goal is to learn fundamental movements, build confidence, and create a training habit.\n\n\nWeekly structure:\n\n• Full Body A: Adaptation circuit with guided machines to familiarize yourself with equipment.\n\n• Upper Body: Machines and light dumbbells for chest, back, and arms.\n\n• Lower Body: Leg machines and core work to close the week.\n\nPerfect for those who have never trained and want to take the first step with safety and confidence.",
         "equipmentCategory": "commercialGym",
@@ -11954,7 +11954,7 @@
     },
     {
         "name": "Small Gym Adaptation",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/adaptacion_al_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/adaptacion_al_gym_pequeno.webp",
         "durationPerSession": 45,
         "description": "3-day per week routine, designed for a small or apartment gym with dumbbells, barbell, and basic equipment. Each session lasts approximately 45 minutes. The goal is to learn fundamental movements, build confidence, and create a training habit.\n\n\nWeekly structure:\n\n• Full Body A: Familiarization with light free weights and basic movements.\n\n• Full Body B: Second session with different variations to reinforce movement patterns.\n\n• Full Body C: Third session integrating compound barbell movements.\n\nPerfect for those who have never trained and want to take the first step with safety and confidence.",
         "equipmentCategory": "smallGym",
@@ -12105,7 +12105,7 @@
     },
     {
         "name": "Hypertrophy with Basic Equipment",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/hipertrofia_con_equipo_basico.webp",
+        "thumbnailURL": "assets/images/plans/hipertrofia_con_equipo_basico.webp",
         "durationPerSession": 75,
         "description": "5-day per week routine, designed for a small or apartment gym with dumbbells, barbell, and basic equipment. Each session lasts approximately 75 minutes. The goal is to build muscle mass and volume through high-intensity training.\n\n\nWeekly structure:\n\n• Push: Chest, shoulders, and triceps with high intensity and volume.\n\n• Pull: Back and biceps with emphasis on muscle density.\n\n• Legs: Complete lower body with emphasis on strength and hypertrophy.\n\n• Upper: Upper body session with emphasis on strength and intensity techniques.\n\n• Lower & Core: Second leg session with different variations and intense abdominal work.\n\nDesigned for advanced athletes seeking maximum performance and muscle development.",
         "equipmentCategory": "smallGym",
@@ -12390,7 +12390,7 @@
     },
     {
         "name": "Feminine Toning at Home",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tonificacion_femenina_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/tonificacion_femenina_en_casa.webp",
         "durationPerSession": 45,
         "description": "3-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 45 minutes. The main goal is to develop and tone the lower body, with special attention to glutes, hamstrings, and quads.\n\nWeekly structure:\n\n• Legs & Glutes: Session focused on glutes and legs with bodyweight exercises.\n\n• Upper Body & Core: Arms, back, and abs work for a toned body.\n\n• Glutes & Abs: Closing session focused on glutes and core.\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "noEquipment",
@@ -12541,7 +12541,7 @@
     },
     {
         "name": "Feminine Body at the Gym",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/cuerpo_femenino_en_el_gym.webp",
+        "thumbnailURL": "assets/images/plans/cuerpo_femenino_en_el_gym.webp",
         "durationPerSession": 50,
         "description": "3-day per week routine, for a commercial gym with full access to machines, barbells, cables, and dumbbells. Each session lasts approximately 50 minutes. The goal is to tone the entire body with emphasis on glutes, legs, and a proportional figure.\n\nWeekly structure:\n\n• Legs & Glutes: Complete leg session with machines and barbell for glute and quad development.\n\n• Upper Body: Back, chest, shoulders, and arms work for a proportional body.\n\n• Glutes & Core: Second lower body session with emphasis on glutes and abs.\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "commercialGym",
@@ -12708,7 +12708,7 @@
     },
     {
         "name": "Feminine Calisthenics",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_femenina.webp",
+        "thumbnailURL": "assets/images/plans/calistenia_femenina.webp",
         "durationPerSession": 40,
         "description": "3-day per week routine, based on calisthenics with pull-up bars, parallel bars, and your own bodyweight. Each session lasts approximately 40 minutes. The goal is to tone the entire body with emphasis on glutes, legs, and a proportional figure.\n\nWeekly structure:\n\n• Legs & Glutes: Legs and glutes with calisthenics and bodyweight.\n\n• Upper Body & Core: Back, chest, and abs work with bar and bodyweight.\n\n• Glutes & Abs: Week closer focused on glutes, legs, and core.\n\nIdeal for beginners looking to build a solid foundation of strength and technique.",
         "equipmentCategory": "noEquipment",
@@ -12859,7 +12859,7 @@
     },
     {
         "name": "Feminine Definition in Small Gym",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/definicion_femenina_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/definicion_femenina_en_gym_pequeno.webp",
         "durationPerSession": 55,
         "description": "4-day per week routine, designed for a small or apartment gym with dumbbells, barbell, and basic equipment. Each session lasts approximately 55 minutes. The goal is to burn fat and define your muscles while maintaining muscle mass.\n\nWeekly structure:\n\n• Legs & Glutes A: Glutes and hamstrings with dumbbells and barbell.\n\n• Upper Body: Chest, back, shoulders, and arms with dumbbells.\n\n• Legs & Glutes B: Second leg session with different variations.\n\n• Full Body & Core: Full body session to close the week with core work.\n\nDesigned for intermediates who want to progress and improve their body composition.",
         "equipmentCategory": "smallGym",
@@ -13081,7 +13081,7 @@
     },
     {
         "name": "First Contact with the Gym",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/primer_contacto_con_el_gym.webp",
+        "thumbnailURL": "assets/images/plans/primer_contacto_con_el_gym.webp",
         "durationPerSession": 30,
         "description": "2-day per week routine, for a commercial gym with full access to machines, barbells, cables, and dumbbells. Each session lasts approximately 30 minutes. The goal is to learn fundamental movements, build confidence, and create a training habit.\n\nWeekly structure:\n\n• Full Body A: Adapting to gym machines. All guided and safe.\n\n• Full Body B: Second adaptation session with different machines.\n\nPerfect for those who have never trained and want to take the first step with safety and confidence.",
         "equipmentCategory": "commercialGym",
@@ -13185,7 +13185,7 @@
     },
     {
         "name": "First Contact with Small Gym",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/primer_contacto_con_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/primer_contacto_con_gym_pequeno.webp",
         "durationPerSession": 30,
         "description": "2-day per week routine, designed for a small or apartment gym with dumbbells, barbell, and basic equipment. Each session lasts approximately 30 minutes. The goal is to learn fundamental movements, build confidence, and create a training habit.\n\nWeekly structure:\n\n• Full Body A: First contact with dumbbells and basic movements.\n\n• Full Body B: Second session with dumbbell and barbell variations.\n\nPerfect for those who have never trained and want to take the first step with safety and confidence.",
         "equipmentCategory": "smallGym",
@@ -13289,7 +13289,7 @@
     },
     {
         "name": "Your Essential Home Session",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tu_sesion_esencial_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/tu_sesion_esencial_en_casa.webp",
         "durationPerSession": 25,
         "description": "1-day per week routine, using only your bodyweight, no equipment or gym needed. Each session lasts approximately 25 minutes. The goal is to learn fundamental movements and build the habit with a single weekly session.\n\n\nWeekly structure:\n\n• Full Body: Push, lower, core\n\nPerfect for those who have never trained and want to start with just one day a week.",
         "equipmentCategory": "noEquipment",
@@ -13346,7 +13346,7 @@
     },
     {
         "name": "Weekly Full Body at Home",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/full_body_semanal_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/full_body_semanal_en_casa.webp",
         "durationPerSession": 40,
         "description": "1-day per week bodyweight routine, designed to get the most out of a single complete session. Each session lasts approximately 40 minutes. The goal is to stimulate the whole body in one day.\n\n\nWeekly structure:\n\n• Complete Full Body: Push, pull, lower, core\n\nIdeal if you can only train one day a week and want a complete stimulus at home.",
         "equipmentCategory": "noEquipment",
@@ -13411,7 +13411,7 @@
     },
     {
         "name": "First Contact with the Bar",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/primer_contacto_con_la_barra.webp",
+        "thumbnailURL": "assets/images/plans/primer_contacto_con_la_barra.webp",
         "durationPerSession": 30,
         "description": "1-day per week routine with a pull-up bar, dip bars and bands. Each session lasts approximately 30 minutes. The goal is to get familiar with the bar and basic calisthenics movements.\n\n\nWeekly structure:\n\n• Bar Full Body: Pull, push, lower, core\n\nPerfect for taking your first calisthenics steps with one weekly session.",
         "equipmentCategory": "calisthenics",
@@ -13468,7 +13468,7 @@
     },
     {
         "name": "One-Day Total Calisthenics",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_total_en_un_dia.webp",
+        "thumbnailURL": "assets/images/plans/calistenia_total_en_un_dia.webp",
         "durationPerSession": 45,
         "description": "1-day per week complete calisthenics routine: pull-ups, dips, legs and core. Each session lasts approximately 45 minutes. The goal is to cover every movement pattern in one intense session.\n\n\nWeekly structure:\n\n• Calisthenics Full Body: Pull, push, lower, core\n\nIdeal if you train calisthenics and only have one day a week.",
         "equipmentCategory": "calisthenics",
@@ -13533,7 +13533,7 @@
     },
     {
         "name": "Your First Dumbbell Full Body",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tu_primer_full_body_con_mancuernas.webp",
+        "thumbnailURL": "assets/images/plans/tu_primer_full_body_con_mancuernas.webp",
         "durationPerSession": 35,
         "description": "1-day per week routine with dumbbells and a bench, ideal for a small gym or home setup. Each session lasts approximately 35 minutes. The goal is to learn the loaded basics safely.\n\n\nWeekly structure:\n\n• Dumbbell Full Body: Push, pull, lower, core\n\nPerfect for your first experience with weights, training one day a week.",
         "equipmentCategory": "smallGym",
@@ -13598,7 +13598,7 @@
     },
     {
         "name": "Weekly Loaded Full Body",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/full_body_cargado_semanal.webp",
+        "thumbnailURL": "assets/images/plans/full_body_cargado_semanal.webp",
         "durationPerSession": 50,
         "description": "1-day per week routine with a barbell and dumbbells for a small gym. Each session lasts approximately 50 minutes. The goal is to pack the loaded basics into one full-body session.\n\n\nWeekly structure:\n\n• Strength Full Body: Barbell and dumbbell basics plus core\n\nIdeal if you can only hit the gym once a week and want real loaded work.",
         "equipmentCategory": "smallGym",
@@ -13663,7 +13663,7 @@
     },
     {
         "name": "Your First Gym Full Body",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tu_primer_full_body_en_el_gym.webp",
+        "thumbnailURL": "assets/images/plans/tu_primer_full_body_en_el_gym.webp",
         "durationPerSession": 35,
         "description": "1-day per week routine combining machines and dumbbells in a commercial gym. Each session lasts approximately 35 minutes. The goal is to cover the basic patterns with the safe guidance of machines.\n\n\nWeekly structure:\n\n• Guided Full Body: Machines and dumbbells for the whole body\n\nPerfect for your first gym experience, training once a week.",
         "equipmentCategory": "commercialGym",
@@ -13728,7 +13728,7 @@
     },
     {
         "name": "All-In Gym Day",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/dia_completo_de_gym.webp",
+        "thumbnailURL": "assets/images/plans/dia_completo_de_gym.webp",
         "durationPerSession": 55,
         "description": "1-day per week commercial gym routine built on barbell basics plus cables and machines. Each session lasts approximately 55 minutes. The goal is a complete full-body stimulus in a single visit.\n\n\nWeekly structure:\n\n• Strength Full Body: Barbell basics, cables and core\n\nIdeal if you can only make it to the gym once a week and want to make it count.",
         "equipmentCategory": "commercialGym",
@@ -13793,7 +13793,7 @@
     },
     {
         "name": "Small Gym Double Full Body",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/doble_full_body_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/doble_full_body_en_gym_pequeno.webp",
         "durationPerSession": 50,
         "description": "2-day per week routine with dumbbells and a barbell in a small gym. Each session lasts approximately 50 minutes. The goal is to train the whole body twice a week with loaded weight.\n\n\nWeekly structure:\n\n• Full Body A: Push, lower, core\n\n• Full Body B: Pull, hips, core\n\nIdeal for building a strength base training two days with basic equipment.",
         "equipmentCategory": "smallGym",
@@ -13897,7 +13897,7 @@
     },
     {
         "name": "Gym Double Full Body",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/doble_full_body_en_el_gym.webp",
+        "thumbnailURL": "assets/images/plans/doble_full_body_en_el_gym.webp",
         "durationPerSession": 55,
         "description": "2-day per week commercial gym routine combining barbell basics, dumbbells, cables and machines. Each session lasts approximately 55 minutes. The goal is to hit the whole body twice a week with loaded work.\n\n\nWeekly structure:\n\n• Full Body A: Push, legs, core\n\n• Full Body B: Pull, hamstrings, shoulders\n\nIdeal for making gym progress with just two weekly visits.",
         "equipmentCategory": "commercialGym",
@@ -14001,7 +14001,7 @@
     },
     {
         "name": "Full Week at Home",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/semana_completa_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/semana_completa_en_casa.webp",
         "durationPerSession": 35,
         "description": "7-day per week bodyweight routine alternating push, pull, legs, cardio and core to spread the fatigue. Each session lasts approximately 35 minutes. The goal is to build the habit of moving every day.\n\n\nWeekly structure:\n\n• Push: Chest, shoulders, triceps, core\n\n• Legs: Quads, glutes, calves\n\n• Pull & Core: Back and abs\n\n• Cardio & Core: Heart rate and abs\n\n• Push B: Push variations and abs\n\n• Legs B: Unilateral work and glutes\n\n• Light Full Body: Gentle end of the week\n\nIdeal if you want to train at home every day with short, varied sessions.",
         "equipmentCategory": "noEquipment",
@@ -14284,7 +14284,7 @@
     },
     {
         "name": "Daily Rhythm at Home",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/ritmo_diario_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/ritmo_diario_en_casa.webp",
         "durationPerSession": 30,
         "description": "7-day per week home routine alternating strength days with easy cardio, posture and mobility days. Each session lasts approximately 30 minutes. The goal is daily movement without piling up fatigue.\n\n\nWeekly structure:\n\n• Full Body A: Push, lower, core\n\n• Easy Cardio: Raise the heart rate without excessive impact\n\n• Legs & Glutes: Complete lower body\n\n• Pull & Posture: Back, lower back and core\n\n• Full Body B: Push and leg variations\n\n• Cardio & Core B: Power and abs\n\n• Mobility & Core: Gentle end of the week\n\nIdeal for making daily training a sustainable habit at home.",
         "equipmentCategory": "noEquipment",
@@ -14567,7 +14567,7 @@
     },
     {
         "name": "Calisthenics Week",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/semana_calistenica.webp",
+        "thumbnailURL": "assets/images/plans/semana_calistenica.webp",
         "durationPerSession": 40,
         "description": "7-day per week calisthenics routine: pull, push and legs twice, plus a core and bands day. Each session lasts approximately 40 minutes. The goal is high frequency with controlled per-session volume.\n\n\nWeekly structure:\n\n• Pull: Pull-ups, rows and biceps\n\n• Push: Dips, push-ups and triceps\n\n• Legs: Quads, glutes, calves\n\n• Core & Bands: Abs and band glute work\n\n• Pull B: Chin-ups and scapular control\n\n• Push B: Assisted dips and shoulders\n\n• Legs & Core B: Unilateral, glutes and abs\n\nIdeal for progressing your pull-ups and dips training every day.",
         "equipmentCategory": "calisthenics",
@@ -14850,7 +14850,7 @@
     },
     {
         "name": "Daily Calisthenics Progression",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/progresion_diaria_calistenica.webp",
+        "thumbnailURL": "assets/images/plans/progresion_diaria_calistenica.webp",
         "durationPerSession": 40,
         "description": "7-day per week calisthenics routine with assisted progressions (bands and TRX), rope cardio and daily core work. Each session lasts approximately 40 minutes. The goal is to build your first pull-ups and dips training daily.\n\n\nWeekly structure:\n\n• Assisted Pull: Band pull-ups and rows\n\n• Assisted Push: Band dips and push-ups\n\n• Legs: Quads, glutes, calves\n\n• Cardio & Ropes: Battle ropes and tempo\n\n• Pull B: Negatives and scapular control\n\n• Push B: Shoulders and triceps\n\n• Legs & Glutes B: Lunges, hips and calves\n\nIdeal if you're building your first pull-ups and want maximum frequency.",
         "equipmentCategory": "calisthenics",
@@ -15133,7 +15133,7 @@
     },
     {
         "name": "Weekly PPL in a Small Gym",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/ppl_semanal_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/ppl_semanal_en_gym_pequeno.webp",
         "durationPerSession": 55,
         "description": "7-day per week small gym routine: Push Pull Legs twice plus a core and conditioning day. Each session lasts approximately 55 minutes. The goal is maximum frequency with dumbbells, barbell and bench.\n\n\nWeekly structure:\n\n• Push A: Chest, shoulders, triceps\n\n• Pull A: Back and biceps\n\n• Legs A: Squat, hamstrings, calves\n\n• Push B: Upper chest and shoulders\n\n• Pull B: Chin-ups, rows and traps\n\n• Legs B: Goblet, hips and calves\n\n• Core & Conditioning: Abs and grip work\n\nIdeal for hypertrophy with basic equipment training every day.",
         "equipmentCategory": "smallGym",
@@ -15416,7 +15416,7 @@
     },
     {
         "name": "Weekly Upper Lower in a Small Gym",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/upper_lower_semanal_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/upper_lower_semanal_en_gym_pequeno.webp",
         "durationPerSession": 50,
         "description": "7-day per week small gym routine: upper and lower twice, plus full body, arms and core. Each session lasts approximately 50 minutes. The goal is to spread the loaded volume across the whole week.\n\n\nWeekly structure:\n\n• Upper A: Chest, back, shoulders, biceps\n\n• Lower A: Goblet, hamstrings, calves\n\n• Upper B: Upper chest, rows, shoulders\n\n• Lower B: Bulgarian, hips, calves\n\n• Full Body: Deadlift, press and core\n\n• Arms: Biceps and triceps\n\n• Core: Complete core\n\nIdeal for building muscle with dumbbells and a barbell training daily.",
         "equipmentCategory": "smallGym",
@@ -15699,7 +15699,7 @@
     },
     {
         "name": "Weekly Gym PPL",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/ppl_semanal_en_el_gym.webp",
+        "thumbnailURL": "assets/images/plans/ppl_semanal_en_el_gym.webp",
         "durationPerSession": 55,
         "description": "7-day per week commercial gym routine: Push Pull Legs twice plus a core and conditioning day, mixing free weights, cables and machines. Each session lasts approximately 55 minutes. The goal is maximum frequency using all the available equipment.\n\n\nWeekly structure:\n\n• Push A: Chest, shoulders, triceps\n\n• Pull A: Pulldown, rows and biceps\n\n• Legs A: Squat, press, hamstrings\n\n• Push B: Shoulders, chest and cable triceps\n\n• Pull B: Rear delts, rows and biceps\n\n• Legs B: Extension, hips and calves\n\n• Core & Conditioning: Abs and grip work\n\nIdeal for hypertrophy training every day in a fully equipped gym.",
         "equipmentCategory": "commercialGym",
@@ -15982,7 +15982,7 @@
     },
     {
         "name": "Total Gym Week",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/semana_total_en_el_gym.webp",
+        "thumbnailURL": "assets/images/plans/semana_total_en_el_gym.webp",
         "durationPerSession": 55,
         "description": "7-day per week commercial gym routine: upper and lower twice, plus full body, arms and core, mixing barbell, dumbbells, cables and machines. Each session lasts approximately 55 minutes. The goal is to hit every muscle group several times per week.\n\n\nWeekly structure:\n\n• Upper A: Chest, pulldown, shoulders, triceps\n\n• Lower A: Squat, hamstrings, calves\n\n• Upper B: Upper chest, rows, shoulders\n\n• Lower B: Press, Bulgarian, calves\n\n• Full Body: Deadlift, press and core\n\n• Arms & Shoulders: Biceps, triceps and delts\n\n• Core & Conditioning: Abs and grip work\n\nIdeal if you hit the gym every day and want a complete, balanced week.",
         "equipmentCategory": "commercialGym",
@@ -16265,7 +16265,7 @@
     },
     {
         "name": "Upper Lower in a Small Gym",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/upper_lower_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/upper_lower_en_gym_pequeno.webp",
         "durationPerSession": 50,
         "description": "6-day per week small gym routine with an upper/lower ×3 structure: two strength days, two hypertrophy days and two pump and glute days. Each session lasts approximately 50 minutes. The goal is to hit every muscle group three times a week with dumbbells, barbell and bench.\n\n\nWeekly structure:\n\n• Upper A: Upper body strength with the barbell\n\n• Lower A: Lower body strength and core\n\n• Upper B: Upper body hypertrophy with dumbbells\n\n• Lower B: Lower body and glute hypertrophy\n\n• Upper C: Full upper body pump\n\n• Lower C: Glutes, legs and core\n\nIdeal as an alternative to Push Pull Legs for training six days with basic equipment.",
         "equipmentCategory": "smallGym",

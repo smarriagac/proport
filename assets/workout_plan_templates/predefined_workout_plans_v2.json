@@ -8,7 +8,7 @@
     "gender": "male",
     "name": "Base en Casa · 1-3 días",
     "description": "3 sesiones por semana. Sin material. El plan se escribe con las tres sesiones; quien entrena menos días recibe las primeras.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/dominacion_total_en_casa.webp",
+    "thumbnailURL": "assets/images/plans/dominacion_total_en_casa.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -274,7 +274,7 @@
     "gender": "female",
     "name": "Glúteo en Casa · 1-3 días",
     "description": "3 sesiones por semana. Volumen semanal cargado en tren inferior. Sin material. El plan se escribe con las tres sesiones; quien entrena menos días recibe las primeras.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tonificacion_en_casa.webp",
+    "thumbnailURL": "assets/images/plans/tonificacion_en_casa.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -481,7 +481,7 @@
     "gender": "male",
     "name": "Hipertrofia en Casa · 1-3 días",
     "description": "3 sesiones por semana. Sin material. El plan se escribe con las tres sesiones; quien entrena menos días recibe las primeras.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/definicion_en_casa.webp",
+    "thumbnailURL": "assets/images/plans/definicion_en_casa.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -850,7 +850,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en Casa · 1-3 días",
     "description": "3 sesiones por semana. Volumen semanal cargado en tren inferior. Sin material. El plan se escribe con las tres sesiones; quien entrena menos días recibe las primeras.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/fuerza_y_estetica_en_casa.webp",
+    "thumbnailURL": "assets/images/plans/fuerza_y_estetica_en_casa.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -1123,7 +1123,7 @@
     "gender": "male",
     "name": "Base en Casa · 4 días",
     "description": "4 sesiones por semana. Sin material.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/estetica_con_peso_corporal.webp",
+    "thumbnailURL": "assets/images/plans/estetica_con_peso_corporal.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -1389,7 +1389,7 @@
     "gender": "female",
     "name": "Glúteo en Casa · 4 días",
     "description": "4 sesiones por semana. Volumen semanal cargado en tren inferior. Sin material.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/fuerza_y_estetica_en_casa.webp",
+    "thumbnailURL": "assets/images/plans/fuerza_y_estetica_en_casa.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -1675,7 +1675,7 @@
     "gender": "male",
     "name": "Hipertrofia en Casa · 4 días",
     "description": "4 sesiones por semana. Sin material.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/equilibrio_de_fuerza_en_casa.webp",
+    "thumbnailURL": "assets/images/plans/equilibrio_de_fuerza_en_casa.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -2013,7 +2013,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en Casa · 4 días",
     "description": "4 sesiones por semana. Volumen semanal cargado en tren inferior. Sin material.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tonificacion_femenina_en_casa.webp",
+    "thumbnailURL": "assets/images/plans/tonificacion_femenina_en_casa.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -2327,7 +2327,7 @@
     "gender": "male",
     "name": "Base en Casa · 5 días",
     "description": "5 sesiones por semana. Sin material.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/fuerza_total_en_casa.webp",
+    "thumbnailURL": "assets/images/plans/fuerza_total_en_casa.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -2692,7 +2692,7 @@
     "gender": "female",
     "name": "Glúteo en Casa · 5 días",
     "description": "5 sesiones por semana. Volumen semanal cargado en tren inferior. Sin material.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tonificacion_femenina_en_casa.webp",
+    "thumbnailURL": "assets/images/plans/tonificacion_femenina_en_casa.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -3041,7 +3041,7 @@
     "gender": "male",
     "name": "Hipertrofia en Casa · 5 días",
     "description": "5 sesiones por semana. Sin material.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/fuerza_basica_en_casa.webp",
+    "thumbnailURL": "assets/images/plans/fuerza_basica_en_casa.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -3482,7 +3482,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en Casa · 5 días",
     "description": "5 sesiones por semana. Volumen semanal cargado en tren inferior. Sin material.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tonificacion_en_casa.webp",
+    "thumbnailURL": "assets/images/plans/tonificacion_en_casa.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -3871,7 +3871,7 @@
     "gender": "male",
     "name": "Base en Casa · 6 días",
     "description": "6 sesiones por semana. Sin material.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/habito_de_entrenar_en_casa.webp",
+    "thumbnailURL": "assets/images/plans/habito_de_entrenar_en_casa.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -4319,7 +4319,7 @@
     "gender": "female",
     "name": "Glúteo en Casa · 6 días",
     "description": "6 sesiones por semana. Volumen semanal cargado en tren inferior. Sin material.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tonificacion_en_casa.webp",
+    "thumbnailURL": "assets/images/plans/tonificacion_en_casa.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -4739,7 +4739,7 @@
     "gender": "male",
     "name": "Hipertrofia en Casa · 6 días",
     "description": "6 sesiones por semana. Sin material.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/full_body_semanal_en_casa.webp",
+    "thumbnailURL": "assets/images/plans/full_body_semanal_en_casa.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -5279,7 +5279,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en Casa · 6 días",
     "description": "6 sesiones por semana. Volumen semanal cargado en tren inferior. Sin material.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/fuerza_y_estetica_en_casa.webp",
+    "thumbnailURL": "assets/images/plans/fuerza_y_estetica_en_casa.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -5726,7 +5726,7 @@
     "gender": "male",
     "name": "Base en Casa · 7 días",
     "description": "7 sesiones por semana. Sin material.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/movimiento_diario.webp",
+    "thumbnailURL": "assets/images/plans/movimiento_diario.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -6201,7 +6201,7 @@
     "gender": "female",
     "name": "Glúteo en Casa · 7 días",
     "description": "7 sesiones por semana. Volumen semanal cargado en tren inferior. Sin material.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/fuerza_y_estetica_en_casa.webp",
+    "thumbnailURL": "assets/images/plans/fuerza_y_estetica_en_casa.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -6680,7 +6680,7 @@
     "gender": "male",
     "name": "Hipertrofia en Casa · 7 días",
     "description": "7 sesiones por semana. Sin material.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/intensidad_concentrada_en_casa.webp",
+    "thumbnailURL": "assets/images/plans/intensidad_concentrada_en_casa.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -7283,7 +7283,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en Casa · 7 días",
     "description": "7 sesiones por semana. Volumen semanal cargado en tren inferior. Sin material.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tonificacion_femenina_en_casa.webp",
+    "thumbnailURL": "assets/images/plans/tonificacion_femenina_en_casa.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -7805,7 +7805,7 @@
     "gender": "male",
     "name": "Base en Barra · 1-3 días",
     "description": "3 sesiones por semana. Introduce la barra de dominadas y las paralelas. El plan se escribe con las tres sesiones; quien entrena menos días recibe las primeras.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_de_alta_frecuencia.webp",
+    "thumbnailURL": "assets/images/plans/calistenia_de_alta_frecuencia.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -8071,7 +8071,7 @@
     "gender": "female",
     "name": "Glúteo en Barra · 1-3 días",
     "description": "3 sesiones por semana. Volumen semanal cargado en tren inferior. Introduce la barra de dominadas y las paralelas. El plan se escribe con las tres sesiones; quien entrena menos días recibe las primeras.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_femenina.webp",
+    "thumbnailURL": "assets/images/plans/calistenia_femenina.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -8278,7 +8278,7 @@
     "gender": "male",
     "name": "Hipertrofia en Barra · 1-3 días",
     "description": "3 sesiones por semana. Introduce la barra de dominadas y las paralelas. El plan se escribe con las tres sesiones; quien entrena menos días recibe las primeras.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/bases_de_la_calistenia.webp",
+    "thumbnailURL": "assets/images/plans/bases_de_la_calistenia.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -8675,7 +8675,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en Barra · 1-3 días",
     "description": "3 sesiones por semana. Volumen semanal cargado en tren inferior. Introduce la barra de dominadas y las paralelas. El plan se escribe con las tres sesiones; quien entrena menos días recibe las primeras.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_femenina.webp",
+    "thumbnailURL": "assets/images/plans/calistenia_femenina.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -8948,7 +8948,7 @@
     "gender": "male",
     "name": "Base en Barra · 4 días",
     "description": "4 sesiones por semana. Introduce la barra de dominadas y las paralelas.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_extrema.webp",
+    "thumbnailURL": "assets/images/plans/calistenia_extrema.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -9234,7 +9234,7 @@
     "gender": "female",
     "name": "Glúteo en Barra · 4 días",
     "description": "4 sesiones por semana. Volumen semanal cargado en tren inferior. Introduce la barra de dominadas y las paralelas.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_femenina.webp",
+    "thumbnailURL": "assets/images/plans/calistenia_femenina.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -9520,7 +9520,7 @@
     "gender": "male",
     "name": "Hipertrofia en Barra · 4 días",
     "description": "4 sesiones por semana. Introduce la barra de dominadas y las paralelas.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_desde_cero.webp",
+    "thumbnailURL": "assets/images/plans/calistenia_desde_cero.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -9862,7 +9862,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en Barra · 4 días",
     "description": "4 sesiones por semana. Volumen semanal cargado en tren inferior. Introduce la barra de dominadas y las paralelas.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_femenina.webp",
+    "thumbnailURL": "assets/images/plans/calistenia_femenina.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -10176,7 +10176,7 @@
     "gender": "male",
     "name": "Base en Barra · 5 días",
     "description": "5 sesiones por semana. Introduce la barra de dominadas y las paralelas.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_total_en_un_dia.webp",
+    "thumbnailURL": "assets/images/plans/calistenia_total_en_un_dia.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -10525,7 +10525,7 @@
     "gender": "female",
     "name": "Glúteo en Barra · 5 días",
     "description": "5 sesiones por semana. Volumen semanal cargado en tren inferior. Introduce la barra de dominadas y las paralelas.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_femenina.webp",
+    "thumbnailURL": "assets/images/plans/calistenia_femenina.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -10874,7 +10874,7 @@
     "gender": "male",
     "name": "Hipertrofia en Barra · 5 días",
     "description": "5 sesiones por semana. Introduce la barra de dominadas y las paralelas.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_integral.webp",
+    "thumbnailURL": "assets/images/plans/calistenia_integral.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -11291,7 +11291,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en Barra · 5 días",
     "description": "5 sesiones por semana. Volumen semanal cargado en tren inferior. Introduce la barra de dominadas y las paralelas.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_femenina.webp",
+    "thumbnailURL": "assets/images/plans/calistenia_femenina.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -11680,7 +11680,7 @@
     "gender": "male",
     "name": "Base en Barra · 6 días",
     "description": "6 sesiones por semana. Introduce la barra de dominadas y las paralelas.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/desarrollo_calistenico.webp",
+    "thumbnailURL": "assets/images/plans/desarrollo_calistenico.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -12076,7 +12076,7 @@
     "gender": "female",
     "name": "Glúteo en Barra · 6 días",
     "description": "6 sesiones por semana. Volumen semanal cargado en tren inferior. Introduce la barra de dominadas y las paralelas.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_femenina.webp",
+    "thumbnailURL": "assets/images/plans/calistenia_femenina.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -12496,7 +12496,7 @@
     "gender": "male",
     "name": "Hipertrofia en Barra · 6 días",
     "description": "6 sesiones por semana. Introduce la barra de dominadas y las paralelas.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/control_corporal_calistenico.webp",
+    "thumbnailURL": "assets/images/plans/control_corporal_calistenico.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -13032,7 +13032,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en Barra · 6 días",
     "description": "6 sesiones por semana. Volumen semanal cargado en tren inferior. Introduce la barra de dominadas y las paralelas.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_femenina.webp",
+    "thumbnailURL": "assets/images/plans/calistenia_femenina.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -13479,7 +13479,7 @@
     "gender": "male",
     "name": "Base en Barra · 7 días",
     "description": "7 sesiones por semana. Introduce la barra de dominadas y las paralelas.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/dominio_corporal_total.webp",
+    "thumbnailURL": "assets/images/plans/dominio_corporal_total.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -13982,7 +13982,7 @@
     "gender": "female",
     "name": "Glúteo en Barra · 7 días",
     "description": "7 sesiones por semana. Volumen semanal cargado en tren inferior. Introduce la barra de dominadas y las paralelas.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_femenina.webp",
+    "thumbnailURL": "assets/images/plans/calistenia_femenina.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -14461,7 +14461,7 @@
     "gender": "male",
     "name": "Hipertrofia en Barra · 7 días",
     "description": "7 sesiones por semana. Introduce la barra de dominadas y las paralelas.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/dominadas_y_fondos_basicos.webp",
+    "thumbnailURL": "assets/images/plans/dominadas_y_fondos_basicos.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -15064,7 +15064,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en Barra · 7 días",
     "description": "7 sesiones por semana. Volumen semanal cargado en tren inferior. Introduce la barra de dominadas y las paralelas.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_femenina.webp",
+    "thumbnailURL": "assets/images/plans/calistenia_femenina.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -15586,7 +15586,7 @@
     "gender": "male",
     "name": "Base en Gym Pequeño · 1-3 días",
     "description": "3 sesiones por semana. Mancuernas, barra y banco. El plan se escribe con las tres sesiones; quien entrena menos días recibe las primeras.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/definicion_en_gym_pequeno.webp",
+    "thumbnailURL": "assets/images/plans/definicion_en_gym_pequeno.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -15852,7 +15852,7 @@
     "gender": "female",
     "name": "Glúteo en Gym Pequeño · 1-3 días",
     "description": "3 sesiones por semana. Volumen semanal cargado en tren inferior. Mancuernas, barra y banco. El plan se escribe con las tres sesiones; quien entrena menos días recibe las primeras.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tonificacion_gym_pequeno.webp",
+    "thumbnailURL": "assets/images/plans/tonificacion_gym_pequeno.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -16063,7 +16063,7 @@
     "gender": "male",
     "name": "Hipertrofia en Gym Pequeño · 1-3 días",
     "description": "3 sesiones por semana. Mancuernas, barra y banco. El plan se escribe con las tres sesiones; quien entrena menos días recibe las primeras.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/adaptacion_al_gym_pequeno.webp",
+    "thumbnailURL": "assets/images/plans/adaptacion_al_gym_pequeno.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -16448,7 +16448,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en Gym Pequeño · 1-3 días",
     "description": "3 sesiones por semana. Volumen semanal cargado en tren inferior. Mancuernas, barra y banco. El plan se escribe con las tres sesiones; quien entrena menos días recibe las primeras.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/definicion_femenina_en_gym_pequeno.webp",
+    "thumbnailURL": "assets/images/plans/definicion_femenina_en_gym_pequeno.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -16738,7 +16738,7 @@
     "gender": "male",
     "name": "Base en Gym Pequeño · 4 días",
     "description": "4 sesiones por semana. Mancuernas, barra y banco.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/empieza_en_gym_pequeno.webp",
+    "thumbnailURL": "assets/images/plans/empieza_en_gym_pequeno.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -17008,7 +17008,7 @@
     "gender": "female",
     "name": "Glúteo en Gym Pequeño · 4 días",
     "description": "4 sesiones por semana. Volumen semanal cargado en tren inferior. Mancuernas, barra y banco.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tonificacion_gym_pequeno.webp",
+    "thumbnailURL": "assets/images/plans/tonificacion_gym_pequeno.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -17282,7 +17282,7 @@
     "gender": "male",
     "name": "Hipertrofia en Gym Pequeño · 4 días",
     "description": "4 sesiones por semana. Mancuernas, barra y banco.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/doble_full_body_en_gym_pequeno.webp",
+    "thumbnailURL": "assets/images/plans/doble_full_body_en_gym_pequeno.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -17649,7 +17649,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en Gym Pequeño · 4 días",
     "description": "4 sesiones por semana. Volumen semanal cargado en tren inferior. Mancuernas, barra y banco.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/definicion_femenina_en_gym_pequeno.webp",
+    "thumbnailURL": "assets/images/plans/definicion_femenina_en_gym_pequeno.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -18014,7 +18014,7 @@
     "gender": "male",
     "name": "Base en Gym Pequeño · 5 días",
     "description": "5 sesiones por semana. Mancuernas, barra y banco.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/fuerza_con_equipo_basico.webp",
+    "thumbnailURL": "assets/images/plans/fuerza_con_equipo_basico.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -18339,7 +18339,7 @@
     "gender": "female",
     "name": "Glúteo en Gym Pequeño · 5 días",
     "description": "5 sesiones por semana. Volumen semanal cargado en tren inferior. Mancuernas, barra y banco.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tonificacion_gym_pequeno.webp",
+    "thumbnailURL": "assets/images/plans/tonificacion_gym_pequeno.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -18676,7 +18676,7 @@
     "gender": "male",
     "name": "Hipertrofia en Gym Pequeño · 5 días",
     "description": "5 sesiones por semana. Mancuernas, barra y banco.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/estetica_en_gym_pequeno.webp",
+    "thumbnailURL": "assets/images/plans/estetica_en_gym_pequeno.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -19119,7 +19119,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en Gym Pequeño · 5 días",
     "description": "5 sesiones por semana. Volumen semanal cargado en tren inferior. Mancuernas, barra y banco.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/definicion_femenina_en_gym_pequeno.webp",
+    "thumbnailURL": "assets/images/plans/definicion_femenina_en_gym_pequeno.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -19559,7 +19559,7 @@
     "gender": "male",
     "name": "Base en Gym Pequeño · 6 días",
     "description": "6 sesiones por semana. Mancuernas, barra y banco.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/full_body_en_gym_pequeno.webp",
+    "thumbnailURL": "assets/images/plans/full_body_en_gym_pequeno.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -19951,7 +19951,7 @@
     "gender": "female",
     "name": "Glúteo en Gym Pequeño · 6 días",
     "description": "6 sesiones por semana. Volumen semanal cargado en tren inferior. Mancuernas, barra y banco.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tonificacion_gym_pequeno.webp",
+    "thumbnailURL": "assets/images/plans/tonificacion_gym_pequeno.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -20351,7 +20351,7 @@
     "gender": "male",
     "name": "Hipertrofia en Gym Pequeño · 6 días",
     "description": "6 sesiones por semana. Mancuernas, barra y banco.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/full_body_cargado_semanal.webp",
+    "thumbnailURL": "assets/images/plans/full_body_cargado_semanal.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -20852,7 +20852,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en Gym Pequeño · 6 días",
     "description": "6 sesiones por semana. Volumen semanal cargado en tren inferior. Mancuernas, barra y banco.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/definicion_femenina_en_gym_pequeno.webp",
+    "thumbnailURL": "assets/images/plans/definicion_femenina_en_gym_pequeno.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -21384,7 +21384,7 @@
     "gender": "male",
     "name": "Base en Gym Pequeño · 7 días",
     "description": "7 sesiones por semana. Mancuernas, barra y banco.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/ppl_semanal_en_gym_pequeno.webp",
+    "thumbnailURL": "assets/images/plans/ppl_semanal_en_gym_pequeno.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -21831,7 +21831,7 @@
     "gender": "female",
     "name": "Glúteo en Gym Pequeño · 7 días",
     "description": "7 sesiones por semana. Volumen semanal cargado en tren inferior. Mancuernas, barra y banco.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tonificacion_gym_pequeno.webp",
+    "thumbnailURL": "assets/images/plans/tonificacion_gym_pequeno.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -22322,7 +22322,7 @@
     "gender": "male",
     "name": "Hipertrofia en Gym Pequeño · 7 días",
     "description": "7 sesiones por semana. Mancuernas, barra y banco.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/hipertrofia_con_equipo_basico.webp",
+    "thumbnailURL": "assets/images/plans/hipertrofia_con_equipo_basico.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -22939,7 +22939,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en Gym Pequeño · 7 días",
     "description": "7 sesiones por semana. Volumen semanal cargado en tren inferior. Mancuernas, barra y banco.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/definicion_femenina_en_gym_pequeno.webp",
+    "thumbnailURL": "assets/images/plans/definicion_femenina_en_gym_pequeno.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -23546,7 +23546,7 @@
     "gender": "male",
     "name": "Base en el Gym · 1-3 días",
     "description": "3 sesiones por semana. Aprovecha las máquinas y poleas del gimnasio. El plan se escribe con las tres sesiones; quien entrena menos días recibe las primeras.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/culturismo_clasico.webp",
+    "thumbnailURL": "assets/images/plans/culturismo_clasico.webp",
     "durationPerSession": 31,
     "trainingSessions": [
       {
@@ -23812,7 +23812,7 @@
     "gender": "female",
     "name": "Glúteo en el Gym · 1-3 días",
     "description": "3 sesiones por semana. Volumen semanal cargado en tren inferior. Aprovecha las máquinas y poleas del gimnasio. El plan se escribe con las tres sesiones; quien entrena menos días recibe las primeras.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/gluteos_y_pierna.webp",
+    "thumbnailURL": "assets/images/plans/gluteos_y_pierna.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -24023,7 +24023,7 @@
     "gender": "male",
     "name": "Hipertrofia en el Gym · 1-3 días",
     "description": "3 sesiones por semana. Aprovecha las máquinas y poleas del gimnasio. El plan se escribe con las tres sesiones; quien entrena menos días recibe las primeras.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/clasico_y_estetico.webp",
+    "thumbnailURL": "assets/images/plans/clasico_y_estetico.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -24408,7 +24408,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en el Gym · 1-3 días",
     "description": "3 sesiones por semana. Volumen semanal cargado en tren inferior. Aprovecha las máquinas y poleas del gimnasio. El plan se escribe con las tres sesiones; quien entrena menos días recibe las primeras.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/cuerpo_femenino_en_el_gym.webp",
+    "thumbnailURL": "assets/images/plans/cuerpo_femenino_en_el_gym.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -24698,7 +24698,7 @@
     "gender": "male",
     "name": "Base en el Gym · 4 días",
     "description": "4 sesiones por semana. Aprovecha las máquinas y poleas del gimnasio.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/doble_full_body_en_el_gym.webp",
+    "thumbnailURL": "assets/images/plans/doble_full_body_en_el_gym.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -24964,7 +24964,7 @@
     "gender": "female",
     "name": "Glúteo en el Gym · 4 días",
     "description": "4 sesiones por semana. Volumen semanal cargado en tren inferior. Aprovecha las máquinas y poleas del gimnasio.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/gluteos_y_pierna.webp",
+    "thumbnailURL": "assets/images/plans/gluteos_y_pierna.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -25254,7 +25254,7 @@
     "gender": "male",
     "name": "Hipertrofia en el Gym · 4 días",
     "description": "4 sesiones por semana. Aprovecha las máquinas y poleas del gimnasio.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/dia_completo_de_gym.webp",
+    "thumbnailURL": "assets/images/plans/dia_completo_de_gym.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -25667,7 +25667,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en el Gym · 4 días",
     "description": "4 sesiones por semana. Volumen semanal cargado en tren inferior. Aprovecha las máquinas y poleas del gimnasio.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/cuerpo_femenino_en_el_gym.webp",
+    "thumbnailURL": "assets/images/plans/cuerpo_femenino_en_el_gym.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -26049,7 +26049,7 @@
     "gender": "male",
     "name": "Base en el Gym · 5 días",
     "description": "5 sesiones por semana. Aprovecha las máquinas y poleas del gimnasio.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/full_body_para_empezar_en_el_gym.webp",
+    "thumbnailURL": "assets/images/plans/full_body_para_empezar_en_el_gym.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -26370,7 +26370,7 @@
     "gender": "female",
     "name": "Glúteo en el Gym · 5 días",
     "description": "5 sesiones por semana. Volumen semanal cargado en tren inferior. Aprovecha las máquinas y poleas del gimnasio.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/gluteos_y_pierna.webp",
+    "thumbnailURL": "assets/images/plans/gluteos_y_pierna.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -26731,7 +26731,7 @@
     "gender": "male",
     "name": "Hipertrofia en el Gym · 5 días",
     "description": "5 sesiones por semana. Aprovecha las máquinas y poleas del gimnasio.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/full_body_en_el_gym.webp",
+    "thumbnailURL": "assets/images/plans/full_body_en_el_gym.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -27204,7 +27204,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en el Gym · 5 días",
     "description": "5 sesiones por semana. Volumen semanal cargado en tren inferior. Aprovecha las máquinas y poleas del gimnasio.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/cuerpo_femenino_en_el_gym.webp",
+    "thumbnailURL": "assets/images/plans/cuerpo_femenino_en_el_gym.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -27678,7 +27678,7 @@
     "gender": "male",
     "name": "Base en el Gym · 6 días",
     "description": "6 sesiones por semana. Aprovecha las máquinas y poleas del gimnasio.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/hibrido_de_hipertrofia.webp",
+    "thumbnailURL": "assets/images/plans/hibrido_de_hipertrofia.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -28054,7 +28054,7 @@
     "gender": "female",
     "name": "Glúteo en el Gym · 6 días",
     "description": "6 sesiones por semana. Volumen semanal cargado en tren inferior. Aprovecha las máquinas y poleas del gimnasio.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/gluteos_y_pierna.webp",
+    "thumbnailURL": "assets/images/plans/gluteos_y_pierna.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -28474,7 +28474,7 @@
     "gender": "male",
     "name": "Hipertrofia en el Gym · 6 días",
     "description": "6 sesiones por semana. Aprovecha las máquinas y poleas del gimnasio.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/hibrido_de_fuerza_y_volumen.webp",
+    "thumbnailURL": "assets/images/plans/hibrido_de_fuerza_y_volumen.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -29042,7 +29042,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en el Gym · 6 días",
     "description": "6 sesiones por semana. Volumen semanal cargado en tren inferior. Aprovecha las máquinas y poleas del gimnasio.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/cuerpo_femenino_en_el_gym.webp",
+    "thumbnailURL": "assets/images/plans/cuerpo_femenino_en_el_gym.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -29608,7 +29608,7 @@
     "gender": "male",
     "name": "Base en el Gym · 7 días",
     "description": "7 sesiones por semana. Aprovecha las máquinas y poleas del gimnasio.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/primer_contacto_con_el_gym.webp",
+    "thumbnailURL": "assets/images/plans/primer_contacto_con_el_gym.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -30043,7 +30043,7 @@
     "gender": "female",
     "name": "Glúteo en el Gym · 7 días",
     "description": "7 sesiones por semana. Volumen semanal cargado en tren inferior. Aprovecha las máquinas y poleas del gimnasio.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/gluteos_y_pierna.webp",
+    "thumbnailURL": "assets/images/plans/gluteos_y_pierna.webp",
     "durationPerSession": 30,
     "trainingSessions": [
       {
@@ -30534,7 +30534,7 @@
     "gender": "male",
     "name": "Hipertrofia en el Gym · 7 días",
     "description": "7 sesiones por semana. Aprovecha las máquinas y poleas del gimnasio.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/ppl_semanal_en_el_gym.webp",
+    "thumbnailURL": "assets/images/plans/ppl_semanal_en_el_gym.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {
@@ -31210,7 +31210,7 @@
     "gender": "female",
     "name": "Glúteo Avanzado en el Gym · 7 días",
     "description": "7 sesiones por semana. Volumen semanal cargado en tren inferior. Aprovecha las máquinas y poleas del gimnasio.",
-    "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/cuerpo_femenino_en_el_gym.webp",
+    "thumbnailURL": "assets/images/plans/cuerpo_femenino_en_el_gym.webp",
     "durationPerSession": 50,
     "trainingSessions": [
       {

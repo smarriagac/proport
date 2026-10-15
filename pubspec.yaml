@@ -59,6 +59,7 @@ flutter:
     - assets/images/muscles/
     - assets/images/exercises/
     - assets/images/plans/
+    - assets/images/quick_workouts/
     - assets/workout_plan_templates/
     - assets/data/
     - assets/quick_workouts/

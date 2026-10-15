@@ -1,7 +1,7 @@
 [
     {
         "name": "Estética con Peso Corporal",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/estetica_con_peso_corporal.webp",
+        "thumbnailURL": "assets/images/plans/estetica_con_peso_corporal.webp",
         "durationPerSession": 90,
         "description": "Rutina de 5 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 90 minutos. El objetivo es lograr un físico estético, proporcionado y simétrico.\n\n\nEstructura semanal:\n\n• Empujes y Core - Metabólico: Entrenamiento enfocado en empujes, tríceps y abdominales, con poca recuperación y alta intensidad.\n\n• Piernas y Glúteos - Fuerza Relativa: Foco en tren inferior y glúteos, alto volumen y énfasis unilateral para máximo estímulo sin carga externa.\n\n• Empujes y Core con énfasis en Deltoides: Enfoque en empuje para hombros y tríceps, combinado con core avanzado e intensidad metabólica.\n\n• Piernas y Core - Densidad Máxima: Variedad unilateral y bilateral en pierna, glúteo y abdomen oblicuo. Énfasis en técnica antes que velocidad.\n\n• Empujes y Core - Cierre Potente: Empuje avanzado y abdominales para cerrar la semana, alta frecuencia y control de fatiga acumulada.\n\nPensada para intermedios que quieren progresar y mejorar su composición corporal.",
         "equipmentCategory": "noEquipment",
@@ -230,7 +230,7 @@
     },
     {
         "name": "Fuerza Total en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/fuerza_total_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/fuerza_total_en_casa.webp",
         "durationPerSession": 90,
         "description": "Rutina de 4 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 90 minutos. El objetivo es ganar fuerza y desarrollar músculo de forma progresiva.\n\n\nEstructura semanal:\n\n• Empujes y Core - Hipertrofia: Entrenamiento de empuje (pecho, triceps, deltoides anteriores y core). Una sesión que da prioridad a rango de movimiento y calidad de repetición.\n\n• Piernas y Glúteos - Nocaut de Peso Corporal: Enfoque dominante en piernas y zona glútea, asegurando reclutamiento global y fatiga muscular estratégica en miembros inferiores.\n\n• Empuje Explosivo y Abdominales: Sesión de empuje y abdominales avanzados, con cargas excéntricas y enfásis en variantes explosivas.\n\n• Piernas y Glúteos Variante - Hipertrofia: Entrenamiento dominante en inferiores. Nuevo estímulo de variantes para asegurar crecimiento global y balance muscular.\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "noEquipment",
@@ -420,7 +420,7 @@
     },
     {
         "name": "Tonificación en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tonificacion_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/tonificacion_en_casa.webp",
         "durationPerSession": 90,
         "description": "Rutina de 3 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 90 minutos. El objetivo principal es desarrollar y tonificar el tren inferior, con especial atención a glúteos, femorales y cuádriceps.\n\n\nEstructura semanal:\n\n• Cuerpo Completo - Base Estética: Entrenamiento cuerpo completo con ejercicios clave para pecho, piernas, glúteos y core. Control y calidad en cada repetición son fundamentales.\n\n• Cuerpo Completo - Pulido y Volumen: Énfasis secundario en empujes y piernas, foco en detalles para una hipertrofia pareja y core estabilizador fuerte.\n\n• Cuerpo Completo - Finalización Atlética: Foco en técnicas avanzadas de cuerpo completo para terminar la semana con máxima congestión muscular, énfasis en core, glúteos y hombros.\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "noEquipment",
@@ -595,7 +595,7 @@
     },
     {
         "name": "Transformación Sin Equipo",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/transformacion_sin_equipo.webp",
+        "thumbnailURL": "assets/images/plans/transformacion_sin_equipo.webp",
         "durationPerSession": 90,
         "description": "Rutina de 6 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 90 minutos. El objetivo es ganar masa muscular y volumen mediante entrenamiento de alta intensidad.\n\n\nEstructura semanal:\n\n• Día de Empuje - Pecho, Tríceps y Core: Entrenamiento de empuje enfocado en pectorales, tríceps, deltoides anteriores y trabajo abdominal. Uso de superseries para congestion máxima y trabajo metabólico.\n\n• Día de Tracción - Espalda, Bíceps y Core: Día de tracción y core donde se usan variantes de remo con toalla y peso corporal, enfatizando el trabajo de espalda, bíceps y estabilidad central.\n\n• Día de Piernas - Tren Inferior Total: Entrenamiento de tren inferior: cuádriceps, glúteos, femorales y gemelos mediante variantes unilaterales y movimientos de cadena posterior.\n\n• Empuje & Core - Hombros, Tríceps y Abdomen: Segundo enfoque en empujes y abdomen. Mismo foco metabólico y densidad de repeticiones para estimular hipertrofia y resistencia muscular.\n\n• Jornada de Tracción & Core - Espalda, Bíceps y Abdomen: Jornada de tracción, dorsal y core, repitiendo patrones y variantes para máxima frecuencia semanal.\n\n• Tren Inferior Total - Piernas y Glúteos: Segundo round de tren inferior, repeticiones y variantes para hipertrofia y fuerza-resistencia. Alta frecuencia para máxima adaptación.\n\nPensada para intermedios que quieren progresar y mejorar su composición corporal.",
         "equipmentCategory": "noEquipment",
@@ -871,7 +871,7 @@
     },
     {
         "name": "Push Pull Legs Estético",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/push_pull_legs_estetico.webp",
+        "thumbnailURL": "assets/images/plans/push_pull_legs_estetico.webp",
         "durationPerSession": 90,
         "description": "Rutina de 6 días por semana, para gym comercial con acceso completo a máquinas, barras, poleas y mancuernas. Cada sesión dura aproximadamente 90 minutos. El objetivo es ganar masa muscular y volumen mediante entrenamiento de alta intensidad.\n\n\nEstructura semanal:\n\n• Tirones - Espalda y Bíceps: Sesión enfocada en el trabajo de espalda y bíceps mediante ejercicios de tracción. Se prioriza la fuerza y la hipertrofia de la cadena posterior.\n\n• Empujes - Pecho, Hombros y Tríceps: Entrenamiento orientado a fortalecer pecho, hombros y tríceps con movimientos de empuje. Se combinan ejercicios compuestos y de aislamiento para un desarrollo equilibrado.\n\n• Pierna - Cuádriceps, Femorales, Glúteos y Gemelos: Sesión centrada en cuádriceps, femorales, glúteos y gemelos. Se utilizan ejercicios multiarticulares y accesorios para estimular la fuerza y el crecimiento muscular de las piernas.\n\n• Tirones - Espalda y Bíceps: Sesión enfocada en el trabajo de espalda y bíceps mediante ejercicios de tracción. Se prioriza la fuerza y la hipertrofia de la cadena posterior.\n\n• Empujes - Pecho, Hombros y Tríceps: Entrenamiento orientado a fortalecer pecho, hombros y tríceps con movimientos de empuje. Se combinan ejercicios compuestos y de aislamiento para un desarrollo equilibrado.\n\n• Pierna - Cuádriceps, Femorales, Glúteos y Gemelos: Sesión centrada en cuádriceps, femorales, glúteos y gemelos. Se utilizan ejercicios multiarticulares y accesorios para estimular la fuerza y el crecimiento muscular de las piernas.\n\nDiseñada para atletas avanzados que buscan el máximo rendimiento y desarrollo muscular.",
         "equipmentCategory": "commercialGym",
@@ -1235,7 +1235,7 @@
     },
     {
         "name": "Upper Lower de Fuerza",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/upper_lower_de_fuerza.webp",
+        "thumbnailURL": "assets/images/plans/upper_lower_de_fuerza.webp",
         "durationPerSession": 90,
         "description": "Rutina de 4 días por semana, para gym comercial con acceso completo a máquinas, barras, poleas y mancuernas. Cada sesión dura aproximadamente 90 minutos. El objetivo es ganar masa muscular y volumen mediante entrenamiento de alta intensidad.\n\n\nEstructura semanal:\n\n• Tren Superior - Pecho, Espalda y Brazos: Sesión enfocada en el trabajo completo del tren superior, combinando presses, jalones y ejercicios de aislamiento para pectorales, espalda, hombros y brazos.\n\n• Tren Inferior - Piernas y Glúteos: Entrenamiento integral de tren inferior, con énfasis en cuádriceps, femorales y glúteos mediante ejercicios compuestos y de aislamiento.\n\n• Tren Superior - Pecho, Espalda y Brazos: Día orientado al desarrollo de fuerza y volumen en el tren superior, alternando movimientos multiarticulares y accesorios para equilibrio muscular.\n\n• Tren Inferior - Piernas y Glúteos: Sesión centrada en el tren inferior, priorizando la técnica y el control en ejercicios para piernas y glúteos, con variedad de estímulos.\n\nPensada para intermedios que quieren progresar y mejorar su composición corporal.",
         "equipmentCategory": "commercialGym",
@@ -1497,7 +1497,7 @@
     },
     {
         "name": "Full Body en el Gym",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/full_body_en_el_gym.webp",
+        "thumbnailURL": "assets/images/plans/full_body_en_el_gym.webp",
         "durationPerSession": 90,
         "description": "Rutina de 3 días por semana, para gym comercial con acceso completo a máquinas, barras, poleas y mancuernas. Cada sesión dura aproximadamente 90 minutos. El objetivo es lograr un físico estético, proporcionado y simétrico.\n\n\nEstructura semanal:\n\n• Full Body - Sentadilla y Empuje: Entrenamiento global con énfasis en sentadillas y empujes, combinando ejercicios multiarticulares y accesorios para fuerza y volumen general.\n\n• Empuje y Tracción - Tren Superior: Sesión enfocada en el tren superior, alternando presses, jalones y aislamientos para pectorales, espalda, hombros y brazos.\n\n• Piernas y Core - Tren Inferior: Trabajo principal de tren inferior con ejercicios compuestos y de aislamiento para cuádriceps, femorales y glúteos, más accesorios de abdomen y hombros.\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "commercialGym",
@@ -1704,7 +1704,7 @@
     },
     {
         "name": "Híbrido de Hipertrofia",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/hibrido_de_hipertrofia.webp",
+        "thumbnailURL": "assets/images/plans/hibrido_de_hipertrofia.webp",
         "durationPerSession": 90,
         "description": "Rutina de 5 días por semana, para gym comercial con acceso completo a máquinas, barras, poleas y mancuernas. Cada sesión dura aproximadamente 90 minutos. El objetivo es ganar masa muscular y volumen mediante entrenamiento de alta intensidad.\n\n\nEstructura semanal:\n\n• Tren Superior - Full Upper: Día de tren superior, enfoque equilibrado en fuerza y volumen. Prioriza pecho y hombros al inicio para darles máxima frescura.\n\n• Tren Inferior - Full Legs: Énfasis en volumen y técnica de piernas. Alternando ejercicios compuestos y de aislamiento para trabajo completo de tren inferior.\n\n• Tracción - Espalda y Bíceps: Sesión pull pura con foco en dorsales, deltoides posteriores y bíceps. Ejercicios estratégicos para densidad y amplitud dorsal.\n\n• Empuje - Pecho, Hombros y Tríceps: Empuje puro: énfasis en pecho y hombros por prioridad y selección de ejercicios. Incluye una superserie para fatiga máxima del deltoides medio/posterior.\n\n• Piernas - Hipertrofia Final: Piernas y glúteos, priorizando movimiento seguro y rangos completos. Sesión ideal para cerrar la semana fuerte.\n\nDiseñada para atletas avanzados que buscan el máximo rendimiento y desarrollo muscular.",
         "equipmentCategory": "commercialGym",
@@ -2013,7 +2013,7 @@
     },
     {
         "name": "Fuerza con Equipo Básico",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/fuerza_con_equipo_basico.webp",
+        "thumbnailURL": "assets/images/plans/fuerza_con_equipo_basico.webp",
         "durationPerSession": 90,
         "description": "Rutina de 5 días por semana, diseñada para un gym pequeño o de edificio con mancuernas, barra y equipo básico. Cada sesión dura aproximadamente 90 minutos. El objetivo es ganar fuerza y desarrollar músculo de forma progresiva.\n\n\nEstructura semanal:\n\n• Tren Superior - Empuje y Deltoides Laterales: Sesión enfocada en el desarrollo del tren superior, comenzando con deltoides laterales para máxima activación y seguido de ejercicios de empuje, tirón y brazos para un estímulo completo de hombros, pecho, espalda y brazos.\n\n• Tren Inferior Completo: Entrenamiento integral de piernas, priorizando cuádriceps, glúteos e isquiotibiales. Incluye movimientos compuestos y accesorios para estimular fuerza, volumen y simetría en todo el tren inferior.\n\n• Tren Superior - Tracción y Deltoides Posteriores: Sesión centrada en ejercicios de tracción para espalda y bíceps, con énfasis especial en el trabajo de deltoides posteriores y la mejora de la postura y la amplitud dorsal.\n\n• Empujes - Pecho y Hombro Estético: Entrenamiento de empuje enfocado en el desarrollo del pectoral y los hombros, combinando presses, aperturas y trabajo específico para deltoides laterales y tríceps, para lograr un aspecto superior estético y proporcionado.\n\n• Piernas - Volumen Total: Sesión de piernas orientada al volumen y la variedad, trabajando cuádriceps, glúteos, isquiotibiales y gemelos con ejercicios multiarticulares y de aislamiento para una musculatura inferior completa y equilibrada.\n\nPensada para intermedios que quieren progresar y mejorar su composición corporal.",
         "equipmentCategory": "smallGym",
@@ -2290,7 +2290,7 @@
     },
     {
         "name": "Estética en Gym Pequeño",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/estetica_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/estetica_en_gym_pequeno.webp",
         "durationPerSession": 90,
         "description": "Rutina de 4 días por semana, diseñada para un gym pequeño o de edificio con mancuernas, barra y equipo básico. Cada sesión dura aproximadamente 90 minutos. El objetivo es lograr un físico estético, proporcionado y simétrico.\n\n\nEstructura semanal:\n\n• Tren Superior - Enfoque en Pectoral: Sesión para maximizar desarrollo de pectorales y, en menor medida, hombros y espalda. El estímulo comenzará por los movimientos de empuje.\n\n• Tren Inferior - Volumen y Potencia: Enfoque integral en la pierna, trabajando cuádriceps, femorales y glúteos seguido por gemelos para balance musculo-tendinoso.\n\n• Tren Superior Completo - Empuje, Tirón y Brazos: Re-puntualiza el estímulo en pecho, sumando trabajo detallado para hombro posterior, bíceps y tríceps.\n\n• Tren Inferior - Volumen y Detalle Final: Reforzamos el volumen y variedad en las piernas y cerramos la semana con trabajo directo de core.\n\nPensada para intermedios que quieren progresar y mejorar su composición corporal.",
         "equipmentCategory": "smallGym",
@@ -2536,7 +2536,7 @@
     },
     {
         "name": "Full Body en Gym Pequeño",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/full_body_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/full_body_en_gym_pequeno.webp",
         "durationPerSession": 90,
         "description": "Rutina de 3 días por semana, diseñada para un gym pequeño o de edificio con mancuernas, barra y equipo básico. Cada sesión dura aproximadamente 90 minutos. El objetivo es ganar fuerza y desarrollar músculo de forma progresiva.\n\n\nEstructura semanal:\n\n• Full Body 1 - Eficiencia Funcional: Sesión integral enfocada en activar eficazmente todo el cuerpo mediante movimientos funcionales y aislados, adecuada para maximizar la eficiencia en un entorno pequeño.\n\n• Full Body 2 - Potenciación Global: Sesión de cuerpo completo con énfasis en cadenas posteriores y región superior, optimizando tiempo y recursos.\n\n• Full Body 3 - Densidad Atlética: Activa todas las cadenas musculares con una alta densidad de trabajo, excelente para cerrar la semana con estímulo y calidad global.\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "smallGym",
@@ -2743,7 +2743,7 @@
     },
     {
         "name": "Push Pull Legs de Volumen",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/push_pull_legs_de_volumen.webp",
+        "thumbnailURL": "assets/images/plans/push_pull_legs_de_volumen.webp",
         "durationPerSession": 90,
         "description": "Rutina de 6 días por semana, para gym comercial con acceso completo a máquinas, barras, poleas y mancuernas. Cada sesión dura aproximadamente 90 minutos. El objetivo es ganar masa muscular y volumen mediante entrenamiento de alta intensidad.\n\n\nEstructura semanal:\n\n• Push A: Empuje con Énfasis en Hombro Lateral: Empuje puro: prioridad absoluta en el desarrollo del hombro lateral, seguido del pectoral superior y el tríceps. Alta densidad y volumen controlado.\n\n• Pull A: Tracción con Énfasis en Espalda y Posterior de Hombro: Tracción de tren superior: Espalda completa y bíceps, con buen volumen horizontal y vertical. Facepull para salud articular y hombro posterior.\n\n• Legs A: Piernas y Glúteos: Piernas completas: combinando fuerza funcional y aislamiento estratégico. Core estable durante todo el bloque, foco en glúteo y femoral.\n\n• Push B: Empuje con Enfoque en Pectoral: Segundo bloque empuje, menor plano inclinado y mayor pectoral medio-inferior. Volvemos a priorizar hombro lateral y ejecutar ejercicios clásicos con control.\n\n• Pull B: Tracción Alternativa con Enfoque Posterior: Tracción alternativo: Remo horizontal y vertical, énfasis en deltoide posterior y bíceps. Integrando ángulos distintos a la sesión del martes.\n\n• Legs B: Piernas Dominante en Glúteo y Unilaterales: Piernas alternativa: Trabajo de cuadriceps y glúteo con variantes, énfasis en unilateralidad y estímulo completo. Volumen exigente y gestión eficiente del tiempo.\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "commercialGym",
@@ -3059,7 +3059,7 @@
     },
     {
         "name": "Hipertrofia con Calistenia",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/hipertrofia_con_calistenia.webp",
+        "thumbnailURL": "assets/images/plans/hipertrofia_con_calistenia.webp",
         "durationPerSession": 60,
         "description": "Rutina de 5 días por semana, basada en calistenia con barras de dominadas, paralelas y tu propio peso. Cada sesión dura aproximadamente 60 minutos. El objetivo es maximizar tu desarrollo muscular con técnicas avanzadas de entrenamiento.\n\n\nEstructura semanal:\n\n• Push - Pectorales, Hombros y Triceps: Enfasis en empujes del tren superior, especialmente pectorales, hombros y tríceps. El objetivo es acumular volumen y estrés metabólico, compensando la falta de lastre con variantes avanzadas y superseries.\n\n• Pull - Espalda y Bíceps: Tirón para dorsales, bíceps y parte posterior del tronco. Alta frecuencia a tirón vertical y horizontal, con integración de supersets para provocar fatiga adicional y estimular fibras de contracción rápida.\n\n• Piernas y Core: Día completo de tren inferior con enfoque en cuádriceps, glúteos e isquiosurales, maximizando el trabajo unilateral y la tensión continua.\n\n• Push Avanzado - Pectoral Superior y Hombro: Día adicional de empuje, enfatizando el pectoral superior, tríceps y deltoides, aumentamos intensidad con movimientos explosivos y métodos avanzados.\n\n• Pull Avanzado - Espalda, Bíceps y Core: Otra jornada de tracción para estimular máximo crecimiento en espalda, bíceps y core usando variantes y métodos metabólicos. Se repite patrón de superset para fatigar fibras en profundidad.\n\nDiseñada para atletas avanzados que buscan el máximo rendimiento y desarrollo muscular.",
         "equipmentCategory": "calisthenics",
@@ -3320,7 +3320,7 @@
     },
     {
         "name": "Calistenia Extrema",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_extrema.webp",
+        "thumbnailURL": "assets/images/plans/calistenia_extrema.webp",
         "durationPerSession": 60,
         "description": "Rutina de 6 días por semana, basada en calistenia con barras de dominadas, paralelas y tu propio peso. Cada sesión dura aproximadamente 60 minutos. El objetivo es llevar tu rendimiento al límite con progresiones avanzadas y máxima intensidad.\n\n\nEstructura semanal:\n\n• Tren Superior - Empuje y Tracción: Primer estímulo semanal muy completo al tren superior y core con variantes básicas y avanzadas de calistenia.\n\n• Tren Inferior - Calistenia Explosiva: Primero de dos estímulos semanales específicos para pierna y glúteos con integración de core.\n\n• Cuerpo Completo + Brazos: Sesión híbrida con movimientos de cuerpo completo y énfasis en core y brazos.\n\n• Tren Superior - Enfoque Dorsal y Core: Segundo énfasis semanal en empujes, dorsal y deltoides; trabajo intenso de core.\n\n• Pierna y Core - Hipertrofia Total: Segundo estímulo para pierna y glúteos, asegurando alta frecuencia para hipertrofia.\n\n• Full Body - Calistenia Avanzada: Sábado avanzado: variantes difíciles de empuje, tracción y core para progresión continua y muscular.\n\nDiseñada para atletas avanzados que buscan el máximo rendimiento y desarrollo muscular.",
         "equipmentCategory": "calisthenics",
@@ -3628,7 +3628,7 @@
     },
     {
         "name": "Control Corporal Calisténico",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/control_corporal_calistenico.webp",
+        "thumbnailURL": "assets/images/plans/control_corporal_calistenico.webp",
         "durationPerSession": 60,
         "description": "Rutina de 4 días por semana, basada en calistenia con barras de dominadas, paralelas y tu propio peso. Cada sesión dura aproximadamente 60 minutos. El objetivo es desarrollar fuerza equilibrada en todo el cuerpo con una base sólida de movimientos.\n\n\nEstructura semanal:\n\n• Cuerpo Superior - Dorsales, Pecho y Core: Día orientado a trabajar la fuerza relativa y la hipertrofia del torso (espalda, pecho, hombros, tríceps y core). Compensación entre tracción y empuje para maximizar estética y desarrollo funcional.\n\n• Cuerpo Inferior y Core - Calistenia Funcional: Sesión dedicada al tren inferior con énfasis en glúteos, cuádriceps, y core estabilizador. Se prioriza el control del movimiento y la simetría bilateral.\n\n• Tracción y Empuje Vertical - Espalda, Hombros y Abdominales: Enfoque en tracción, empujes verticales, trabajo de hombro y core. Uso de variantes avanzadas para estimular deltoides y espalda.\n\n• Piernas y Core - Fuerza Unilateral y Control: Trabajo del tren inferior con énfasis en fuerza unilateral, glúteo, core y gemelos. Busca tanto la simetría como la congestión muscular.\n\nPensada para intermedios que quieren progresar y mejorar su composición corporal.",
         "equipmentCategory": "calisthenics",
@@ -3826,7 +3826,7 @@
     },
     {
         "name": "Trilogía Calisténica",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/trilogia_calistenica.webp",
+        "thumbnailURL": "assets/images/plans/trilogia_calistenica.webp",
         "durationPerSession": 55,
         "description": "Rutina de 3 días por semana, basada en calistenia con barras de dominadas, paralelas y tu propio peso. Cada sesión dura aproximadamente 55 minutos. El objetivo es ganar masa muscular y volumen mediante entrenamiento de alta intensidad.\n\n\nEstructura semanal:\n\n• Push & Core: Fondos, flexiones y abdominales\n\n• Pull & Core: Dominadas, remo y abdominales\n\n• Legs & Core: Pierna completa y core\n\nPensada para intermedios que quieren progresar y mejorar su composición corporal.",
         "equipmentCategory": "calisthenics",
@@ -3977,7 +3977,7 @@
     },
     {
         "name": "Clasico y Estético",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/clasico_y_estetico.webp",
+        "thumbnailURL": "assets/images/plans/clasico_y_estetico.webp",
         "durationPerSession": 60,
         "description": "Rutina de 5 días por semana, para gym comercial con acceso completo a máquinas, barras, poleas y mancuernas. Cada sesión dura aproximadamente 60 minutos. El objetivo es lograr un físico estético, proporcionado y simétrico.\n\n\nEstructura semanal:\n\n• Tren Superior - Empuje y Deltoides Laterales: Sesión enfocada en el desarrollo del tren superior, comenzando con deltoides laterales para máxima activación y seguido de ejercicios de empuje, tirón y brazos para un estímulo completo de hombros, pecho, espalda y brazos.\n\n• Tren Inferior Completo: Entrenamiento integral de piernas, priorizando cuádriceps, glúteos e isquiotibiales. Incluye movimientos compuestos y accesorios para estimular fuerza, volumen y simetría en todo el tren inferior.\n\n• Tren Superior - Tracción y Deltoides Posteriores: Sesión centrada en ejercicios de tracción para espalda y bíceps, con énfasis especial en el trabajo de deltoides posteriores y la mejora de la postura y la amplitud dorsal.\n\n• Empujes - Pecho y Hombro Estético: Entrenamiento de empuje enfocado en el desarrollo del pectoral y los hombros, combinando presses, aperturas y trabajo específico para deltoides laterales y tríceps, para lograr un aspecto superior estético y proporcionado.\n\n• Piernas - Volumen Total: Sesión de piernas orientada al volumen y la variedad, trabajando cuádriceps, glúteos, isquiotibiales y gemelos con ejercicios multiarticulares y de aislamiento para una musculatura inferior completa y equilibrada.\n\nPensada para intermedios que quieren progresar y mejorar su composición corporal.",
         "equipmentCategory": "commercialGym",
@@ -4254,7 +4254,7 @@
     },
     {
         "name": "Definición en Gym Pequeño",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/definicion_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/definicion_en_gym_pequeno.webp",
         "durationPerSession": 60,
         "description": "Rutina de 4 días por semana, diseñada para un gym pequeño o de edificio con mancuernas, barra y equipo básico. Cada sesión dura aproximadamente 60 minutos. El objetivo es quemar grasa y definir la musculatura manteniendo la masa muscular.\n\n\nEstructura semanal:\n\n• Tren Superior - Enfoque en Pectoral: Sesión para maximizar desarrollo de pectorales y, en menor medida, hombros y espalda. El estímulo comenzará por los movimientos de empuje.\n\n• Tren Inferior - Volumen y Potencia: Enfoque integral en la pierna, trabajando cuádriceps, femorales y glúteos seguido por gemelos para balance musculo-tendinoso.\n\n• Tren Superior Completo - Empuje, Tirón y Brazos: Re-puntualiza el estímulo en pecho, sumando trabajo detallado para hombro posterior, bíceps y tríceps.\n\n• Tren Inferior - Volumen y Detalle Final: Reforzamos el volumen y variedad en las piernas y cerramos la semana con trabajo directo de core.\n\nPensada para intermedios que quieren progresar y mejorar su composición corporal.",
         "equipmentCategory": "smallGym",
@@ -4500,7 +4500,7 @@
     },
     {
         "name": "Empieza en Gym Pequeño",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/empieza_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/empieza_en_gym_pequeno.webp",
         "durationPerSession": 60,
         "description": "Rutina de 3 días por semana, diseñada para un gym pequeño o de edificio con mancuernas, barra y equipo básico. Cada sesión dura aproximadamente 60 minutos. El objetivo es aprender los movimientos fundamentales, ganar confianza y crear el hábito de entrenar.\n\n\nEstructura semanal:\n\n• Full Body 1 - Eficiencia Funcional: Sesión integral enfocada en activar eficazmente todo el cuerpo mediante movimientos funcionales y aislados, adecuada para maximizar la eficiencia en un entorno pequeño.\n\n• Full Body 2 - Potenciación Global: Sesión de cuerpo completo con énfasis en cadenas posteriores y región superior, optimizando tiempo y recursos.\n\n• Full Body 3 - Densidad Atlética: Activa todas las cadenas musculares con una alta densidad de trabajo, excelente para cerrar la semana con estímulo y calidad global.\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "smallGym",
@@ -4707,7 +4707,7 @@
     },
     {
         "name": "Push Pull Legs en Gym Pequeño",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/push_pull_legs_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/push_pull_legs_en_gym_pequeno.webp",
         "durationPerSession": 60,
         "description": "Rutina de 6 días por semana, diseñada para un gym pequeño o de edificio con mancuernas, barra y equipo básico. Cada sesión dura aproximadamente 60 minutos. El objetivo es ganar masa muscular y volumen mediante entrenamiento de alta intensidad.\n\n\nEstructura semanal:\n\n• Push A: Empuje con Énfasis en Hombro Lateral: Empuje puro: prioridad absoluta en el desarrollo del hombro lateral, seguido del pectoral superior y el tríceps. Alta densidad y volumen controlado.\n\n• Pull A: Tracción con Énfasis en Espalda y Posterior de Hombro: Tracción de tren superior: Espalda completa y bíceps, con buen volumen horizontal y vertical. Facepull para salud articular y hombro posterior.\n\n• Legs A: Piernas y Glúteos: Piernas completas: combinando fuerza funcional y aislamiento estratégico. Core estable durante todo el bloque, foco en glúteo y femoral.\n\n• Push B: Empuje con Enfoque en Pectoral: Segundo bloque empuje, menor plano inclinado y mayor pectoral medio-inferior. Volvemos a priorizar hombro lateral y ejecutar ejercicios clásicos con control.\n\n• Pull B: Tracción Alternativa con Enfoque Posterior: Tracción alternativo: Remo horizontal y vertical, énfasis en deltoide posterior y bíceps. Integrando ángulos distintos a la sesión del martes.\n\n• Legs B: Piernas Dominante en Glúteo y Unilaterales: Piernas alternativa: Trabajo de cuadriceps y glúteo con variantes, énfasis en unilateralidad y estímulo completo. Volumen exigente y gestión eficiente del tiempo.\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "smallGym",
@@ -5023,7 +5023,7 @@
     },
     {
         "name": "Culturismo Clásico",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/culturismo_clasico.webp",
+        "thumbnailURL": "assets/images/plans/culturismo_clasico.webp",
         "durationPerSession": 60,
         "description": "Rutina de 6 días por semana, para gym comercial con acceso completo a máquinas, barras, poleas y mancuernas. Cada sesión dura aproximadamente 60 minutos. El objetivo es lograr un físico estético, proporcionado y simétrico.\n\n\nEstructura semanal:\n\n• Pull - Espalda y Bíceps: Enfocado en ejercicios de tirón para espalda y bíceps. Trabajamos remos, jalones y curls para desarrollar fuerza y volumen en la parte superior posterior.\n\n• Push - Pecho, Hombro y Tríceps: Sesión de empuje centrada en pecho, hombros y tríceps. Incluye presses, aperturas y trabajo de hombro para estimular el tren superior anterior.\n\n• Piernas - Cuádriceps y Glúteos: Día completo de pierna. Se trabajan cuádriceps, femorales, glúteos y gemelos con ejercicios compuestos y de aislamiento.\n\n• Pull - Espalda y Bíceps: Enfocado en ejercicios de tirón para espalda y bíceps. Variación de remos, dominadas y curls para estimular la parte posterior del tren superior.\n\n• Push - Pecho, Hombro y Tríceps: Sesión de empuje variada para pecho, hombros y tríceps. Se incluyen presses, aperturas y trabajo unilateral para un desarrollo equilibrado.\n\n• Piernas - Cuádriceps y Glúteos: Día de pierna enfocado en fuerza y técnica. Se trabajan todos los músculos del tren inferior con énfasis en profundidad y control.\n\nDiseñada para atletas avanzados que buscan el máximo rendimiento y desarrollo muscular.",
         "equipmentCategory": "commercialGym",
@@ -5403,7 +5403,7 @@
     },
     {
         "name": "Upper Lower Estético",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/upper_lower_estetico.webp",
+        "thumbnailURL": "assets/images/plans/upper_lower_estetico.webp",
         "durationPerSession": 60,
         "description": "Rutina de 4 días por semana, para gym comercial con acceso completo a máquinas, barras, poleas y mancuernas. Cada sesión dura aproximadamente 60 minutos. El objetivo es lograr un físico estético, proporcionado y simétrico.\n\n\nEstructura semanal:\n\n• Tren Superior - Pecho, Espalda y Brazos: Sesión técnica para el desarrollo completo del tren superior, combinando presses, jalones y ejercicios de aislamiento para pectorales, espalda, hombros y brazos.\n\n• Tren Inferior - Piernas y Glúteos: Entrenamiento integral de tren inferior, con énfasis en cuádriceps, femorales y glúteos mediante ejercicios compuestos y de aislamiento.\n\n• Tren Superior - Pecho, Espalda y Brazos: Día orientado al desarrollo de fuerza y volumen en el tren superior, alternando movimientos multiarticulares y accesorios para equilibrio muscular.\n\n• Tren Inferior - Piernas y Glúteos: Sesión centrada en el tren inferior, priorizando la técnica y el control en ejercicios para piernas y glúteos, con variedad de estímulos.\n\nPensada para intermedios que quieren progresar y mejorar su composición corporal.",
         "equipmentCategory": "commercialGym",
@@ -5665,7 +5665,7 @@
     },
     {
         "name": "Full Body para Empezar en el Gym",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/full_body_para_empezar_en_el_gym.webp",
+        "thumbnailURL": "assets/images/plans/full_body_para_empezar_en_el_gym.webp",
         "durationPerSession": 60,
         "description": "Rutina de 3 días por semana, para gym comercial con acceso completo a máquinas, barras, poleas y mancuernas. Cada sesión dura aproximadamente 60 minutos. El objetivo es ganar fuerza y desarrollar músculo de forma progresiva.\n\n\nEstructura semanal:\n\n• Empuje - Piernas, Pecho y Hombros: Enfocado en ejercicios de empuje y piernas. Trabajamos sentadillas, pecho y hombros para estimular fuerza y masa muscular en todo el cuerpo.\n\n• Tirón - Espalda y Brazos: Día de tirón y brazos. Se priorizan movimientos para espalda, bíceps y deltoides posteriores, mejorando fuerza y volumen en la parte superior.\n\n• Piernas y Core: Sesión centrada en piernas y core. Incluye ejercicios para cuádriceps, femorales, glúteos y abdominales para un desarrollo completo del tren inferior.\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "commercialGym",
@@ -5880,7 +5880,7 @@
     },
     {
         "name": "Híbrido de Fuerza y Volumen",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/hibrido_de_fuerza_y_volumen.webp",
+        "thumbnailURL": "assets/images/plans/hibrido_de_fuerza_y_volumen.webp",
         "durationPerSession": 60,
         "description": "Rutina de 5 días por semana, para gym comercial con acceso completo a máquinas, barras, poleas y mancuernas. Cada sesión dura aproximadamente 60 minutos. El objetivo es ganar masa muscular y volumen mediante entrenamiento de alta intensidad.\n\n\nEstructura semanal:\n\n• Tren Superior - Full Upper: Día de tren superior, enfoque equilibrado en fuerza y volumen. Prioriza pecho y hombros al inicio para darles máxima frescura.\n\n• Tren Inferior - Full Legs: Énfasis en volumen y técnica de piernas. Alternando ejercicios compuestos y de aislamiento para trabajo completo de tren inferior.\n\n• Tracción - Espalda y Bíceps: Sesión pull pura con foco en dorsales, deltoides posteriores y bíceps. Ejercicios estratégicos para densidad y amplitud dorsal.\n\n• Empuje - Pecho, Hombros y Tríceps: Empuje puro: énfasis en pecho y hombros por prioridad y selección de ejercicios. Incluye una superserie para fatiga máxima del deltoides medio/posterior.\n\n• Piernas - Hipertrofia Final: Piernas y glúteos, priorizando movimiento seguro y rangos completos. Sesión ideal para cerrar la semana fuerte.\n\nPensada para intermedios que quieren progresar y mejorar su composición corporal.",
         "equipmentCategory": "commercialGym",
@@ -6189,7 +6189,7 @@
     },
     {
         "name": "Primeros Pasos en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/primeros_pasos_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/primeros_pasos_en_casa.webp",
         "durationPerSession": 21,
         "description": "Rutina de 2 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 21 minutos. El objetivo es aprender los movimientos fundamentales, ganar confianza y crear el hábito de entrenar.\n\n\nEstructura semanal:\n\n• Full Body A: Push, lower, core\n\n• Full Body B: Push, lower, core\n\nPerfecta para quienes nunca han entrenado y quieren dar el primer paso con seguridad y confianza.",
         "equipmentCategory": "noEquipment",
@@ -6277,7 +6277,7 @@
     },
     {
         "name": "Tu Primera Rutina",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tu_primera_rutina.webp",
+        "thumbnailURL": "assets/images/plans/tu_primera_rutina.webp",
         "durationPerSession": 21,
         "description": "Rutina de 3 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 21 minutos. El objetivo es aprender los movimientos fundamentales, ganar confianza y crear el hábito de entrenar.\n\n\nEstructura semanal:\n\n• Full Body A (Push + Lower): Push y tren inferior\n\n• Full Body B (Pull + Lower): Pull y tren inferior\n\n• Full Body C (Mix): Mezcla de empuje, pierna y core\n\nPerfecta para quienes nunca han entrenado y quieren dar el primer paso con seguridad y confianza.",
         "equipmentCategory": "noEquipment",
@@ -6404,7 +6404,7 @@
     },
     {
         "name": "Hábito de Entrenar en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/habito_de_entrenar_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/habito_de_entrenar_en_casa.webp",
         "durationPerSession": 21,
         "description": "Rutina de 4 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 21 minutos. El objetivo es aprender los movimientos fundamentales, ganar confianza y crear el hábito de entrenar.\n\n\nEstructura semanal:\n\n• Upper A: Empuje, pull y core\n\n• Lower A: Sentadilla, glúteos, pantorrillas\n\n• Upper B: Empuje, pull y core\n\n• Lower B: Sentadilla, glúteos, pantorrillas\n\nPerfecta para quienes nunca han entrenado y quieren dar el primer paso con seguridad y confianza.",
         "equipmentCategory": "noEquipment",
@@ -6570,7 +6570,7 @@
     },
     {
         "name": "Movimiento Diario",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/movimiento_diario.webp",
+        "thumbnailURL": "assets/images/plans/movimiento_diario.webp",
         "durationPerSession": 17,
         "description": "Rutina de 5 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 17 minutos. El objetivo es mantenerte activo todos los días con sesiones cortas que mejoran tu movilidad y condición física general.\n\n\nEstructura semanal:\n\n• Push: Empuje y core\n\n• Lower A: Sentadilla y glúteos\n\n• Pull + Core: Pull y abdominales\n\n• Lower B: Pierna y glúteos variante\n\n• Mix: Full body ligero\n\nPerfecta para quienes nunca han entrenado y quieren dar el primer paso con seguridad y confianza.",
         "equipmentCategory": "noEquipment",
@@ -6735,7 +6735,7 @@
     },
     {
         "name": "Fuerza Básica en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/fuerza_basica_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/fuerza_basica_en_casa.webp",
         "durationPerSession": 50,
         "description": "Rutina de 2 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 50 minutos. El objetivo es ganar fuerza y desarrollar músculo de forma progresiva.\n\n\nEstructura semanal:\n\n• Full Body A: Empuje, pierna y core\n\n• Full Body B: Empuje, pierna y core\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "noEquipment",
@@ -6839,7 +6839,7 @@
     },
     {
         "name": "Músculo en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/musculo_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/musculo_en_casa.webp",
         "durationPerSession": 50,
         "description": "Rutina de 5 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 50 minutos. El objetivo es ganar masa muscular y volumen mediante entrenamiento de alta intensidad.\n\n\nEstructura semanal:\n\n• Push: Pecho, hombros y core\n\n• Lower A: Pierna y glúteos\n\n• Pull & Core: Espalda y abdominales\n\n• Lower B: Pierna y glúteos variante\n\n• Full Body: Sesión de cuerpo completo\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "noEquipment",
@@ -7084,7 +7084,7 @@
     },
     {
         "name": "Transformación Total en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/transformacion_total_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/transformacion_total_en_casa.webp",
         "durationPerSession": 45,
         "description": "Rutina de 6 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 45 minutos. El objetivo es un desarrollo muscular completo trabajando todos los grupos musculares de forma equilibrada.\n\n\nEstructura semanal:\n\n• Push A: Pecho, hombros y core\n\n• Pull A: Espalda y core\n\n• Legs A: Pierna y glúteos\n\n• Push B: Pecho, hombros y core variante\n\n• Pull B: Espalda y core variante\n\n• Legs B: Pierna y glúteos variante\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "noEquipment",
@@ -7360,7 +7360,7 @@
     },
     {
         "name": "Intensidad Concentrada en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/intensidad_concentrada_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/intensidad_concentrada_en_casa.webp",
         "durationPerSession": 60,
         "description": "Rutina de 2 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 60 minutos. El objetivo es ganar fuerza y desarrollar músculo de forma progresiva.\n\n\nEstructura semanal:\n\n• Full Body A: Push, lower y core\n\n• Full Body B: Push, lower y core variante\n\nPensada para intermedios que quieren progresar y mejorar su composición corporal.",
         "equipmentCategory": "noEquipment",
@@ -7480,7 +7480,7 @@
     },
     {
         "name": "Definición en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/definicion_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/definicion_en_casa.webp",
         "durationPerSession": 60,
         "description": "Rutina de 3 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 60 minutos. El objetivo es quemar grasa y definir la musculatura manteniendo la masa muscular.\n\n\nEstructura semanal:\n\n• Push & Core: Pecho, hombros y abdominales\n\n• Pull & Core: Espalda y abdominales\n\n• Legs & Core: Pierna y abdominales\n\nPensada para intermedios que quieren progresar y mejorar su composición corporal.",
         "equipmentCategory": "noEquipment",
@@ -7647,7 +7647,7 @@
     },
     {
         "name": "Equilibrio de Fuerza en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/equilibrio_de_fuerza_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/equilibrio_de_fuerza_en_casa.webp",
         "durationPerSession": 60,
         "description": "Rutina de 4 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 60 minutos. El objetivo es ganar fuerza y desarrollar músculo de forma progresiva.\n\n\nEstructura semanal:\n\n• Upper A: Empuje, pull y core\n\n• Lower A: Pierna y glúteos\n\n• Upper B: Empuje, pull y core variante\n\n• Lower B: Pierna y glúteos variante\n\nPensada para intermedios que quieren progresar y mejorar su composición corporal.",
         "equipmentCategory": "noEquipment",
@@ -7877,7 +7877,7 @@
     },
     {
         "name": "Potencia Concentrada en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/potencia_concentrada_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/potencia_concentrada_en_casa.webp",
         "durationPerSession": 75,
         "description": "Rutina de 2 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 75 minutos. El objetivo es desarrollar fuerza explosiva y potencia con ejercicios de alta intensidad.\n\n\nEstructura semanal:\n\n• Full Body A: Push, pull, lower y core\n\n• Full Body B: Push, pull, lower y core variante\n\nDiseñada para atletas avanzados que buscan el máximo rendimiento y desarrollo muscular.",
         "equipmentCategory": "noEquipment",
@@ -8013,7 +8013,7 @@
     },
     {
         "name": "Triple Impacto en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/triple_impacto_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/triple_impacto_en_casa.webp",
         "durationPerSession": 70,
         "description": "Rutina de 3 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 70 minutos. El objetivo es desarrollar potencia y fuerza funcional con ejercicios de alto rendimiento.\n\n\nEstructura semanal:\n\n• Push: Pecho, hombros y core\n\n• Pull & Core: Espalda y abdominales\n\n• Legs: Pierna completa\n\nDiseñada para atletas avanzados que buscan el máximo rendimiento y desarrollo muscular.",
         "equipmentCategory": "noEquipment",
@@ -8180,7 +8180,7 @@
     },
     {
         "name": "Fuerza y Estética en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/fuerza_y_estetica_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/fuerza_y_estetica_en_casa.webp",
         "durationPerSession": 65,
         "description": "Rutina de 4 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 65 minutos. El objetivo es lograr un físico estético, proporcionado y simétrico.\n\n\nEstructura semanal:\n\n• Upper A: Push, pull y core\n\n• Lower A: Pierna y glúteos\n\n• Upper B: Push, pull y core variante\n\n• Lower B: Pierna y glúteos variante\n\nDiseñada para atletas avanzados que buscan el máximo rendimiento y desarrollo muscular.",
         "equipmentCategory": "noEquipment",
@@ -8410,7 +8410,7 @@
     },
     {
         "name": "Rendimiento Total en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/rendimiento_total_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/rendimiento_total_en_casa.webp",
         "durationPerSession": 60,
         "description": "Rutina de 5 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 60 minutos. El objetivo es aumentar la resistencia muscular y la capacidad de trabajo con alto volumen.\n\n\nEstructura semanal:\n\n• Push: Pecho, hombros y core\n\n• Pull: Espalda y core\n\n• Legs: Pierna completa\n\n• Upper: Push, pull y core\n\n• Lower: Pierna y glúteos\n\nDiseñada para atletas avanzados que buscan el máximo rendimiento y desarrollo muscular.",
         "equipmentCategory": "noEquipment",
@@ -8687,7 +8687,7 @@
     },
     {
         "name": "Dominación Total en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/dominacion_total_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/dominacion_total_en_casa.webp",
         "durationPerSession": 60,
         "description": "Rutina de 6 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 60 minutos. El objetivo es llevar tu rendimiento al límite con progresiones avanzadas y máxima intensidad.\n\n\nEstructura semanal:\n\n• Push A: Pecho, hombros y core\n\n• Pull A: Espalda y core\n\n• Legs A: Pierna y glúteos\n\n• Push B: Pecho, hombros y core variante\n\n• Pull B: Espalda y core variante\n\n• Legs B: Pierna y glúteos variante\n\nDiseñada para atletas avanzados que buscan el máximo rendimiento y desarrollo muscular.",
         "equipmentCategory": "noEquipment",
@@ -8995,7 +8995,7 @@
     },
     {
         "name": "Tu Primera Dominada",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tu_primera_dominada.webp",
+        "thumbnailURL": "assets/images/plans/tu_primera_dominada.webp",
         "durationPerSession": 40,
         "description": "Rutina de 2 días por semana, basada en calistenia con barras de dominadas, paralelas y tu propio peso. Cada sesión dura aproximadamente 40 minutos. El objetivo es aprender los movimientos fundamentales, ganar confianza y crear el hábito de entrenar.\n\n\nEstructura semanal:\n\n• Full Body A: Pull, push, lower y core\n\n• Full Body B: Pull, push, lower y core\n\nPerfecta para quienes nunca han entrenado y quieren dar el primer paso con seguridad y confianza.",
         "equipmentCategory": "calisthenics",
@@ -9083,7 +9083,7 @@
     },
     {
         "name": "Calistenia Desde Cero",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_desde_cero.webp",
+        "thumbnailURL": "assets/images/plans/calistenia_desde_cero.webp",
         "durationPerSession": 40,
         "description": "Rutina de 3 días por semana, basada en calistenia con barras de dominadas, paralelas y tu propio peso. Cada sesión dura aproximadamente 40 minutos. El objetivo es introducirte al entrenamiento de forma segura y progresiva.\n\n\nEstructura semanal:\n\n• Full Body A: Pull, push, lower y core\n\n• Full Body B: Pull, push, lower y core\n\n• Full Body C: Pull, push, lower y core\n\nPerfecta para quienes nunca han entrenado y quieren dar el primer paso con seguridad y confianza.",
         "equipmentCategory": "calisthenics",
@@ -9210,7 +9210,7 @@
     },
     {
         "name": "Dominadas y Fondos Básicos",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/dominadas_y_fondos_basicos.webp",
+        "thumbnailURL": "assets/images/plans/dominadas_y_fondos_basicos.webp",
         "durationPerSession": 50,
         "description": "Rutina de 2 días por semana, basada en calistenia con barras de dominadas, paralelas y tu propio peso. Cada sesión dura aproximadamente 50 minutos. El objetivo es construir fuerza, mejorar tu técnica y empezar a ver resultados.\n\n\nEstructura semanal:\n\n• Full Body A: Pull, push, lower y core\n\n• Full Body B: Push, pull, lower y core\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "calisthenics",
@@ -9314,7 +9314,7 @@
     },
     {
         "name": "Bases de la Calistenia",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/bases_de_la_calistenia.webp",
+        "thumbnailURL": "assets/images/plans/bases_de_la_calistenia.webp",
         "durationPerSession": 50,
         "description": "Rutina de 3 días por semana, basada en calistenia con barras de dominadas, paralelas y tu propio peso. Cada sesión dura aproximadamente 50 minutos. El objetivo es ganar fuerza y desarrollar músculo de forma progresiva.\n\n\nEstructura semanal:\n\n• Full Body A: Pull, push, lower y core\n\n• Full Body B: Push, pull, lower y core\n\n• Full Body C: Pull, push, lower y core\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "calisthenics",
@@ -9465,7 +9465,7 @@
     },
     {
         "name": "Progresión Calisténica",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/progresion_calistenica.webp",
+        "thumbnailURL": "assets/images/plans/progresion_calistenica.webp",
         "durationPerSession": 50,
         "description": "Rutina de 4 días por semana, basada en calistenia con barras de dominadas, paralelas y tu propio peso. Cada sesión dura aproximadamente 50 minutos. El objetivo es construir fuerza, mejorar tu técnica y empezar a ver resultados.\n\n\nEstructura semanal:\n\n• Upper A: Pull, push y core\n\n• Lower A: Pierna y glúteos\n\n• Upper B: Pull, push y core variante\n\n• Lower B: Pierna y glúteos variante\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "calisthenics",
@@ -9663,7 +9663,7 @@
     },
     {
         "name": "Desarrollo Calisténico",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/desarrollo_calistenico.webp",
+        "thumbnailURL": "assets/images/plans/desarrollo_calistenico.webp",
         "durationPerSession": 45,
         "description": "Rutina de 5 días por semana, basada en calistenia con barras de dominadas, paralelas y tu propio peso. Cada sesión dura aproximadamente 45 minutos. El objetivo es ganar fuerza y desarrollar músculo de forma progresiva.\n\n\nEstructura semanal:\n\n• Push: Pecho y core\n\n• Pull: Espalda y core\n\n• Legs: Pierna y glúteos\n\n• Upper: Push, pull y core\n\n• Lower: Pierna y glúteos variante\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "calisthenics",
@@ -9908,7 +9908,7 @@
     },
     {
         "name": "Calistenia de Alta Frecuencia",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_de_alta_frecuencia.webp",
+        "thumbnailURL": "assets/images/plans/calistenia_de_alta_frecuencia.webp",
         "durationPerSession": 45,
         "description": "Rutina de 6 días por semana, basada en calistenia con barras de dominadas, paralelas y tu propio peso. Cada sesión dura aproximadamente 45 minutos. El objetivo es construir fuerza, mejorar tu técnica y empezar a ver resultados.\n\n\nEstructura semanal:\n\n• Push A: Pecho y core\n\n• Pull A: Espalda y core\n\n• Legs A: Pierna y glúteos\n\n• Push B: Pecho y core variante\n\n• Pull B: Espalda y core variante\n\n• Legs B: Pierna y glúteos variante\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "calisthenics",
@@ -10184,7 +10184,7 @@
     },
     {
         "name": "Intensidad Calisténica",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/intensidad_calistenica.webp",
+        "thumbnailURL": "assets/images/plans/intensidad_calistenica.webp",
         "durationPerSession": 60,
         "description": "Rutina de 2 días por semana, basada en calistenia con barras de dominadas, paralelas y tu propio peso. Cada sesión dura aproximadamente 60 minutos. El objetivo es mejorar tu condición física y desarrollar un físico más fuerte y definido.\n\n\nEstructura semanal:\n\n• Full Body A: Pull, push, lower y core\n\n• Full Body B: Pull, push, lower y core\n\nPensada para intermedios que quieren progresar y mejorar su composición corporal.",
         "equipmentCategory": "calisthenics",
@@ -10304,7 +10304,7 @@
     },
     {
         "name": "Calistenia Integral",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_integral.webp",
+        "thumbnailURL": "assets/images/plans/calistenia_integral.webp",
         "durationPerSession": 55,
         "description": "Rutina de 5 días por semana, basada en calistenia con barras de dominadas, paralelas y tu propio peso. Cada sesión dura aproximadamente 55 minutos. El objetivo es un desarrollo muscular completo trabajando todos los grupos musculares de forma equilibrada.\n\n\nEstructura semanal:\n\n• Push: Fondos, flexiones y core\n\n• Pull: Dominadas y espalda\n\n• Legs: Pierna completa\n\n• Upper: Push, pull y core\n\n• Lower: Pierna y glúteos\n\nPensada para intermedios que quieren progresar y mejorar su composición corporal.",
         "equipmentCategory": "calisthenics",
@@ -10557,7 +10557,7 @@
     },
     {
         "name": "Dominio corporal total",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/dominio_corporal_total.webp",
+        "thumbnailURL": "assets/images/plans/dominio_corporal_total.webp",
         "durationPerSession": 55,
         "description": "Rutina de 6 días por semana, basada en calistenia con barras de dominadas, paralelas y tu propio peso. Cada sesión dura aproximadamente 55 minutos. El objetivo es mejorar tu condición física y desarrollar un físico más fuerte y definido.\n\n\nEstructura semanal:\n\n• Push A: Fondos, flexiones y core\n\n• Pull A: Dominadas y espalda\n\n• Legs A: Pierna completa\n\n• Push B: Flexiones y core variante\n\n• Pull B: Dominadas y core variante\n\n• Legs B: Pierna y glúteos variante\n\nPensada para intermedios que quieren progresar y mejorar su composición corporal.",
         "equipmentCategory": "calisthenics",
@@ -10849,7 +10849,7 @@
     },
     {
         "name": "Potencia Calisténica",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/potencia_calistenica.webp",
+        "thumbnailURL": "assets/images/plans/potencia_calistenica.webp",
         "durationPerSession": 75,
         "description": "Rutina de 2 días por semana, basada en calistenia con barras de dominadas, paralelas y tu propio peso. Cada sesión dura aproximadamente 75 minutos. El objetivo es desarrollar potencia y fuerza funcional con ejercicios de alto rendimiento.\n\n\nEstructura semanal:\n\n• Full Body A: Pull, push, lower y core\n\n• Full Body B: Pull, push, lower y core\n\nDiseñada para atletas avanzados que buscan el máximo rendimiento y desarrollo muscular.",
         "equipmentCategory": "calisthenics",
@@ -10985,7 +10985,7 @@
     },
     {
         "name": "Fuerza bruta calisténica",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/fuerza_bruta_calistenica.webp",
+        "thumbnailURL": "assets/images/plans/fuerza_bruta_calistenica.webp",
         "durationPerSession": 65,
         "description": "Rutina de 3 días por semana, basada en calistenia con barras de dominadas, paralelas y tu propio peso. Cada sesión dura aproximadamente 65 minutos. El objetivo es ganar fuerza y desarrollar músculo de forma progresiva.\n\n\nEstructura semanal:\n\n• Push & Core: Fondos, flexiones y abdominales\n\n• Pull & Core: Dominadas y abdominales\n\n• Legs: Pierna completa\n\nDiseñada para atletas avanzados que buscan el máximo rendimiento y desarrollo muscular.",
         "equipmentCategory": "calisthenics",
@@ -11160,7 +11160,7 @@
     },
     {
         "name": "Maestria corporal avanzada",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/maestria_corporal_avanzada.webp",
+        "thumbnailURL": "assets/images/plans/maestria_corporal_avanzada.webp",
         "durationPerSession": 60,
         "description": "Rutina de 4 días por semana, basada en calistenia con barras de dominadas, paralelas y tu propio peso. Cada sesión dura aproximadamente 60 minutos. El objetivo es llevar tu rendimiento al límite con progresiones avanzadas y máxima intensidad.\n\n\nEstructura semanal:\n\n• Upper A: Pull, push y core\n\n• Lower A: Pierna y glúteos\n\n• Upper B: Pull, push y core variante\n\n• Lower B: Pierna y glúteos variante\n\nDiseñada para atletas avanzados que buscan el máximo rendimiento y desarrollo muscular.",
         "equipmentCategory": "calisthenics",
@@ -11390,7 +11390,7 @@
     },
     {
         "name": "Glúteos y Pierna",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/gluteos_y_pierna.webp",
+        "thumbnailURL": "assets/images/plans/gluteos_y_pierna.webp",
         "durationPerSession": 60,
         "description": "Rutina de 4 días por semana, para gym comercial con acceso completo a máquinas, barras, poleas y mancuernas. Cada sesión dura aproximadamente 60 minutos. El objetivo principal es desarrollar y tonificar el tren inferior, con especial atención a glúteos, femorales y cuádriceps.\n\n\nEstructura semanal:\n\n• Glúteos y Femorales: Foco en el desarrollo del glúteo y la cadena posterior con movimientos compuestos y de aislamiento.\n\n• Cuádriceps y Core: Enfoque en la parte anterior de la pierna y trabajo abdominal intenso.\n\n• Glúteos y Tren Superior: Sesión mixta: glúteos con trabajo ligero de tren superior para mantener el equilibrio muscular.\n\n• Pierna Completa: Sesión final de pierna completa con énfasis en volumen y fatiga acumulada.\n\nPensada para intermedios que quieren progresar y mejorar su composición corporal.",
         "equipmentCategory": "commercialGym",
@@ -11620,7 +11620,7 @@
     },
     {
         "name": "Tonificación Gym Pequeño",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tonificacion_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/tonificacion_gym_pequeno.webp",
         "durationPerSession": 50,
         "description": "Rutina de 3 días por semana, diseñada para un gym pequeño o de edificio con mancuernas, barra y equipo básico. Cada sesión dura aproximadamente 50 minutos. El objetivo principal es desarrollar y tonificar el tren inferior, con especial atención a glúteos, femorales y cuádriceps.\n\n\nEstructura semanal:\n\n• Tren Inferior: Foco en piernas y glúteos con mancuernas y barra.\n\n• Tren Superior: Trabajo de pecho, espalda, hombros y brazos con mancuernas.\n\n• Full Body: Sesión de cuerpo completo para cerrar la semana con todos los grupos musculares.\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "smallGym",
@@ -11795,7 +11795,7 @@
     },
     {
         "name": "Tu Primer Día en el Gym",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tu_primer_dia_en_el_gym.webp",
+        "thumbnailURL": "assets/images/plans/tu_primer_dia_en_el_gym.webp",
         "durationPerSession": 45,
         "description": "Rutina de 3 días por semana, para gym comercial con acceso completo a máquinas, barras, poleas y mancuernas. Cada sesión dura aproximadamente 45 minutos. El objetivo es aprender los movimientos fundamentales, ganar confianza y crear el hábito de entrenar.\n\n\nEstructura semanal:\n\n• Cuerpo Completo A: Circuito de adaptación con máquinas guiadas para familiarizarte con el equipo.\n\n• Tren Superior: Máquinas y mancuernas ligeras para pecho, espalda y brazos.\n\n• Tren Inferior: Máquinas de pierna y trabajo de core para cerrar la semana.\n\nPerfecta para quienes nunca han entrenado y quieren dar el primer paso con seguridad y confianza.",
         "equipmentCategory": "commercialGym",
@@ -11954,7 +11954,7 @@
     },
     {
         "name": "Adaptación al Gym Pequeño",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/adaptacion_al_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/adaptacion_al_gym_pequeno.webp",
         "durationPerSession": 45,
         "description": "Rutina de 3 días por semana, diseñada para un gym pequeño o de edificio con mancuernas, barra y equipo básico. Cada sesión dura aproximadamente 45 minutos. El objetivo es aprender los movimientos fundamentales, ganar confianza y crear el hábito de entrenar.\n\n\nEstructura semanal:\n\n• Full Body A: Familiarización con peso libre ligero y movimientos básicos.\n\n• Full Body B: Segunda sesión con variantes diferentes para reforzar patrones de movimiento.\n\n• Full Body C: Tercera sesión integrando movimientos compuestos con barra.\n\nPerfecta para quienes nunca han entrenado y quieren dar el primer paso con seguridad y confianza.",
         "equipmentCategory": "smallGym",
@@ -12105,7 +12105,7 @@
     },
     {
         "name": "Hipertrofia con Equipo Básico",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/hipertrofia_con_equipo_basico.webp",
+        "thumbnailURL": "assets/images/plans/hipertrofia_con_equipo_basico.webp",
         "durationPerSession": 75,
         "description": "Rutina de 5 días por semana, diseñada para un gym pequeño o de edificio con mancuernas, barra y equipo básico. Cada sesión dura aproximadamente 75 minutos. El objetivo es ganar masa muscular y volumen mediante entrenamiento de alta intensidad.\n\n\nEstructura semanal:\n\n• Empuje: Pecho, hombros y tríceps con alta intensidad y volumen.\n\n• Tracción: Espalda y bíceps con énfasis en densidad muscular.\n\n• Piernas: Tren inferior completo con énfasis en fuerza e hipertrofia.\n\n• Upper: Sesión de tren superior con énfasis en fuerza y técnicas de intensidad.\n\n• Lower y Core: Segunda sesión de pierna con variantes diferentes y trabajo abdominal intenso.\n\nDiseñada para atletas avanzados que buscan el máximo rendimiento y desarrollo muscular.",
         "equipmentCategory": "smallGym",
@@ -12390,7 +12390,7 @@
     },
     {
         "name": "Tonificación Femenina en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tonificacion_femenina_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/tonificacion_femenina_en_casa.webp",
         "durationPerSession": 45,
         "description": "Rutina de 3 días por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 45 minutos. El objetivo principal es desarrollar y tonificar el tren inferior, con especial atención a glúteos, femorales y cuádriceps.\n\nEstructura semanal:\n\n• Pierna y Glúteos: Sesión enfocada en glúteos y pierna con ejercicios de peso corporal.\n\n• Tren Superior y Core: Trabajo de brazos, espalda y abdomen para un cuerpo tonificado.\n\n• Glúteos y Abdomen: Sesión de cierre con foco en glúteos y core.\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "noEquipment",
@@ -12541,7 +12541,7 @@
     },
     {
         "name": "Cuerpo Femenino en el Gym",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/cuerpo_femenino_en_el_gym.webp",
+        "thumbnailURL": "assets/images/plans/cuerpo_femenino_en_el_gym.webp",
         "durationPerSession": 50,
         "description": "Rutina de 3 días por semana, para gym comercial con acceso completo a máquinas, barras, poleas y mancuernas. Cada sesión dura aproximadamente 50 minutos. El objetivo es tonificar todo el cuerpo con énfasis en glúteos, pierna y una figura proporcionada.\n\nEstructura semanal:\n\n• Pierna y Glúteos: Sesión de pierna completa con máquinas y barra para desarrollo de glúteos y cuádriceps.\n\n• Tren Superior: Trabajo de espalda, pecho, hombros y brazos para un cuerpo proporcionado.\n\n• Glúteos y Core: Segunda sesión de tren inferior con énfasis en glúteos y abdomen.\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "commercialGym",
@@ -12708,7 +12708,7 @@
     },
     {
         "name": "Calistenia Femenina",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_femenina.webp",
+        "thumbnailURL": "assets/images/plans/calistenia_femenina.webp",
         "durationPerSession": 40,
         "description": "Rutina de 3 días por semana, basada en calistenia con barras de dominadas, paralelas y tu propio peso. Cada sesión dura aproximadamente 40 minutos. El objetivo es tonificar todo el cuerpo con énfasis en glúteos, pierna y una figura proporcionada.\n\nEstructura semanal:\n\n• Pierna y Glúteos: Pierna y glúteos con calistenia y peso corporal.\n\n• Tren Superior y Core: Trabajo de espalda, pecho y abdomen con barra y peso corporal.\n\n• Glúteos y Abdomen: Cierre de semana con foco en glúteos, pierna y core.\n\nIdeal para principiantes que buscan construir una base sólida de fuerza y técnica.",
         "equipmentCategory": "noEquipment",
@@ -12859,7 +12859,7 @@
     },
     {
         "name": "Definición Femenina en Gym Pequeño",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/definicion_femenina_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/definicion_femenina_en_gym_pequeno.webp",
         "durationPerSession": 55,
         "description": "Rutina de 4 días por semana, diseñada para un gym pequeño o de edificio con mancuernas, barra y equipo básico. Cada sesión dura aproximadamente 55 minutos. El objetivo es quemar grasa y definir la musculatura manteniendo la masa muscular.\n\nEstructura semanal:\n\n• Pierna y Glúteos A: Glúteos y femorales con mancuernas y barra.\n\n• Tren Superior: Pecho, espalda, hombros y brazos con mancuernas.\n\n• Pierna y Glúteos B: Segunda sesión de pierna con variantes diferentes.\n\n• Cuerpo Completo y Core: Sesión de cuerpo completo para cerrar la semana con trabajo de core.\n\nPensada para intermedios que quieren progresar y mejorar su composición corporal.",
         "equipmentCategory": "smallGym",
@@ -13081,7 +13081,7 @@
     },
     {
         "name": "Primer Contacto con el Gym",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/primer_contacto_con_el_gym.webp",
+        "thumbnailURL": "assets/images/plans/primer_contacto_con_el_gym.webp",
         "durationPerSession": 30,
         "description": "Rutina de 2 días por semana, para gym comercial con acceso completo a máquinas, barras, poleas y mancuernas. Cada sesión dura aproximadamente 30 minutos. El objetivo es aprender los movimientos fundamentales, ganar confianza y crear el hábito de entrenar.\n\nEstructura semanal:\n\n• Cuerpo Completo A: Adaptación a las máquinas del gym. Todo guiado y seguro.\n\n• Cuerpo Completo B: Segunda sesión de adaptación con máquinas diferentes.\n\nPerfecta para quienes nunca han entrenado y quieren dar el primer paso con seguridad y confianza.",
         "equipmentCategory": "commercialGym",
@@ -13185,7 +13185,7 @@
     },
     {
         "name": "Primer Contacto con Gym Pequeño",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/primer_contacto_con_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/primer_contacto_con_gym_pequeno.webp",
         "durationPerSession": 30,
         "description": "Rutina de 2 días por semana, diseñada para un gym pequeño o de edificio con mancuernas, barra y equipo básico. Cada sesión dura aproximadamente 30 minutos. El objetivo es aprender los movimientos fundamentales, ganar confianza y crear el hábito de entrenar.\n\nEstructura semanal:\n\n• Cuerpo Completo A: Primera toma de contacto con mancuernas y movimientos básicos.\n\n• Cuerpo Completo B: Segunda sesión con variantes de mancuernas y barra.\n\nPerfecta para quienes nunca han entrenado y quieren dar el primer paso con seguridad y confianza.",
         "equipmentCategory": "smallGym",
@@ -13289,7 +13289,7 @@
     },
     {
         "name": "Tu Sesión Esencial en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tu_sesion_esencial_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/tu_sesion_esencial_en_casa.webp",
         "durationPerSession": 25,
         "description": "Rutina de 1 día por semana, usando únicamente tu peso corporal, sin necesidad de equipo ni gimnasio. Cada sesión dura aproximadamente 25 minutos. El objetivo es aprender los movimientos fundamentales y crear el hábito con una sola sesión semanal.\n\n\nEstructura semanal:\n\n• Full Body: Empuje, pierna y core\n\nPerfecta para quienes nunca han entrenado y quieren empezar con un solo día a la semana.",
         "equipmentCategory": "noEquipment",
@@ -13346,7 +13346,7 @@
     },
     {
         "name": "Full Body Semanal en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/full_body_semanal_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/full_body_semanal_en_casa.webp",
         "durationPerSession": 40,
         "description": "Rutina de 1 día por semana con tu peso corporal, pensada para aprovechar al máximo una única sesión completa. Cada sesión dura aproximadamente 40 minutos. El objetivo es estimular todo el cuerpo en un solo día.\n\n\nEstructura semanal:\n\n• Full Body Completo: Empuje, tracción, pierna y core\n\nIdeal si solo puedes entrenar un día a la semana y quieres un estímulo completo en casa.",
         "equipmentCategory": "noEquipment",
@@ -13411,7 +13411,7 @@
     },
     {
         "name": "Primer Contacto con la Barra",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/primer_contacto_con_la_barra.webp",
+        "thumbnailURL": "assets/images/plans/primer_contacto_con_la_barra.webp",
         "durationPerSession": 30,
         "description": "Rutina de 1 día por semana con barra de dominadas, paralelas y bandas. Cada sesión dura aproximadamente 30 minutos. El objetivo es familiarizarte con la barra y los movimientos básicos de calistenia.\n\n\nEstructura semanal:\n\n• Full Body con Barra: Tracción, empuje, pierna y core\n\nPerfecta para dar tus primeros pasos en calistenia con una sesión semanal.",
         "equipmentCategory": "calisthenics",
@@ -13468,7 +13468,7 @@
     },
     {
         "name": "Calistenia Total en un Día",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/calistenia_total_en_un_dia.webp",
+        "thumbnailURL": "assets/images/plans/calistenia_total_en_un_dia.webp",
         "durationPerSession": 45,
         "description": "Rutina de 1 día por semana de calistenia completa: dominadas, fondos y trabajo de pierna y core. Cada sesión dura aproximadamente 45 minutos. El objetivo es cubrir todos los patrones en una sola sesión intensa.\n\n\nEstructura semanal:\n\n• Full Body Calisténico: Tracción, empuje, pierna y core\n\nIdeal si entrenas calistenia y solo dispones de un día a la semana.",
         "equipmentCategory": "calisthenics",
@@ -13533,7 +13533,7 @@
     },
     {
         "name": "Tu Primer Full Body con Mancuernas",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tu_primer_full_body_con_mancuernas.webp",
+        "thumbnailURL": "assets/images/plans/tu_primer_full_body_con_mancuernas.webp",
         "durationPerSession": 35,
         "description": "Rutina de 1 día por semana con mancuernas y banco, ideal para un gym pequeño o en casa con equipo básico. Cada sesión dura aproximadamente 35 minutos. El objetivo es aprender los básicos con peso de forma segura.\n\n\nEstructura semanal:\n\n• Full Body con Mancuernas: Empuje, tracción, pierna y core\n\nPerfecta para tu primera experiencia con pesas entrenando un día a la semana.",
         "equipmentCategory": "smallGym",
@@ -13598,7 +13598,7 @@
     },
     {
         "name": "Full Body Cargado Semanal",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/full_body_cargado_semanal.webp",
+        "thumbnailURL": "assets/images/plans/full_body_cargado_semanal.webp",
         "durationPerSession": 50,
         "description": "Rutina de 1 día por semana con barra y mancuernas para un gym pequeño. Cada sesión dura aproximadamente 50 minutos. El objetivo es concentrar los básicos con carga en una sola sesión de cuerpo completo.\n\n\nEstructura semanal:\n\n• Full Body de Fuerza: Básicos con barra, mancuernas y core\n\nIdeal si solo puedes ir al gym un día a la semana y quieres trabajo con peso de verdad.",
         "equipmentCategory": "smallGym",
@@ -13663,7 +13663,7 @@
     },
     {
         "name": "Tu Primer Full Body en el Gym",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/tu_primer_full_body_en_el_gym.webp",
+        "thumbnailURL": "assets/images/plans/tu_primer_full_body_en_el_gym.webp",
         "durationPerSession": 35,
         "description": "Rutina de 1 día por semana combinando máquinas y mancuernas en un gym comercial. Cada sesión dura aproximadamente 35 minutos. El objetivo es recorrer los patrones básicos con la guía segura de las máquinas.\n\n\nEstructura semanal:\n\n• Full Body Guiado: Máquinas y mancuernas para todo el cuerpo\n\nPerfecta para tu primer día de gym entrenando una vez por semana.",
         "equipmentCategory": "commercialGym",
@@ -13728,7 +13728,7 @@
     },
     {
         "name": "Día Completo de Gym",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/dia_completo_de_gym.webp",
+        "thumbnailURL": "assets/images/plans/dia_completo_de_gym.webp",
         "durationPerSession": 55,
         "description": "Rutina de 1 día por semana en gym comercial centrada en básicos con barra más cables y máquinas. Cada sesión dura aproximadamente 55 minutos. El objetivo es un estímulo completo de cuerpo entero en una sola visita.\n\n\nEstructura semanal:\n\n• Full Body de Fuerza: Básicos con barra, cables y core\n\nIdeal si solo puedes ir al gym un día a la semana y quieres aprovecharlo al máximo.",
         "equipmentCategory": "commercialGym",
@@ -13793,7 +13793,7 @@
     },
     {
         "name": "Doble Full Body en Gym Pequeño",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/doble_full_body_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/doble_full_body_en_gym_pequeno.webp",
         "durationPerSession": 50,
         "description": "Rutina de 2 días por semana con mancuernas y barra en un gym pequeño. Cada sesión dura aproximadamente 50 minutos. El objetivo es trabajar todo el cuerpo dos veces por semana con peso cargado.\n\n\nEstructura semanal:\n\n• Full Body A: Empuje, pierna y core\n\n• Full Body B: Tracción, cadera y core\n\nIdeal para construir base de fuerza entrenando dos días con equipo básico.",
         "equipmentCategory": "smallGym",
@@ -13897,7 +13897,7 @@
     },
     {
         "name": "Doble Full Body en el Gym",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/doble_full_body_en_el_gym.webp",
+        "thumbnailURL": "assets/images/plans/doble_full_body_en_el_gym.webp",
         "durationPerSession": 55,
         "description": "Rutina de 2 días por semana en gym comercial que combina básicos con barra, mancuernas, cables y máquinas. Cada sesión dura aproximadamente 55 minutos. El objetivo es cubrir todo el cuerpo dos veces por semana con trabajo cargado.\n\n\nEstructura semanal:\n\n• Full Body A: Empuje, pierna y core\n\n• Full Body B: Tracción, femoral y hombro\n\nIdeal para progresar en el gym con solo dos visitas semanales.",
         "equipmentCategory": "commercialGym",
@@ -14001,7 +14001,7 @@
     },
     {
         "name": "Semana Completa en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/semana_completa_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/semana_completa_en_casa.webp",
         "durationPerSession": 35,
         "description": "Rutina de 7 días por semana con tu peso corporal, alternando empuje, tracción, pierna, cardio y core para repartir la fatiga. Cada sesión dura aproximadamente 35 minutos. El objetivo es crear el hábito de moverte todos los días.\n\n\nEstructura semanal:\n\n• Empuje: Pecho, hombro, tríceps y core\n\n• Pierna: Cuádriceps, glúteo y gemelo\n\n• Tracción y Core: Espalda y abdomen\n\n• Cardio y Core: Ritmo cardíaco y abdomen\n\n• Empuje B: Variantes de empuje y abdomen\n\n• Pierna B: Trabajo unilateral y glúteo\n\n• Full Body Ligero: Cierre suave de la semana\n\nIdeal si quieres entrenar en casa todos los días con sesiones cortas y variadas.",
         "equipmentCategory": "noEquipment",
@@ -14284,7 +14284,7 @@
     },
     {
         "name": "Ritmo Diario en Casa",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/ritmo_diario_en_casa.webp",
+        "thumbnailURL": "assets/images/plans/ritmo_diario_en_casa.webp",
         "durationPerSession": 30,
         "description": "Rutina de 7 días por semana en casa que alterna días de fuerza con días suaves de cardio, postura y movilidad. Cada sesión dura aproximadamente 30 minutos. El objetivo es sumar movimiento diario sin acumular fatiga.\n\n\nEstructura semanal:\n\n• Full Body A: Empuje, pierna y core\n\n• Cardio Suave: Ritmo cardíaco sin impacto excesivo\n\n• Pierna y Glúteo: Tren inferior completo\n\n• Tracción y Postura: Espalda, lumbar y core\n\n• Full Body B: Variantes de empuje y pierna\n\n• Cardio y Core B: Potencia y abdomen\n\n• Movilidad y Core: Cierre suave de la semana\n\nIdeal para hacer del entrenamiento diario un hábito sostenible en casa.",
         "equipmentCategory": "noEquipment",
@@ -14567,7 +14567,7 @@
     },
     {
         "name": "Semana Calisténica",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/semana_calistenica.webp",
+        "thumbnailURL": "assets/images/plans/semana_calistenica.webp",
         "durationPerSession": 40,
         "description": "Rutina de 7 días por semana de calistenia: tracción, empuje y pierna dos veces, más un día de core y bandas. Cada sesión dura aproximadamente 40 minutos. El objetivo es alta frecuencia con volumen controlado por sesión.\n\n\nEstructura semanal:\n\n• Tracción: Dominadas, remo y bíceps\n\n• Empuje: Fondos, flexiones y tríceps\n\n• Pierna: Cuádriceps, glúteo y gemelo\n\n• Core y Bandas: Abdomen y glúteo con bandas\n\n• Tracción B: Dominadas supinas y control escapular\n\n• Empuje B: Fondos asistidos y hombro\n\n• Pierna y Core B: Unilateral, glúteo y abdomen\n\nIdeal para progresar en dominadas y fondos entrenando todos los días.",
         "equipmentCategory": "calisthenics",
@@ -14850,7 +14850,7 @@
     },
     {
         "name": "Progresión Diaria Calisténica",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/progresion_diaria_calistenica.webp",
+        "thumbnailURL": "assets/images/plans/progresion_diaria_calistenica.webp",
         "durationPerSession": 40,
         "description": "Rutina de 7 días por semana de calistenia con progresiones asistidas (bandas y TRX), cardio con cuerdas y trabajo diario de core. Cada sesión dura aproximadamente 40 minutos. El objetivo es construir tus primeras dominadas y fondos entrenando a diario.\n\n\nEstructura semanal:\n\n• Tracción Asistida: Dominadas con banda y remos\n\n• Empuje Asistido: Fondos con banda y flexiones\n\n• Pierna: Cuádriceps, glúteo y gemelo\n\n• Cardio y Cuerdas: Cuerdas de batalla y ritmo\n\n• Tracción B: Negativas y control escapular\n\n• Empuje B: Hombro y tríceps\n\n• Pierna y Glúteo B: Zancadas, cadera y gemelo\n\nIdeal si estás construyendo tus primeras dominadas y quieres frecuencia máxima.",
         "equipmentCategory": "calisthenics",
@@ -15133,7 +15133,7 @@
     },
     {
         "name": "PPL Semanal en Gym Pequeño",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/ppl_semanal_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/ppl_semanal_en_gym_pequeno.webp",
         "durationPerSession": 55,
         "description": "Rutina de 7 días por semana en gym pequeño: Push Pull Legs dos veces más un día de core y acondicionamiento. Cada sesión dura aproximadamente 55 minutos. El objetivo es máxima frecuencia con mancuernas, barra y banco.\n\n\nEstructura semanal:\n\n• Push A: Pecho, hombro y tríceps\n\n• Pull A: Espalda y bíceps\n\n• Legs A: Sentadilla, femoral y gemelo\n\n• Push B: Pecho superior y hombro\n\n• Pull B: Dominadas, remo y trapecio\n\n• Legs B: Goblet, cadera y gemelo\n\n• Core y Acondicionamiento: Abdomen y trabajo de agarre\n\nIdeal para hipertrofia con equipo básico entrenando todos los días.",
         "equipmentCategory": "smallGym",
@@ -15416,7 +15416,7 @@
     },
     {
         "name": "Upper Lower Semanal en Gym Pequeño",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/upper_lower_semanal_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/upper_lower_semanal_en_gym_pequeno.webp",
         "durationPerSession": 50,
         "description": "Rutina de 7 días por semana en gym pequeño: torso y pierna dos veces, más full body, brazos y core. Cada sesión dura aproximadamente 50 minutos. El objetivo es repartir el volumen cargado en toda la semana.\n\n\nEstructura semanal:\n\n• Upper A: Pecho, espalda, hombro y bíceps\n\n• Lower A: Goblet, femoral y gemelo\n\n• Upper B: Pecho superior, remo y hombro\n\n• Lower B: Búlgara, cadera y gemelo\n\n• Full Body: Peso muerto, empuje y core\n\n• Brazos: Bíceps y tríceps\n\n• Core: Abdomen completo\n\nIdeal para construir músculo con mancuernas y barra entrenando a diario.",
         "equipmentCategory": "smallGym",
@@ -15699,7 +15699,7 @@
     },
     {
         "name": "PPL Semanal en el Gym",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/ppl_semanal_en_el_gym.webp",
+        "thumbnailURL": "assets/images/plans/ppl_semanal_en_el_gym.webp",
         "durationPerSession": 55,
         "description": "Rutina de 7 días por semana en gym comercial: Push Pull Legs dos veces más un día de core y acondicionamiento, combinando pesos libres, cables y máquinas. Cada sesión dura aproximadamente 55 minutos. El objetivo es máxima frecuencia con todo el equipo disponible.\n\n\nEstructura semanal:\n\n• Push A: Pecho, hombro y tríceps\n\n• Pull A: Jalón, remo y bíceps\n\n• Legs A: Sentadilla, prensa y femoral\n\n• Push B: Hombro, pecho y tríceps en cable\n\n• Pull B: Deltoide posterior, remo y bíceps\n\n• Legs B: Extensión, cadera y gemelo\n\n• Core y Acondicionamiento: Abdomen y trabajo de agarre\n\nIdeal para hipertrofia entrenando todos los días en un gym completo.",
         "equipmentCategory": "commercialGym",
@@ -15982,7 +15982,7 @@
     },
     {
         "name": "Semana Total en el Gym",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/semana_total_en_el_gym.webp",
+        "thumbnailURL": "assets/images/plans/semana_total_en_el_gym.webp",
         "durationPerSession": 55,
         "description": "Rutina de 7 días por semana en gym comercial: torso y pierna dos veces, más full body, brazos y core, mezclando barra, mancuernas, cables y máquinas. Cada sesión dura aproximadamente 55 minutos. El objetivo es cubrir cada grupo muscular varias veces por semana.\n\n\nEstructura semanal:\n\n• Upper A: Pecho, jalón, hombro y tríceps\n\n• Lower A: Sentadilla, femoral y gemelo\n\n• Upper B: Pecho superior, remo y hombro\n\n• Lower B: Prensa, búlgara y gemelo\n\n• Full Body: Peso muerto, empuje y core\n\n• Brazos y Hombro: Bíceps, tríceps y deltoides\n\n• Core y Acondicionamiento: Abdomen y trabajo de agarre\n\nIdeal si vas al gym todos los días y quieres una semana completa y equilibrada.",
         "equipmentCategory": "commercialGym",
@@ -16265,7 +16265,7 @@
     },
     {
         "name": "Upper Lower en Gym Pequeño",
-        "thumbnailURL": "https://symmetry-assets.com/public/training_page/plans/upper_lower_en_gym_pequeno.webp",
+        "thumbnailURL": "assets/images/plans/upper_lower_en_gym_pequeno.webp",
         "durationPerSession": 50,
         "description": "Rutina de 6 días por semana en gym pequeño con estructura torso/pierna ×3: dos días de fuerza, dos de hipertrofia y dos de bombeo y glúteo. Cada sesión dura aproximadamente 50 minutos. El objetivo es tocar cada grupo muscular tres veces por semana con mancuernas, barra y banco.\n\n\nEstructura semanal:\n\n• Upper A: Fuerza de torso con barra\n\n• Lower A: Fuerza de pierna y core\n\n• Upper B: Hipertrofia de torso con mancuernas\n\n• Lower B: Hipertrofia de pierna y glúteo\n\n• Upper C: Bombeo de torso completo\n\n• Lower C: Glúteo, pierna y core\n\nIdeal como alternativa al Push Pull Legs para entrenar seis días con equipo básico.",
         "equipmentCategory": "smallGym",
