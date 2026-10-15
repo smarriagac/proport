@@ -105,6 +105,8 @@ class AppAssets {
       'assets/images/workout_hero_empuje_card.png';
 
   // Data Assets
+  static const String exerciseCatalogJson =
+      'assets/data/exercise_catalog.json';
   static const String predefinedPlansExampleJson =
       'assets/workout_plan_templates/predefined_workout_plans_v2_example.json';
   static const String predefinedPlansEnJson =
@@ -130,7 +132,7 @@ class AppAssets {
   static const String iconReplaceArrows =
       'assets/icons/controls/icon_replace_arrows.svg';
 
-  // Muscle Distribution & Exercise Preview Thumbnails
+  // Muscle Distribution
   static const String muscleDistributionHombros =
       'assets/images/muscles/distribution_hombros.png';
   static const String muscleDistributionTriceps =
@@ -138,25 +140,60 @@ class AppAssets {
   static const String muscleDistributionPecho =
       'assets/images/muscles/distribution_pecho.png';
 
-  static const String exTreadmill = 'assets/images/exercises/ex_treadmill.png';
-  static const String exInclineBench =
-      'assets/images/exercises/ex_incline_bench.png';
-  static const String exCableCrossover =
-      'assets/images/exercises/ex_cable_crossover.png';
-  static const String exShoulderPress =
-      'assets/images/exercises/ex_shoulder_press.png';
-  static const String exLateralRaise =
-      'assets/images/exercises/ex_lateral_raise.png';
+  // Authentic Symmetry Exercise Animated GIFs
+  static const String gifTreadmill =
+      'assets/images/exercises/treadmill.gif';
+  static const String gifInclineBenchPress =
+      'assets/images/exercises/incline_bench_press.gif';
+  static const String gifFlatBenchPress =
+      'assets/images/exercises/flat_bench_press.gif';
+  static const String gifLowCableCrossover =
+      'assets/images/exercises/low_cable_crossover.gif';
+  static const String gifSeatedShoulderPress =
+      'assets/images/exercises/seated_shoulder_press.gif';
+  static const String gifStandingMilitaryPress =
+      'assets/images/exercises/standing_military_press.gif';
+  static const String gifLateralRaises =
+      'assets/images/exercises/lateral_raises.gif';
+  static const String gifTricepsPushdown =
+      'assets/images/exercises/triceps_pushdown.gif';
+  static const String gifBenchDips =
+      'assets/images/exercises/bench_dips.gif';
+  static const String gifLatPulldownPronated =
+      'assets/images/exercises/lat_pulldown_pronated.gif';
+  static const String gifLatPulldownSupinated =
+      'assets/images/exercises/lat_pulldown_supinated.gif';
+  static const String gifSeatedCableRow =
+      'assets/images/exercises/seated_cable_row.gif';
+  static const String gifBarbellRow =
+      'assets/images/exercises/barbell_row.gif';
+  static const String gifDumbbellRow =
+      'assets/images/exercises/dumbbell_row.gif';
+  static const String gifFacePull =
+      'assets/images/exercises/face_pull.gif';
+  static const String gifBicepCurl =
+      'assets/images/exercises/bicep_curl.gif';
 
-  // Active Workout Guider Assets
-  static const String heroLatPulldown =
-      'assets/images/exercises/hero_lat_pulldown.png';
-  static const String carouselLatPulldown =
-      'assets/images/exercises/carousel_lat_pulldown.png';
-  static const String carouselPulldownVar =
-      'assets/images/exercises/carousel_pulldown_var.png';
-  static const String carouselSeatedRow =
-      'assets/images/exercises/carousel_seated_row.png';
+  // Authentic Symmetry Plan Covers
+  static const String planPushPullLegs =
+      'assets/images/plans/push_pull_legs_estetico.webp';
+  static const String planFullBodyGym =
+      'assets/images/plans/full_body_en_el_gym.webp';
+  static const String planUpperLower =
+      'assets/images/plans/upper_lower_de_fuerza.webp';
+  static const String planEsteticaCorporal =
+      'assets/images/plans/estetica_con_peso_corporal.webp';
+
+  // Fallback Legacy Thumbnails (kept for compatibility)
+  static const String exTreadmill = gifTreadmill;
+  static const String exInclineBench = gifInclineBenchPress;
+  static const String exCableCrossover = gifLowCableCrossover;
+  static const String exShoulderPress = gifSeatedShoulderPress;
+  static const String exLateralRaise = gifLateralRaises;
+  static const String heroLatPulldown = gifLatPulldownPronated;
+  static const String carouselLatPulldown = gifLatPulldownPronated;
+  static const String carouselPulldownVar = gifLatPulldownSupinated;
+  static const String carouselSeatedRow = gifSeatedCableRow;
   static const String rankDiamondBadge =
       'assets/icons/ranking/base/rank=diamond.svg';
 }

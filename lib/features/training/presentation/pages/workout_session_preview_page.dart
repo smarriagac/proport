@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 import '../../../../core/constants/app_constants.dart';
 import '../../../../core/theme/app_theme.dart';
+import '../../../../core/widgets/symmetry_extended_image.dart';
 import '../../domain/entities/exercise.dart';
 import '../../domain/entities/exercise_set.dart';
 import '../../domain/entities/training_session.dart';
@@ -145,27 +146,46 @@ class _WorkoutSessionPreviewPageState extends State<WorkoutSessionPreviewPage> {
         lower.contains('correr') ||
         lower.contains('andar') ||
         lower.contains('cardio')) {
-      return AppAssets.exTreadmill;
+      return AppAssets.gifTreadmill;
     }
-    if (lower.contains('inclinado') ||
-        lower.contains('plano') ||
-        lower.contains('fondos')) {
-      return AppAssets.exInclineBench;
+    if (lower.contains('inclinado')) {
+      return AppAssets.gifInclineBenchPress;
+    }
+    if (lower.contains('plano') || lower.contains('banca')) {
+      return AppAssets.gifFlatBenchPress;
+    }
+    if (lower.contains('fondo') || lower.contains('dip')) {
+      return AppAssets.gifBenchDips;
+    }
+    if (lower.contains('tríceps') ||
+        lower.contains('triceps') ||
+        lower.contains('cuerda')) {
+      return AppAssets.gifTricepsPushdown;
     }
     if (lower.contains('apertura') ||
         lower.contains('polea') ||
-        lower.contains('cruce') ||
-        lower.contains('tríceps') ||
-        lower.contains('triceps')) {
-      return AppAssets.exCableCrossover;
+        lower.contains('cruce')) {
+      return AppAssets.gifLowCableCrossover;
     }
-    if (lower.contains('hombro') || lower.contains('militar')) {
-      return AppAssets.exShoulderPress;
+    if (lower.contains('militar')) {
+      return AppAssets.gifStandingMilitaryPress;
+    }
+    if (lower.contains('hombro')) {
+      return AppAssets.gifSeatedShoulderPress;
     }
     if (lower.contains('lateral') || lower.contains('elevacion')) {
-      return AppAssets.exLateralRaise;
+      return AppAssets.gifLateralRaises;
     }
-    return AppAssets.exInclineBench;
+    if (lower.contains('jalón') || lower.contains('jalon')) {
+      return AppAssets.gifLatPulldownPronated;
+    }
+    if (lower.contains('remo')) {
+      return AppAssets.gifSeatedCableRow;
+    }
+    if (lower.contains('curl') || lower.contains('biceps') || lower.contains('bíceps')) {
+      return AppAssets.gifBicepCurl;
+    }
+    return AppAssets.gifInclineBenchPress;
   }
 
   String _formatExerciseSubtitle(Exercise exercise) {
@@ -366,16 +386,14 @@ class _WorkoutSessionPreviewPageState extends State<WorkoutSessionPreviewPage> {
                           borderRadius: BorderRadius.circular(18),
                           child: Padding(
                             padding: const EdgeInsets.all(4.0),
-                            child: Image.asset(
-                              thumbnail,
+                            child: SymmetryExtendedImage(
+                              source: thumbnail,
                               fit: BoxFit.contain,
-                              errorBuilder: (context, error, stackTrace) {
-                                return const Icon(
-                                  Icons.fitness_center_rounded,
-                                  color: Colors.black,
-                                  size: 28,
-                                );
-                              },
+                              errorWidget: const Icon(
+                                Icons.fitness_center_rounded,
+                                color: Colors.black,
+                                size: 28,
+                              ),
                             ),
                           ),
                         ),
@@ -510,16 +528,14 @@ class _WorkoutSessionPreviewPageState extends State<WorkoutSessionPreviewPage> {
             ),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(14),
-              child: Image.asset(
-                imageAsset,
+              child: SymmetryExtendedImage(
+                source: imageAsset,
                 fit: BoxFit.cover,
-                errorBuilder: (context, error, stackTrace) {
-                  return const Icon(
-                    Icons.accessibility_new_rounded,
-                    color: AppColors.primaryBlue,
-                    size: 28,
-                  );
-                },
+                errorWidget: const Icon(
+                  Icons.accessibility_new_rounded,
+                  color: AppColors.primaryBlue,
+                  size: 28,
+                ),
               ),
             ),
           ),

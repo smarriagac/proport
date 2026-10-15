@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 import '../../../../core/constants/app_constants.dart';
 import '../../../../core/theme/app_theme.dart';
+import '../../../../core/widgets/symmetry_extended_image.dart';
 import '../../domain/entities/training_session.dart';
 import '../bloc/training_bloc.dart';
 import '../bloc/training_event.dart';
@@ -370,17 +371,15 @@ class TrainingDashboardPage extends StatelessWidget {
             child: Stack(
               fit: StackFit.expand,
               children: [
-                // 1. High-res athlete background image
-                Image.asset(
-                  AppAssets.workoutHeroCleanBg,
+                // 1. High-res athlete background image projected via ExtendedImage
+                const SymmetryExtendedImage(
+                  source: AppAssets.planPushPullLegs,
                   fit: BoxFit.cover,
                   alignment: Alignment.topCenter,
-                  errorBuilder: (context, error, stackTrace) {
-                    return Image.asset(
-                      AppAssets.workoutHeroEmpujeCard,
-                      fit: BoxFit.cover,
-                    );
-                  },
+                  errorWidget: SymmetryExtendedImage(
+                    source: AppAssets.workoutHeroCleanBg,
+                    fit: BoxFit.cover,
+                  ),
                 ),
 
                 // 2. Seamless dark gradient overlay for bottom legibility

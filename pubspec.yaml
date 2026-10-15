@@ -24,6 +24,7 @@ dependencies:
   sqlite3_flutter_libs: ^0.6.0+eol
   path_provider: ^2.1.6
   path: ^1.9.1
+  extended_image: ^10.1.0
 
 dev_dependencies:
   flutter_test:
@@ -57,6 +58,7 @@ flutter:
     - assets/images/
     - assets/images/muscles/
     - assets/images/exercises/
+    - assets/images/plans/
     - assets/workout_plan_templates/
     - assets/data/
     - assets/quick_workouts/

@@ -5,6 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 import '../../../../core/constants/app_constants.dart';
 import '../../../../core/theme/app_theme.dart';
+import '../../../../core/widgets/symmetry_extended_image.dart';
 import '../../domain/entities/exercise.dart';
 import '../../domain/entities/exercise_set.dart';
 import '../bloc/training_bloc.dart';
@@ -108,10 +109,44 @@ class _ActiveWorkoutPageState extends State<ActiveWorkoutPage> {
   }
 
   String _getCarouselThumbnail(int index, String exerciseName) {
-    if (index == 0) return AppAssets.carouselLatPulldown;
-    if (index == 1) return AppAssets.carouselPulldownVar;
-    if (index == 2) return AppAssets.carouselSeatedRow;
-    return AppAssets.carouselLatPulldown;
+    final lower = exerciseName.toLowerCase();
+    if (lower.contains('supino') || lower.contains('estrecho')) {
+      return AppAssets.gifLatPulldownSupinated;
+    }
+    if (lower.contains('jalón') || lower.contains('jalon')) {
+      return AppAssets.gifLatPulldownPronated;
+    }
+    if (lower.contains('remo') && lower.contains('mancuerna')) {
+      return AppAssets.gifDumbbellRow;
+    }
+    if (lower.contains('remo') && lower.contains('barra')) {
+      return AppAssets.gifBarbellRow;
+    }
+    if (lower.contains('remo')) {
+      return AppAssets.gifSeatedCableRow;
+    }
+    if (lower.contains('face pull')) {
+      return AppAssets.gifFacePull;
+    }
+    if (lower.contains('inclinado')) {
+      return AppAssets.gifInclineBenchPress;
+    }
+    if (lower.contains('plano') || lower.contains('banca')) {
+      return AppAssets.gifFlatBenchPress;
+    }
+    if (lower.contains('fondo') || lower.contains('dip')) {
+      return AppAssets.gifBenchDips;
+    }
+    if (lower.contains('lateral') || lower.contains('elevacion')) {
+      return AppAssets.gifLateralRaises;
+    }
+    if (lower.contains('tríceps') || lower.contains('triceps')) {
+      return AppAssets.gifTricepsPushdown;
+    }
+    if (lower.contains('curl') || lower.contains('biceps') || lower.contains('bíceps')) {
+      return AppAssets.gifBicepCurl;
+    }
+    return AppAssets.gifLatPulldownPronated;
   }
 
   @override
@@ -325,18 +360,16 @@ class _ActiveWorkoutPageState extends State<ActiveWorkoutPage> {
                     : Border.all(color: const Color(0xFF26262B), width: 1.0),
               ),
               child: ClipOval(
-                child: Image.asset(
-                  thumbAsset,
+                child: SymmetryExtendedImage(
+                  source: thumbAsset,
                   fit: BoxFit.cover,
-                  errorBuilder: (context, error, stackTrace) {
-                    return const Center(
-                      child: Icon(
-                        Icons.fitness_center_rounded,
-                        color: Colors.white70,
-                        size: 24,
-                      ),
-                    );
-                  },
+                  errorWidget: const Center(
+                    child: Icon(
+                      Icons.fitness_center_rounded,
+                      color: Colors.white70,
+                      size: 24,
+                    ),
+                  ),
                 ),
               ),
             ),
@@ -354,19 +387,18 @@ class _ActiveWorkoutPageState extends State<ActiveWorkoutPage> {
       child: Stack(
         alignment: Alignment.center,
         children: [
-          // Center athlete render with electric blue back/muscles
-          Image.asset(
-            AppAssets.heroLatPulldown,
+          // Center athlete render with authentic animated GIF projected via ExtendedImage
+          SymmetryExtendedImage(
+            source: _getCarouselThumbnail(
+                _currentExerciseIndex, currentExercise.name),
             fit: BoxFit.contain,
-            errorBuilder: (context, error, stackTrace) {
-              return const Center(
-                child: Icon(
-                  Icons.fitness_center_rounded,
-                  color: AppColors.primaryBlue,
-                  size: 80,
-                ),
-              );
-            },
+            errorWidget: const Center(
+              child: Icon(
+                Icons.fitness_center_rounded,
+                color: AppColors.primaryBlue,
+                size: 80,
+              ),
+            ),
           ),
 
           // Symmetry S Intelligence Floating Badge
