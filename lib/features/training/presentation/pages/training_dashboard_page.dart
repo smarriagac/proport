@@ -27,10 +27,6 @@ class TrainingDashboardPage extends StatelessWidget {
               AppAssets.logoSvg,
               width: 24,
               height: 24,
-              colorFilter: const ColorFilter.mode(
-                Colors.white,
-                BlendMode.srcIn,
-              ),
             ),
             const SizedBox(width: 8),
             const Text(

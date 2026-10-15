@@ -20,14 +20,10 @@ class FriendsPage extends StatelessWidget {
               AppAssets.logoSvg,
               width: 26,
               height: 26,
-              colorFilter: const ColorFilter.mode(
-                Colors.white,
-                BlendMode.srcIn,
-              ),
             ),
             const SizedBox(width: 8),
             const Text(
-              'Symmetry',
+              'Proport',
               style: TextStyle(
                 fontFamily: AppTheme.fontAlbert,
                 fontWeight: FontWeight.w800,

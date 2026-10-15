@@ -1,7 +1,15 @@
-<svg width="529" height="789" viewBox="0 0 529 789" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M267.848 153.788V0L0 153.788L133.924 234.025L267.848 153.788Z" fill="#B0B0B0"/>
-<path d="M133.924 234.025L0 153.788L0 320.949L395.076 548.288L529 468.051L133.924 234.025Z" fill="#F9FAFB"/>
-<path d="M267.848 0V153.788L529 307.576V153.788L267.848 0Z" fill="#F9FAFB"/>
-<path d="M529 468.051L395.076 548.288L267.848 628.525V789L529 628.525V468.051Z" fill="#B0B0B0"/>
-<path d="M267.848 789V628.525L0 468.051L0 628.525L267.848 789Z" fill="#F9FAFB"/>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Proport Geometric Isometric "P" Logo -->
+  <!-- Left Pillar - Main Front Facet (Pure White) -->
+  <path d="M106 195L200 141V407L106 353V195Z" fill="#FFFFFF"/>
+  <!-- Left Pillar - Side Shadow Facet (Cool Grey) -->
+  <path d="M210 135L254 110V376L210 401V135Z" fill="#B0B0B0"/>
+  <!-- Upper Loop - Top Angled Facet (Pure White) -->
+  <path d="M264 105L358 159V205L264 151V105Z" fill="#FFFFFF"/>
+  <!-- Upper Loop - Dynamic Outer Face (Proport Electric Blue) -->
+  <path d="M368 165L406 187V293L368 271V165Z" fill="#3875FF"/>
+  <!-- Upper Loop - Return Bottom Facet (Deep Royal Blue) -->
+  <path d="M358 277L396 299L310 348L272 326L358 277Z" fill="#2050CC"/>
+  <!-- Upper Loop - Inner Shadow Facet (Muted Grey) -->
+  <path d="M264 225L350 275L306 300L264 276V225Z" fill="#7E7E86"/>
 </svg>

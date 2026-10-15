@@ -59,9 +59,11 @@ class AppColors {
 class AppAssets {
   AppAssets._();
 
-  static const String logoSvg = 'assets/symmetry_logo.svg';
+  static const String logoSvg = 'assets/proport_logo.svg';
+  static const String proportLogoSvg = 'assets/proport_logo.svg';
   static const String lettersLogoSvg = 'assets/symmetry_letters_logo.svg';
-  static const String logoPng = 'assets/symmetry_logo.png';
+  static const String logoPng = 'assets/proport_logo.png';
+  static const String proportLogoPng = 'assets/proport_logo.png';
   static const String androidLogoPng = 'assets/symmetry_android_logo.png';
 
   // Navigation Bar SVGs

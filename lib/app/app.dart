@@ -33,7 +33,7 @@ class SymmetryApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp.router(
-        title: 'Symmetry',
+        title: 'Proport',
         debugShowCheckedModeBanner: false,
         theme: AppTheme.darkTheme,
         routerConfig: appRouter,
