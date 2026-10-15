@@ -1,11 +1,27 @@
 # Skill Registry
 
 Generated: 2026-10-15
-Project: symmetry
-Root: /Users/silver/Documents/pp/symmetry
+Project: proport
+Root: /Users/silver/Documents/pp/proport
 
 ## Project Skills
-- None in repository
+
+| Skill | Trigger / Description | Scope | Path |
+|---|---|---|---|
+| `flutter-apply-architecture-best-practices` | Layered Flutter architecture (UI, Logic, Data) | project | `.agents/skills/flutter-apply-architecture-best-practices/SKILL.md` |
+| `flutter-build-responsive-layout` | Responsive layouts with LayoutBuilder, MediaQuery, Expanded | project | `.agents/skills/flutter-build-responsive-layout/SKILL.md` |
+| `flutter-fix-layout-issues` | Fix Flutter layout errors (overflows, unbounded constraints) | project | `.agents/skills/flutter-fix-layout-issues/SKILL.md` |
+| `flutter-implement-json-serialization` | Model classes with fromJson/toJson using dart:convert | project | `.agents/skills/flutter-implement-json-serialization/SKILL.md` |
+| `flutter-setup-declarative-routing` | Declarative routing with go_router and deep linking | project | `.agents/skills/flutter-setup-declarative-routing/SKILL.md` |
+| `flutter-setup-localization` | Localization setup with flutter_localizations, intl, l10n.yaml | project | `.agents/skills/flutter-setup-localization/SKILL.md` |
+| `flutter-use-http-package` | REST API requests (GET, POST, PUT, DELETE) with http package | project | `.agents/skills/flutter-use-http-package/SKILL.md` |
+| `flutter-add-widget-preview` | Interactive widget previews using previews.dart system | project | `.agents/skills/flutter-add-widget-preview/SKILL.md` |
+| `flutter-add-widget-test` | Component-level widget testing with WidgetTester | project | `.agents/skills/flutter-add-widget-test/SKILL.md` |
+| `flutter-add-integration-test` | Flutter Driver / integration_test automated user flows | project | `.agents/skills/flutter-add-integration-test/SKILL.md` |
+| `dart-analyze` | Static analysis resolution following analysis_options.yaml | project | `.github/skills/dart-analyze/SKILL.md` |
+| `dart-testing` | Unit and widget tests standard (AAA, groups, error cases) | project | `.github/skills/dart-testing/SKILL.md` |
+| `commit` | Conventional Commits with emojis stage analyzer | project | `.github/skills/commit/SKILL.md` |
+| `flutter-json-backup` | Local JSON backup/restore system with clean architecture | project | `.github/skills/flutter-json-backup/SKILL.md` |
 
 ## User Skills
 
