@@ -60,6 +60,8 @@ flutter:
     - assets/images/exercises/
     - assets/images/plans/
     - assets/images/quick_workouts/
+    - assets/images/routines/
+    - assets/images/exercises/thumbs/
     - assets/workout_plan_templates/
     - assets/data/
     - assets/quick_workouts/

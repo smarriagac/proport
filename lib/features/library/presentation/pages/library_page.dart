@@ -17,61 +17,67 @@ class _LibraryPageState extends State<LibraryPage> {
     _LibraryTemplateItem(
       title: 'Domingo',
       subtitle: 'Plantilla',
-      sketchTypes: [
-        _SketchType.legPress,
-        _SketchType.chestPress,
-        _SketchType.legExtension,
-        _SketchType.latPulldown,
+      imageAsset: 'assets/images/routines/routine_domingo.png',
+      exerciseAssets: [
+        'assets/images/exercises/9n2149Z.gif',
+        'assets/images/exercises/my33uHU.gif',
+        'assets/images/exercises/fUBheHs.gif',
+        'assets/images/exercises/EIeI8Vf.gif',
       ],
     ),
     _LibraryTemplateItem(
       title: 'Sábado de Tracción 🦍',
       subtitle: 'Plantilla · 8 ejercicios',
-      sketchTypes: [
-        _SketchType.latPulldown,
-        _SketchType.seatedRow,
-        _SketchType.bicepCurl,
-        _SketchType.uprightRow,
+      imageAsset: 'assets/images/routines/routine_traccion.png',
+      exerciseAssets: [
+        'assets/images/exercises/CmEr4pM.gif',
+        'assets/images/exercises/fUBheHs.gif',
+        'assets/images/exercises/4dUn2iv.gif',
+        'assets/images/exercises/G61cXLk.gif',
       ],
     ),
     _LibraryTemplateItem(
       title: 'Sábado de Empuje 🫣',
       subtitle: 'Plantilla · 10 ejercicios',
-      sketchTypes: [
-        _SketchType.inclineBench,
-        _SketchType.flatBench,
-        _SketchType.cableFly,
-        _SketchType.tricepPushdown,
+      imageAsset: 'assets/images/routines/routine_empuje.png',
+      exerciseAssets: [
+        'assets/images/exercises/5v7KYld.gif',
+        'assets/images/exercises/EIeI8Vf.gif',
+        'assets/images/exercises/7saC5zz.gif',
+        'assets/images/exercises/2IxROQ1.gif',
       ],
     ),
     _LibraryTemplateItem(
       title: 'Pecho, Triceps',
       subtitle: 'Plantilla · 8 ejercicios',
-      sketchTypes: [
-        _SketchType.flatBench,
-        _SketchType.inclineBench,
-        _SketchType.cableFly,
-        _SketchType.tricepPushdown,
+      imageAsset: 'assets/images/routines/routine_pecho_triceps.png',
+      exerciseAssets: [
+        'assets/images/exercises/EIeI8Vf.gif',
+        'assets/images/exercises/5v7KYld.gif',
+        'assets/images/exercises/7saC5zz.gif',
+        'assets/images/exercises/2IxROQ1.gif',
       ],
     ),
     _LibraryTemplateItem(
       title: 'Espalda, Biceps',
       subtitle: 'Plantilla · 7 ejercicios',
-      sketchTypes: [
-        _SketchType.latPulldown,
-        _SketchType.seatedRow,
-        _SketchType.latPulldown,
-        _SketchType.bicepCurl,
+      imageAsset: 'assets/images/routines/routine_espalda_biceps.png',
+      exerciseAssets: [
+        'assets/images/exercises/CmEr4pM.gif',
+        'assets/images/exercises/fUBheHs.gif',
+        'assets/images/exercises/CmEr4pM.gif',
+        'assets/images/exercises/4dUn2iv.gif',
       ],
     ),
     _LibraryTemplateItem(
       title: 'Piernas, Hombros',
       subtitle: 'Plantilla · 7 ejercicios',
-      sketchTypes: [
-        _SketchType.legPress,
-        _SketchType.legExtension,
-        _SketchType.shoulderPress,
-        _SketchType.lateralRaise,
+      imageAsset: 'assets/images/routines/routine_piernas_hombros.png',
+      exerciseAssets: [
+        'assets/images/exercises/9n2149Z.gif',
+        'assets/images/exercises/my33uHU.gif',
+        'assets/images/exercises/znQUdHY.gif',
+        'assets/images/exercises/DsgkuIt.gif',
       ],
     ),
   ];
@@ -286,8 +292,8 @@ class _LibraryPageState extends State<LibraryPage> {
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
         child: Row(
           children: [
-            // 2x2 White Sketch Card
-            _buildSketchGridCard(item.sketchTypes),
+            // 2x2 White Card with Original Downloaded Exercise Drawings
+            _buildSketchGridCard(item),
             const SizedBox(width: 16),
 
             // Title & Subtitle
@@ -338,7 +344,7 @@ class _LibraryPageState extends State<LibraryPage> {
     );
   }
 
-  Widget _buildSketchGridCard(List<_SketchType> types) {
+  Widget _buildSketchGridCard(_LibraryTemplateItem item) {
     return Container(
       width: 64,
       height: 64,
@@ -346,22 +352,34 @@ class _LibraryPageState extends State<LibraryPage> {
         color: Colors.white,
         borderRadius: BorderRadius.circular(16),
       ),
-      padding: const EdgeInsets.all(5),
+      clipBehavior: Clip.antiAlias,
+      child: Image.asset(
+        item.imageAsset,
+        fit: BoxFit.cover,
+        errorBuilder: (_, __, ___) => _buildFallbackGrid(item.exerciseAssets),
+      ),
+    );
+  }
+
+  Widget _buildFallbackGrid(List<String> assets) {
+    return Container(
+      color: Colors.white,
+      padding: const EdgeInsets.all(4),
       child: Column(
         children: [
           Expanded(
             child: Row(
               children: [
-                Expanded(child: _buildMiniSketchTile(types[0])),
-                Expanded(child: _buildMiniSketchTile(types[1])),
+                Expanded(child: _buildCellImage(assets[0])),
+                Expanded(child: _buildCellImage(assets[1])),
               ],
             ),
           ),
           Expanded(
             child: Row(
               children: [
-                Expanded(child: _buildMiniSketchTile(types[2])),
-                Expanded(child: _buildMiniSketchTile(types[3])),
+                Expanded(child: _buildCellImage(assets[2])),
+                Expanded(child: _buildCellImage(assets[3])),
               ],
             ),
           ),
@@ -370,10 +388,11 @@ class _LibraryPageState extends State<LibraryPage> {
     );
   }
 
-  Widget _buildMiniSketchTile(_SketchType type) {
-    return CustomPaint(
-      size: const Size(28, 28),
-      painter: _MiniExerciseSketchPainter(type: type),
+  Widget _buildCellImage(String path) {
+    return Image.asset(
+      path,
+      fit: BoxFit.contain,
+      errorBuilder: (_, __, ___) => const SizedBox(),
     );
   }
 
@@ -459,224 +478,16 @@ class _LibraryPageState extends State<LibraryPage> {
   }
 }
 
-enum _SketchType {
-  chestPress,
-  latPulldown,
-  seatedRow,
-  inclineBench,
-  flatBench,
-  cableFly,
-  tricepPushdown,
-  legPress,
-  legExtension,
-  shoulderPress,
-  bicepCurl,
-  uprightRow,
-  lateralRaise,
-}
-
 class _LibraryTemplateItem {
   final String title;
   final String subtitle;
-  final List<_SketchType> sketchTypes;
+  final String imageAsset;
+  final List<String> exerciseAssets;
 
   const _LibraryTemplateItem({
     required this.title,
     required this.subtitle,
-    required this.sketchTypes,
+    required this.imageAsset,
+    required this.exerciseAssets,
   });
-}
-
-/// CustomPainter that draws authentic exercise sketches matching the Symmetry UI:
-/// gym equipment frame (grey), seated/standing figure (charcoal), and red active muscle accent.
-class _MiniExerciseSketchPainter extends CustomPainter {
-  final _SketchType type;
-
-  const _MiniExerciseSketchPainter({required this.type});
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final framePaint = Paint()
-      ..color = const Color(0xFF888890)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.0
-      ..strokeCap = StrokeCap.round;
-
-    final bodyPaint = Paint()
-      ..color = const Color(0xFF202024)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.6
-      ..strokeCap = StrokeCap.round;
-
-    final musclePaint = Paint()
-      ..color = const Color(0xFFE53935)
-      ..style = PaintingStyle.fill;
-
-    final w = size.width;
-    final h = size.height;
-
-    switch (type) {
-      case _SketchType.chestPress:
-        // Chest press machine
-        canvas.drawLine(Offset(w * 0.3, h * 0.35), Offset(w * 0.3, h * 0.75), framePaint);
-        canvas.drawCircle(Offset(w * 0.45, h * 0.35), 2.2, bodyPaint);
-        canvas.drawLine(Offset(w * 0.45, h * 0.42), Offset(w * 0.45, h * 0.75), bodyPaint);
-        canvas.drawLine(Offset(w * 0.45, h * 0.5), Offset(w * 0.75, h * 0.5), bodyPaint);
-        canvas.drawCircle(Offset(w * 0.5, h * 0.5), 2.0, musclePaint);
-        break;
-
-      case _SketchType.latPulldown:
-        // Overhead tower
-        canvas.drawLine(Offset(w * 0.5, 2), Offset(w * 0.5, h - 2), framePaint);
-        canvas.drawLine(Offset(w * 0.2, 2), Offset(w * 0.8, 2), framePaint);
-        // Seated figure
-        canvas.drawCircle(Offset(w * 0.5, h * 0.35), 2.2, bodyPaint);
-        canvas.drawLine(Offset(w * 0.5, h * 0.42), Offset(w * 0.5, h * 0.7), bodyPaint);
-        // Arms pulling bar
-        canvas.drawLine(Offset(w * 0.3, 3), Offset(w * 0.5, h * 0.5), bodyPaint);
-        canvas.drawLine(Offset(w * 0.7, 3), Offset(w * 0.5, h * 0.5), bodyPaint);
-        // Red Back accent
-        canvas.drawCircle(Offset(w * 0.5, h * 0.52), 2.0, musclePaint);
-        break;
-
-      case _SketchType.seatedRow:
-        // Seat and cable
-        canvas.drawLine(Offset(w * 0.2, h * 0.7), Offset(w * 0.8, h * 0.7), framePaint);
-        canvas.drawLine(Offset(w * 0.8, h * 0.3), Offset(w * 0.8, h * 0.7), framePaint);
-        // Seated figure pulling
-        canvas.drawCircle(Offset(w * 0.35, h * 0.4), 2.2, bodyPaint);
-        canvas.drawLine(Offset(w * 0.35, h * 0.48), Offset(w * 0.35, h * 0.7), bodyPaint);
-        canvas.drawLine(Offset(w * 0.35, h * 0.55), Offset(w * 0.65, h * 0.55), bodyPaint);
-        // Red back
-        canvas.drawCircle(Offset(w * 0.35, h * 0.55), 2.0, musclePaint);
-        break;
-
-      case _SketchType.inclineBench:
-        // Incline bench
-        canvas.drawLine(Offset(w * 0.2, h * 0.8), Offset(w * 0.7, h * 0.3), framePaint);
-        // Figure
-        canvas.drawCircle(Offset(w * 0.6, h * 0.25), 2.2, bodyPaint);
-        canvas.drawLine(Offset(w * 0.55, h * 0.32), Offset(w * 0.3, h * 0.7), bodyPaint);
-        // Barbell press
-        canvas.drawLine(Offset(w * 0.25, h * 0.2), Offset(w * 0.65, h * 0.2), framePaint);
-        canvas.drawLine(Offset(w * 0.45, h * 0.4), Offset(w * 0.45, h * 0.2), bodyPaint);
-        // Red chest
-        canvas.drawCircle(Offset(w * 0.48, h * 0.38), 2.0, musclePaint);
-        break;
-
-      case _SketchType.flatBench:
-        // Flat bench
-        canvas.drawLine(Offset(w * 0.2, h * 0.65), Offset(w * 0.8, h * 0.65), framePaint);
-        // Figure lying
-        canvas.drawCircle(Offset(w * 0.25, h * 0.55), 2.2, bodyPaint);
-        canvas.drawLine(Offset(w * 0.32, h * 0.58), Offset(w * 0.75, h * 0.58), bodyPaint);
-        // Pressing arms
-        canvas.drawLine(Offset(w * 0.48, h * 0.58), Offset(w * 0.48, h * 0.3), bodyPaint);
-        canvas.drawLine(Offset(w * 0.3, h * 0.3), Offset(w * 0.66, h * 0.3), framePaint);
-        // Red chest
-        canvas.drawCircle(Offset(w * 0.45, h * 0.55), 2.0, musclePaint);
-        break;
-
-      case _SketchType.cableFly:
-        // Crossover cables
-        canvas.drawLine(Offset(w * 0.1, 2), Offset(w * 0.1, h - 2), framePaint);
-        canvas.drawLine(Offset(w * 0.9, 2), Offset(w * 0.9, h - 2), framePaint);
-        // Standing figure
-        canvas.drawCircle(Offset(w * 0.5, h * 0.3), 2.2, bodyPaint);
-        canvas.drawLine(Offset(w * 0.5, h * 0.38), Offset(w * 0.5, h * 0.8), bodyPaint);
-        // Hugging cables
-        canvas.drawLine(Offset(w * 0.15, h * 0.35), Offset(w * 0.5, h * 0.5), bodyPaint);
-        canvas.drawLine(Offset(w * 0.85, h * 0.35), Offset(w * 0.5, h * 0.5), bodyPaint);
-        // Red chest
-        canvas.drawCircle(Offset(w * 0.5, h * 0.45), 2.0, musclePaint);
-        break;
-
-      case _SketchType.tricepPushdown:
-        // Cable machine
-        canvas.drawLine(Offset(w * 0.5, 2), Offset(w * 0.5, h * 0.3), framePaint);
-        // Figure
-        canvas.drawCircle(Offset(w * 0.35, h * 0.3), 2.2, bodyPaint);
-        canvas.drawLine(Offset(w * 0.35, h * 0.38), Offset(w * 0.35, h * 0.8), bodyPaint);
-        // Arms down
-        canvas.drawLine(Offset(w * 0.35, h * 0.45), Offset(w * 0.5, h * 0.6), bodyPaint);
-        // Red triceps
-        canvas.drawCircle(Offset(w * 0.4, h * 0.48), 1.8, musclePaint);
-        break;
-
-      case _SketchType.legPress:
-        // 45° angled sled
-        canvas.drawLine(Offset(w * 0.2, h * 0.8), Offset(w * 0.8, h * 0.2), framePaint);
-        // Seated figure
-        canvas.drawCircle(Offset(w * 0.3, h * 0.65), 2.2, bodyPaint);
-        canvas.drawLine(Offset(w * 0.3, h * 0.72), Offset(w * 0.55, h * 0.45), bodyPaint);
-        // Red quads
-        canvas.drawCircle(Offset(w * 0.45, h * 0.55), 2.2, musclePaint);
-        break;
-
-      case _SketchType.legExtension:
-        // Seated machine
-        canvas.drawLine(Offset(w * 0.3, h * 0.6), Offset(w * 0.7, h * 0.6), framePaint);
-        canvas.drawLine(Offset(w * 0.3, h * 0.3), Offset(w * 0.3, h * 0.6), framePaint);
-        // Figure kicking out
-        canvas.drawCircle(Offset(w * 0.35, h * 0.35), 2.2, bodyPaint);
-        canvas.drawLine(Offset(w * 0.35, h * 0.42), Offset(w * 0.55, h * 0.6), bodyPaint);
-        canvas.drawLine(Offset(w * 0.55, h * 0.6), Offset(w * 0.75, h * 0.6), bodyPaint);
-        // Red quads
-        canvas.drawCircle(Offset(w * 0.5, h * 0.55), 2.2, musclePaint);
-        break;
-
-      case _SketchType.shoulderPress:
-        // Bench
-        canvas.drawLine(Offset(w * 0.4, h * 0.4), Offset(w * 0.4, h * 0.8), framePaint);
-        // Seated figure
-        canvas.drawCircle(Offset(w * 0.5, h * 0.3), 2.2, bodyPaint);
-        canvas.drawLine(Offset(w * 0.5, h * 0.38), Offset(w * 0.5, h * 0.75), bodyPaint);
-        // Dumbbells overhead
-        canvas.drawLine(Offset(w * 0.5, h * 0.45), Offset(w * 0.3, h * 0.2), bodyPaint);
-        canvas.drawLine(Offset(w * 0.5, h * 0.45), Offset(w * 0.7, h * 0.2), bodyPaint);
-        // Red shoulders
-        canvas.drawCircle(Offset(w * 0.38, h * 0.38), 1.8, musclePaint);
-        canvas.drawCircle(Offset(w * 0.62, h * 0.38), 1.8, musclePaint);
-        break;
-
-      case _SketchType.bicepCurl:
-        // Standing figure
-        canvas.drawCircle(Offset(w * 0.5, h * 0.25), 2.2, bodyPaint);
-        canvas.drawLine(Offset(w * 0.5, h * 0.33), Offset(w * 0.5, h * 0.8), bodyPaint);
-        // Curling arm
-        canvas.drawLine(Offset(w * 0.5, h * 0.4), Offset(w * 0.65, h * 0.5), bodyPaint);
-        canvas.drawLine(Offset(w * 0.65, h * 0.5), Offset(w * 0.55, h * 0.38), bodyPaint);
-        // Red bicep
-        canvas.drawCircle(Offset(w * 0.6, h * 0.45), 2.0, musclePaint);
-        break;
-
-      case _SketchType.uprightRow:
-        // Cable/barbell upright row
-        canvas.drawLine(Offset(w * 0.5, h * 0.4), Offset(w * 0.5, h * 0.75), framePaint);
-        // Standing figure
-        canvas.drawCircle(Offset(w * 0.5, h * 0.25), 2.2, bodyPaint);
-        canvas.drawLine(Offset(w * 0.5, h * 0.33), Offset(w * 0.5, h * 0.8), bodyPaint);
-        // High elbows
-        canvas.drawLine(Offset(w * 0.3, h * 0.4), Offset(w * 0.5, h * 0.45), bodyPaint);
-        canvas.drawLine(Offset(w * 0.7, h * 0.4), Offset(w * 0.5, h * 0.45), bodyPaint);
-        // Red traps
-        canvas.drawCircle(Offset(w * 0.5, h * 0.38), 2.0, musclePaint);
-        break;
-
-      case _SketchType.lateralRaise:
-        // Standing figure with arms raised
-        canvas.drawCircle(Offset(w * 0.5, h * 0.25), 2.2, bodyPaint);
-        canvas.drawLine(Offset(w * 0.5, h * 0.33), Offset(w * 0.5, h * 0.8), bodyPaint);
-        // Arms raised
-        canvas.drawLine(Offset(w * 0.2, h * 0.45), Offset(w * 0.8, h * 0.45), bodyPaint);
-        // Red shoulders
-        canvas.drawCircle(Offset(w * 0.35, h * 0.45), 1.8, musclePaint);
-        canvas.drawCircle(Offset(w * 0.65, h * 0.45), 1.8, musclePaint);
-        break;
-    }
-  }
-
-  @override
-  bool shouldRepaint(covariant _MiniExerciseSketchPainter oldDelegate) =>
-      oldDelegate.type != type;
 }
