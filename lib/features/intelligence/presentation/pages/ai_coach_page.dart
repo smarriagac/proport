@@ -181,7 +181,7 @@ class _AICoachPageState extends State<AICoachPage> {
                           onSubmitted: (_) => _sendMessage(),
                           style: const TextStyle(fontSize: 14),
                           decoration: InputDecoration(
-                            hintText: 'Ask Symmetry Coach anything...',
+                            hintText: 'Ask Proport Coach anything...',
                             contentPadding: const EdgeInsets.symmetric(
                               horizontal: 16,
                               vertical: 12,

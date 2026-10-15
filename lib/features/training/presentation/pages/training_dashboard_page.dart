@@ -34,7 +34,7 @@ class TrainingDashboardPage extends StatelessWidget {
             ),
             const SizedBox(width: 8),
             const Text(
-              'Symmetry',
+              'Proport',
               style: TextStyle(
                 fontFamily: AppTheme.fontAlbert,
                 fontWeight: FontWeight.w700,

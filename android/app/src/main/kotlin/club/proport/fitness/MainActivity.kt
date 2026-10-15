@@ -1,4 +1,4 @@
-package club.symmetry.fitness
+package club.proport.fitness
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,7 +1,7 @@
 import '../models/chat_message_model.dart';
 import '../models/ai_workout_recommendation_model.dart';
-import 'package:symmetry/features/training/data/models/exercise_model.dart';
-import 'package:symmetry/features/training/data/models/exercise_set_model.dart';
+import 'package:proport/features/training/data/models/exercise_model.dart';
+import 'package:proport/features/training/data/models/exercise_set_model.dart';
 
 abstract class IntelligenceLocalDataSource {
   Future<List<ChatMessageModel>> getChatHistory();
@@ -20,7 +20,7 @@ class IntelligenceLocalDataSourceImpl implements IntelligenceLocalDataSource {
       id: 'msg_welcome',
       sender: 'assistant',
       content:
-          'Welcome to Symmetry AI Coach. I analyze your training volume, balance, and progressive overload in real time.\n\nAsk me anything about exercise technique, plateau breaking, recovery, or let me design your next workout!',
+          'Welcome to Proport AI Coach. I analyze your training volume, balance, and progressive overload in real time.\n\nAsk me anything about exercise technique, plateau breaking, recovery, or let me design your next workout!',
       timestamp: DateTime.now().subtract(const Duration(minutes: 5)),
       suggestions: const [
         'How do I break a bench press plateau?',

@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:symmetry/features/training/domain/entities/exercise.dart';
+import 'package:proport/features/training/domain/entities/exercise.dart';
 
 class AIWorkoutRecommendation extends Equatable {
   final String id;

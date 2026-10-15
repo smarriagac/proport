@@ -940,7 +940,7 @@ class _ActiveWorkoutPageState extends State<ActiveWorkoutPage> {
             Icon(Icons.auto_awesome_rounded, color: AppColors.accentBlue, size: 22),
             SizedBox(width: 8),
             Text(
-              'Symmetry Intelligence',
+              'Proport Intelligence',
               style: TextStyle(
                 fontFamily: AppTheme.fontAlbert,
                 fontWeight: FontWeight.w700,

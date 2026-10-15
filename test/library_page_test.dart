@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:symmetry/features/library/presentation/pages/library_page.dart';
+import 'package:proport/features/library/presentation/pages/library_page.dart';
 
 void main() {
   testWidgets('LibraryPage renders authentic header, category chips, templates, and action cards',

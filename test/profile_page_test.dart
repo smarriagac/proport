@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:symmetry/features/profile/presentation/pages/profile_page.dart';
+import 'package:proport/features/profile/presentation/pages/profile_page.dart';
 
 void main() {
   testWidgets('ProfilePage renders authentic header, stats, action buttons and history grid',

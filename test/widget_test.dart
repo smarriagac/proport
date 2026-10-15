@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:drift/native.dart';
-import 'package:symmetry/app/app.dart';
-import 'package:symmetry/core/database/app_database.dart';
-import 'package:symmetry/core/di/injection.dart';
+import 'package:proport/app/app.dart';
+import 'package:proport/core/database/app_database.dart';
+import 'package:proport/core/di/injection.dart';
 
 void main() {
   late AppDatabase testDb;

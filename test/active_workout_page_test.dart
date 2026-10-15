@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:symmetry/features/training/domain/entities/exercise.dart';
-import 'package:symmetry/features/training/domain/entities/exercise_set.dart';
-import 'package:symmetry/features/training/domain/entities/training_session.dart';
-import 'package:symmetry/features/training/presentation/bloc/training_bloc.dart';
-import 'package:symmetry/features/training/presentation/bloc/training_state.dart';
-import 'package:symmetry/features/training/presentation/pages/active_workout_page.dart';
+import 'package:proport/features/training/domain/entities/exercise.dart';
+import 'package:proport/features/training/domain/entities/exercise_set.dart';
+import 'package:proport/features/training/domain/entities/training_session.dart';
+import 'package:proport/features/training/presentation/bloc/training_bloc.dart';
+import 'package:proport/features/training/presentation/bloc/training_state.dart';
+import 'package:proport/features/training/presentation/pages/active_workout_page.dart';
 
 class MockTrainingBloc extends Cubit<TrainingState> implements TrainingBloc {
   MockTrainingBloc()

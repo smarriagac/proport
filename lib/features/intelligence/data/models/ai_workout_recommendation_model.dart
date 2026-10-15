@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:symmetry/features/training/data/models/exercise_model.dart';
+import 'package:proport/features/training/data/models/exercise_model.dart';
 import '../../domain/entities/ai_workout_recommendation.dart';
 
 part 'ai_workout_recommendation_model.freezed.dart';

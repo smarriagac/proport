@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:symmetry/features/statistics/presentation/widgets/rank_calculator_tab_content.dart';
+import 'package:proport/features/statistics/presentation/widgets/rank_calculator_tab_content.dart';
 
 void main() {
   testWidgets('RankCalculatorTabContent renders authentic hero badges, title, and cta',

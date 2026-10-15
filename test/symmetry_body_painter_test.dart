@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:symmetry/features/statistics/presentation/widgets/symmetry_body_painter.dart';
+import 'package:proport/features/statistics/presentation/widgets/symmetry_body_painter.dart';
 
 void main() {
   group('SymmetryBodyDiagram & SymmetryBodyPainter Tests', () {

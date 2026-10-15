@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:symmetry/features/training/domain/entities/training_session.dart';
-import 'package:symmetry/features/training/presentation/pages/workout_session_preview_page.dart';
+import 'package:proport/features/training/domain/entities/training_session.dart';
+import 'package:proport/features/training/presentation/pages/workout_session_preview_page.dart';
 
 void main() {
   testWidgets('WorkoutSessionPreviewPage renders authentic header, muscles, and CTA', (tester) async {

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:symmetry/core/constants/app_constants.dart';
-import 'package:symmetry/features/training/domain/entities/training_session.dart';
-import 'package:symmetry/features/training/presentation/bloc/training_bloc.dart';
-import 'package:symmetry/features/training/presentation/bloc/training_event.dart';
+import 'package:proport/core/constants/app_constants.dart';
+import 'package:proport/features/training/domain/entities/training_session.dart';
+import 'package:proport/features/training/presentation/bloc/training_bloc.dart';
+import 'package:proport/features/training/presentation/bloc/training_event.dart';
 import '../bloc/intelligence_bloc.dart';
 import '../bloc/intelligence_event.dart';
 import '../bloc/intelligence_state.dart';

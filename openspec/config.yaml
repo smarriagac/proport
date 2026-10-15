@@ -2,12 +2,12 @@
 schema: spec-driven
 
 context: |
-  Project: symmetry
+  Project: proport
   Tech stack: Flutter 3.x / Dart 3.x
   State management: flutter_bloc
   Architecture: Clean Architecture (Feature-First) with Drift SQLite
   Images & Media: extended_image (local assets & disk/memory cache)
-  Design System: Symmetry Dark Gym Tech (AlbertSans, DMSans, DMMono)
+  Design System: Proport Dark Gym Tech (AlbertSans, DMSans, DMMono)
 
 testing:
   strict_tdd: true
