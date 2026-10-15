@@ -24,21 +24,21 @@ class TrainingDashboardPage extends StatelessWidget {
           children: [
             SvgPicture.asset(
               AppAssets.logoSvg,
-              width: 26,
-              height: 26,
+              width: 24,
+              height: 24,
               colorFilter: const ColorFilter.mode(
-                AppColors.primaryBlue,
+                Colors.white,
                 BlendMode.srcIn,
               ),
             ),
-            const SizedBox(width: 10),
+            const SizedBox(width: 8),
             const Text(
-              'SYMMETRY',
+              'Symmetry',
               style: TextStyle(
                 fontFamily: AppTheme.fontAlbert,
-                fontWeight: FontWeight.w900,
-                letterSpacing: 2.0,
-                fontSize: 18,
+                fontWeight: FontWeight.w700,
+                letterSpacing: -0.3,
+                fontSize: 22,
                 color: Colors.white,
               ),
             ),
@@ -49,57 +49,62 @@ class TrainingDashboardPage extends StatelessWidget {
             builder: (context, state) {
               final streakDays = state.maybeWhen(
                 loaded: (_, __, ___, ____, _____, completed) =>
-                    completed.isNotEmpty ? completed.length : 5,
-                orElse: () => 5,
+                    completed.isNotEmpty ? completed.length : 51,
+                orElse: () => 51,
               );
 
-              return Container(
-                margin: const EdgeInsets.symmetric(vertical: 10),
-                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                decoration: BoxDecoration(
-                  color: AppColors.card,
-                  borderRadius: BorderRadius.circular(20),
-                  border: Border.all(
-                    color: AppColors.flameOrange.withValues(alpha: 0.35),
-                  ),
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    SvgPicture.asset(
-                      AppAssets.streakFlameLit,
-                      width: 16,
-                      height: 16,
+              return Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  // PRO badge
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 4),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFC7E2FE),
+                      borderRadius: BorderRadius.circular(100),
                     ),
-                    const SizedBox(width: 5),
-                    Text(
-                      '$streakDays DÍAS',
-                      style: const TextStyle(
+                    child: const Text(
+                      'PRO',
+                      style: TextStyle(
                         fontFamily: AppTheme.fontAlbert,
                         fontWeight: FontWeight.w800,
                         fontSize: 12,
-                        color: AppColors.flameOrange,
+                        color: Colors.black,
+                        letterSpacing: 0.5,
                       ),
                     ),
-                  ],
-                ),
+                  ),
+                  const SizedBox(width: 14),
+                  // Streak badge
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      SvgPicture.asset(
+                        AppAssets.streakFlameLit,
+                        width: 18,
+                        height: 18,
+                        colorFilter: const ColorFilter.mode(
+                          Color(0xFF8E8E93),
+                          BlendMode.srcIn,
+                        ),
+                      ),
+                      const SizedBox(width: 5),
+                      Text(
+                        '$streakDays',
+                        style: const TextStyle(
+                          fontFamily: AppTheme.fontAlbert,
+                          fontWeight: FontWeight.w700,
+                          fontSize: 16,
+                          color: Color(0xFF8E8E93),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(width: 16),
+                ],
               );
             },
           ),
-          const SizedBox(width: 8),
-          IconButton(
-            icon: SvgPicture.asset(
-              AppAssets.notificationIcon,
-              width: 22,
-              height: 22,
-              colorFilter: const ColorFilter.mode(
-                Colors.white,
-                BlendMode.srcIn,
-              ),
-            ),
-            onPressed: () {},
-          ),
-          const SizedBox(width: 8),
         ],
       ),
       body: BlocBuilder<TrainingBloc, TrainingState>(
@@ -145,12 +150,12 @@ class TrainingDashboardPage extends StatelessWidget {
                   context.read<TrainingBloc>().add(const LoadWorkoutPlansEvent());
                 },
                 child: ListView(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   children: [
                     // Active Workout in progress indicator (if any)
                     if (activeSession != null) ...[
                       _buildActiveWorkoutNotice(context, activeSession.name),
-                      const SizedBox(height: 18),
+                      const SizedBox(height: 14),
                     ],
 
                     // "Tu Plan" Hero Card Section
@@ -160,14 +165,14 @@ class TrainingDashboardPage extends StatelessWidget {
                       session: primarySession,
                     ),
 
-                    const SizedBox(height: 24),
+                    const SizedBox(height: 32),
 
                     // "¿Buscas otra forma de entrenar?" Section
                     _buildAlternativeTrainingSection(context, activePlan: activePlan),
 
-                    const SizedBox(height: 26),
+                    const SizedBox(height: 30),
 
-                    // Sessions in Current Plan Section
+                    // Sessions in Current Plan Section (Scrollable follow-up)
                     if (activePlan != null && activePlan.trainingSessions.isNotEmpty) ...[
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -274,7 +279,7 @@ class TrainingDashboardPage extends StatelessWidget {
                           ),
                         );
                       }),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: 20),
                     ],
                   ],
                 ),
@@ -291,15 +296,15 @@ class TrainingDashboardPage extends StatelessWidget {
     required dynamic activePlan,
     required TrainingSession? session,
   }) {
-    final workoutTitle = session?.name ?? (activePlan != null ? activePlan.name : 'Torso Potencia A');
-    final exerciseCount = session?.exercises.length ?? 6;
-    final durationMin = session?.durationMinutes ?? (activePlan != null ? activePlan.durationPerSession : 45);
-    final ruleset = activePlan != null ? activePlan.ruleset : 'Torso / Pierna';
+    final workoutTitle = session?.name ?? (activePlan != null ? activePlan.name : 'EMPUJE');
+    final exerciseCount = session?.exercises.length ?? 10;
+    final durationMin = session?.durationMinutes ?? (activePlan != null ? activePlan.durationPerSession : 120);
+    final dayName = _getDayOfWeekName(session?.dayOfWeek ?? DateTime.now().weekday);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Header Row
+        // Header Row: Tu Plan + Más planes ->
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -307,27 +312,39 @@ class TrainingDashboardPage extends StatelessWidget {
               'Tu Plan',
               style: TextStyle(
                 fontFamily: AppTheme.fontAlbert,
-                fontWeight: FontWeight.w800,
-                fontSize: 18,
+                fontWeight: FontWeight.w700,
+                fontSize: 20,
                 color: Colors.white,
               ),
             ),
             InkWell(
+              borderRadius: BorderRadius.circular(8),
               onTap: () {
                 if (activePlan != null) {
                   context.push('/training/plan-detail', extra: activePlan);
                 }
               },
               child: const Padding(
-                padding: EdgeInsets.symmetric(vertical: 4, horizontal: 2),
-                child: Text(
-                  'Más planes',
-                  style: TextStyle(
-                    fontFamily: AppTheme.fontDM,
-                    fontWeight: FontWeight.w600,
-                    fontSize: 13,
-                    color: AppColors.accentBlue,
-                  ),
+                padding: EdgeInsets.symmetric(vertical: 4, horizontal: 4),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      'Más planes',
+                      style: TextStyle(
+                        fontFamily: AppTheme.fontDM,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 14,
+                        color: Color(0xFF8E8E93),
+                      ),
+                    ),
+                    SizedBox(width: 4),
+                    Icon(
+                      Icons.arrow_forward_rounded,
+                      color: Color(0xFF8E8E93),
+                      size: 16,
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -335,161 +352,148 @@ class TrainingDashboardPage extends StatelessWidget {
         ),
         const SizedBox(height: 12),
 
-        // Premium Workout Card
+        // Full-bleed Hero Card
         Container(
-          padding: const EdgeInsets.all(20),
+          height: 470,
           decoration: BoxDecoration(
-            color: AppColors.card,
-            borderRadius: BorderRadius.circular(20),
-            border: Border.all(color: AppColors.cardBorder),
-            gradient: const LinearGradient(
-              colors: [Color(0xFF1E2430), AppColors.card],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: AppColors.primaryBlue.withValues(alpha: 0.12),
-                blurRadius: 20,
-                offset: const Offset(0, 6),
-              ),
-            ],
+            borderRadius: BorderRadius.circular(28),
+            border: Border.all(color: const Color(0xFF26262B), width: 1),
           ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Badge & Tag row
-              Row(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(27),
+            child: Stack(
+              fit: StackFit.expand,
+              children: [
+                // 1. High-res athlete background image
+                Image.asset(
+                  AppAssets.workoutHeroCleanBg,
+                  fit: BoxFit.cover,
+                  alignment: Alignment.topCenter,
+                  errorBuilder: (context, error, stackTrace) {
+                    return Image.asset(
+                      AppAssets.workoutHeroEmpujeCard,
+                      fit: BoxFit.cover,
+                    );
+                  },
+                ),
+
+                // 2. Seamless dark gradient overlay for bottom legibility
+                Positioned.fill(
+                  child: DecoratedBox(
                     decoration: BoxDecoration(
-                      color: AppColors.primaryBlue.withValues(alpha: 0.16),
-                      borderRadius: BorderRadius.circular(8),
-                      border: Border.all(
-                        color: AppColors.primaryBlue.withValues(alpha: 0.3),
-                      ),
-                    ),
-                    child: Text(
-                      ruleset.toString().toUpperCase(),
-                      style: const TextStyle(
-                        fontFamily: AppTheme.fontAlbert,
-                        color: AppColors.accentBlue,
-                        fontWeight: FontWeight.w800,
-                        fontSize: 11,
-                        letterSpacing: 0.5,
-                      ),
-                    ),
-                  ),
-                  const Spacer(),
-                  const Row(
-                    children: [
-                      Icon(
-                        Icons.schedule_rounded,
-                        size: 14,
-                        color: AppColors.textMuted,
-                      ),
-                      SizedBox(width: 4),
-                      Text(
-                        'SESIÓN DE HOY',
-                        style: TextStyle(
-                          fontFamily: AppTheme.fontAlbert,
-                          fontSize: 11,
-                          fontWeight: FontWeight.w700,
-                          color: AppColors.textMuted,
-                          letterSpacing: 0.5,
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-              const SizedBox(height: 14),
-
-              // Workout title
-              Text(
-                workoutTitle,
-                style: const TextStyle(
-                  fontFamily: AppTheme.fontAlbert,
-                  fontWeight: FontWeight.w800,
-                  fontSize: 21,
-                  color: Colors.white,
-                  letterSpacing: -0.3,
-                ),
-              ),
-              const SizedBox(height: 4),
-
-              // Subtitle: 45 min · 6 ejercicios
-              Text(
-                '$durationMin min · $exerciseCount ejercicios',
-                style: const TextStyle(
-                  fontFamily: AppTheme.fontDM,
-                  color: AppColors.textSecondary,
-                  fontSize: 13,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-              const SizedBox(height: 20),
-
-              // High-impact "INICIAR ENTRENAMIENTO" button with gradient sheen
-              Container(
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  gradient: const LinearGradient(
-                    colors: [AppColors.primaryBlue, AppColors.accentBlue],
-                    begin: Alignment.centerLeft,
-                    end: Alignment.centerRight,
-                  ),
-                  borderRadius: BorderRadius.circular(14),
-                  boxShadow: [
-                    BoxShadow(
-                      color: AppColors.primaryBlue.withValues(alpha: 0.35),
-                      blurRadius: 14,
-                      offset: const Offset(0, 4),
-                    ),
-                  ],
-                ),
-                child: Material(
-                  color: Colors.transparent,
-                  child: InkWell(
-                    borderRadius: BorderRadius.circular(14),
-                    onTap: () {
-                      if (session != null) {
-                        context
-                            .read<TrainingBloc>()
-                            .add(StartWorkoutSessionEvent(session));
-                        context.push('/training/active-workout');
-                      } else if (activePlan != null && activePlan.trainingSessions.isNotEmpty) {
-                        context
-                            .read<TrainingBloc>()
-                            .add(StartWorkoutSessionEvent(activePlan.trainingSessions.first));
-                        context.push('/training/active-workout');
-                      }
-                    },
-                    child: const Padding(
-                      padding: EdgeInsets.symmetric(vertical: 15),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(Icons.play_arrow_rounded, color: Colors.white, size: 22),
-                          SizedBox(width: 8),
-                          Text(
-                            'INICIAR ENTRENAMIENTO',
-                            style: TextStyle(
-                              fontFamily: AppTheme.fontAlbert,
-                              fontSize: 14,
-                              fontWeight: FontWeight.w800,
-                              letterSpacing: 0.8,
-                              color: Colors.white,
-                            ),
-                          ),
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        stops: const [0.0, 0.42, 0.70, 1.0],
+                        colors: [
+                          Colors.transparent,
+                          Colors.transparent,
+                          Colors.black.withValues(alpha: 0.65),
+                          Colors.black.withValues(alpha: 0.98),
                         ],
                       ),
                     ),
                   ),
                 ),
-              ),
-            ],
+
+                // 3. Frosted Day pill top-left
+                Positioned(
+                  top: 18,
+                  left: 18,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
+                    decoration: BoxDecoration(
+                      color: const Color(0x73000000),
+                      borderRadius: BorderRadius.circular(100),
+                      border: Border.all(
+                        color: Colors.white.withValues(alpha: 0.18),
+                        width: 1,
+                      ),
+                    ),
+                    child: Text(
+                      dayName,
+                      style: const TextStyle(
+                        fontFamily: AppTheme.fontDM,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 13,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+
+                // 4. Content bottom: EMPUJE, 120 min · 10 ejercicios, Ver button
+                Positioned(
+                  left: 20,
+                  right: 20,
+                  bottom: 20,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        workoutTitle.toUpperCase(),
+                        style: const TextStyle(
+                          fontFamily: AppTheme.fontAlbert,
+                          fontWeight: FontWeight.w900,
+                          fontSize: 32,
+                          color: Colors.white,
+                          letterSpacing: 0.6,
+                          height: 1.1,
+                        ),
+                      ),
+                      const SizedBox(height: 6),
+                      Text(
+                        '$durationMin min · $exerciseCount ejercicios',
+                        style: const TextStyle(
+                          fontFamily: AppTheme.fontDM,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 14,
+                          color: Color(0xFFD1D1D6),
+                        ),
+                      ),
+                      const SizedBox(height: 18),
+                      SizedBox(
+                        width: double.infinity,
+                        height: 52,
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.white,
+                            foregroundColor: Colors.black,
+                            elevation: 0,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(100),
+                            ),
+                          ),
+                          onPressed: () {
+                            if (session != null) {
+                              context
+                                  .read<TrainingBloc>()
+                                  .add(StartWorkoutSessionEvent(session));
+                              context.push('/training/active-workout');
+                            } else if (activePlan != null && activePlan.trainingSessions.isNotEmpty) {
+                              context
+                                  .read<TrainingBloc>()
+                                  .add(StartWorkoutSessionEvent(activePlan.trainingSessions.first));
+                              context.push('/training/active-workout');
+                            }
+                          },
+                          child: const Text(
+                            'Ver',
+                            style: TextStyle(
+                              fontFamily: AppTheme.fontAlbert,
+                              fontWeight: FontWeight.w700,
+                              fontSize: 16,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ],
@@ -501,131 +505,174 @@ class TrainingDashboardPage extends StatelessWidget {
     required dynamic activePlan,
   }) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
           '¿Buscas otra forma de entrenar?',
+          textAlign: TextAlign.center,
           style: TextStyle(
             fontFamily: AppTheme.fontAlbert,
-            fontWeight: FontWeight.w800,
-            fontSize: 16,
+            fontWeight: FontWeight.w600,
+            fontSize: 18,
             color: Colors.white,
           ),
         ),
-        const SizedBox(height: 12),
+        const SizedBox(height: 16),
 
-        // 1. Generar entrenamiento con IA
-        _buildActionCard(
-          icon: const Icon(
-            Icons.auto_awesome_rounded,
-            color: AppColors.accentBlue,
-            size: 22,
+        // Grouped Card Container with 3 options
+        Container(
+          decoration: BoxDecoration(
+            color: const Color(0xFF141416),
+            borderRadius: BorderRadius.circular(24),
+            border: Border.all(color: const Color(0xFF26262B), width: 1),
           ),
-          iconBgColor: AppColors.accentBlue.withValues(alpha: 0.15),
-          title: 'Generar entrenamiento con IA',
-          subtitle: 'Dinos tu objetivo y lo tienes en segundos',
-          onTap: () => context.push('/intelligence/generator'),
-        ),
-        const SizedBox(height: 10),
+          child: Column(
+            children: [
+              // 1. Ir a mi Biblioteca
+              _buildGroupedItem(
+                leading: SvgPicture.asset(
+                  AppAssets.navLibrary,
+                  width: 20,
+                  height: 20,
+                  colorFilter: const ColorFilter.mode(
+                    Colors.white,
+                    BlendMode.srcIn,
+                  ),
+                ),
+                titleWidget: const Text(
+                  'Ir a mi Biblioteca',
+                  style: TextStyle(
+                    fontFamily: AppTheme.fontAlbert,
+                    fontWeight: FontWeight.w700,
+                    fontSize: 15,
+                    color: Colors.white,
+                  ),
+                ),
+                subtitle: 'Crea tus plantillas y úsalas cuando quieras',
+                onTap: () => context.go('/library'),
+              ),
+              const Divider(
+                height: 1,
+                thickness: 1,
+                color: Color(0xFF26262B),
+                indent: 16,
+                endIndent: 16,
+              ),
 
-        // 2. Empezar entrenamiento libre
-        _buildActionCard(
-          icon: SvgPicture.asset(
-            AppAssets.navTrain,
-            width: 20,
-            height: 20,
-            colorFilter: const ColorFilter.mode(
-              AppColors.primaryBlue,
-              BlendMode.srcIn,
-            ),
-          ),
-          iconBgColor: AppColors.primaryBlue.withValues(alpha: 0.15),
-          title: 'Empezar entrenamiento libre',
-          subtitle: 'Añade ejercicios a medida que entrenas',
-          onTap: () {
-            final emptySession = TrainingSession(
-              dayOfWeek: DateTime.now().weekday,
-              name: 'Entrenamiento Libre',
-              description: 'Sesión libre personalizada',
-              exercises: const [],
-              durationMinutes: 45,
-            );
-            context
-                .read<TrainingBloc>()
-                .add(StartWorkoutSessionEvent(emptySession));
-            context.push('/training/active-workout');
-          },
-        ),
-        const SizedBox(height: 10),
+              // 2. Generar entrenamiento con IA
+              _buildGroupedItem(
+                leading: SvgPicture.asset(
+                  AppAssets.iconSparkles,
+                  width: 20,
+                  height: 20,
+                  colorFilter: const ColorFilter.mode(
+                    Colors.white,
+                    BlendMode.srcIn,
+                  ),
+                ),
+                titleWidget: RichText(
+                  text: const TextSpan(
+                    text: 'Generar entrenamiento con ',
+                    style: TextStyle(
+                      fontFamily: AppTheme.fontAlbert,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 15,
+                      color: Colors.white,
+                    ),
+                    children: [
+                      TextSpan(
+                        text: 'IA',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                subtitle: 'Elige sitio, tiempo y te lo montamos',
+                onTap: () => context.push('/intelligence/generator'),
+              ),
+              const Divider(
+                height: 1,
+                thickness: 1,
+                color: Color(0xFF26262B),
+                indent: 16,
+                endIndent: 16,
+              ),
 
-        // 3. Tus plantillas
-        _buildActionCard(
-          icon: const Icon(
-            Icons.folder_outlined,
-            color: AppColors.flameOrange,
-            size: 22,
+              // 3. Empezar entrenamiento libre
+              _buildGroupedItem(
+                leading: SvgPicture.asset(
+                  AppAssets.iconDumbbell,
+                  width: 20,
+                  height: 20,
+                  colorFilter: const ColorFilter.mode(
+                    Colors.white,
+                    BlendMode.srcIn,
+                  ),
+                ),
+                titleWidget: const Text(
+                  'Empezar entrenamiento libre',
+                  style: TextStyle(
+                    fontFamily: AppTheme.fontAlbert,
+                    fontWeight: FontWeight.w700,
+                    fontSize: 15,
+                    color: Colors.white,
+                  ),
+                ),
+                subtitle: 'Añade ejercicios a medida que entrenas',
+                onTap: () {
+                  final emptySession = TrainingSession(
+                    dayOfWeek: DateTime.now().weekday,
+                    name: 'Entrenamiento Libre',
+                    description: 'Sesión libre personalizada',
+                    exercises: const [],
+                    durationMinutes: 45,
+                  );
+                  context
+                      .read<TrainingBloc>()
+                      .add(StartWorkoutSessionEvent(emptySession));
+                  context.push('/training/active-workout');
+                },
+              ),
+            ],
           ),
-          iconBgColor: AppColors.flameOrange.withValues(alpha: 0.15),
-          title: 'Tus plantillas',
-          subtitle: 'Crea o usa rutinas guardadas',
-          onTap: () {
-            if (activePlan != null) {
-              context.push('/training/plan-detail', extra: activePlan);
-            }
-          },
         ),
       ],
     );
   }
 
-  Widget _buildActionCard({
-    required Widget icon,
-    required Color iconBgColor,
-    required String title,
+  Widget _buildGroupedItem({
+    required Widget leading,
+    required Widget titleWidget,
     required String subtitle,
     required VoidCallback onTap,
   }) {
     return InkWell(
       onTap: onTap,
-      borderRadius: BorderRadius.circular(16),
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-        decoration: BoxDecoration(
-          color: AppColors.surface,
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: AppColors.cardBorder),
-        ),
+      borderRadius: BorderRadius.circular(24),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 15),
         child: Row(
           children: [
-            Container(
-              padding: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                color: iconBgColor,
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: icon,
+            SizedBox(
+              width: 26,
+              height: 26,
+              child: Center(child: leading),
             ),
             const SizedBox(width: 14),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    title,
-                    style: const TextStyle(
-                      fontFamily: AppTheme.fontAlbert,
-                      fontWeight: FontWeight.w700,
-                      fontSize: 15,
-                      color: Colors.white,
-                    ),
-                  ),
-                  const SizedBox(height: 2),
+                  titleWidget,
+                  const SizedBox(height: 3),
                   Text(
                     subtitle,
                     style: const TextStyle(
                       fontFamily: AppTheme.fontDM,
                       fontSize: 12,
-                      color: AppColors.textSecondary,
+                      color: Color(0xFF8E8E93),
                     ),
                   ),
                 ],
@@ -633,8 +680,8 @@ class TrainingDashboardPage extends StatelessWidget {
             ),
             const Icon(
               Icons.chevron_right_rounded,
-              color: AppColors.textMuted,
-              size: 22,
+              color: Color(0xFF8E8E93),
+              size: 20,
             ),
           ],
         ),
@@ -690,5 +737,25 @@ class TrainingDashboardPage extends StatelessWidget {
       ),
     );
   }
-}
 
+  String _getDayOfWeekName(int day) {
+    switch (day) {
+      case 1:
+        return 'Lunes';
+      case 2:
+        return 'Martes';
+      case 3:
+        return 'Miércoles';
+      case 4:
+        return 'Jueves';
+      case 5:
+        return 'Viernes';
+      case 6:
+        return 'Sábado';
+      case 7:
+        return 'Domingo';
+      default:
+        return 'Viernes';
+    }
+  }
+}

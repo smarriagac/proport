@@ -99,6 +99,10 @@ class AppAssets {
   static const String workoutBody5 = 'assets/icons/ranking/workout_body_5.png';
   static const String symmetryCalculatorHeroBadges =
       'assets/icons/ranking/symmetry_calculator_hero_badges.png';
+  static const String workoutHeroCleanBg =
+      'assets/images/workout_hero_clean_bg.png';
+  static const String workoutHeroEmpujeCard =
+      'assets/images/workout_hero_empuje_card.png';
 
   // Data Assets
   static const String predefinedPlansExampleJson =
