@@ -30,7 +30,10 @@ class TrainingRepositoryImpl implements TrainingRepository {
   @override
   Future<List<Exercise>> getExerciseCatalog() async {
     final models = await localDataSource.getExerciseCatalog();
-    return models.map((m) => m.toDomain()).toList();
+    return models.map((m) {
+      final thumb = localDataSource.getCachedThumbnail(m.exerciseTemplateId);
+      return m.toDomain(thumbnailURL: thumb);
+    }).toList();
   }
 
   @override
@@ -44,5 +47,27 @@ class TrainingRepositoryImpl implements TrainingRepository {
     final models = await localDataSource.getCompletedSessions();
     final nameMap = await localDataSource.getExerciseNameMap();
     return models.map((m) => m.toDomain(nameMap: nameMap)).toList();
+  }
+
+  @override
+  Future<List<TrainingSession>> getTemplates() async {
+    final models = await localDataSource.getTemplates();
+    final nameMap = await localDataSource.getExerciseNameMap();
+    return models.map((m) {
+      final session = m.toDomain(nameMap: nameMap);
+      final id = localDataSource.getTemplateIdForSession(m.name);
+      return session.copyWith(templateId: id);
+    }).toList();
+  }
+
+  @override
+  Future<void> saveTemplate(TrainingSession session) async {
+    final model = TrainingSessionModel.fromDomain(session);
+    await localDataSource.saveTemplate(model, session.templateId);
+  }
+
+  @override
+  Future<void> deleteTemplate(String sessionId) async {
+    await localDataSource.deleteTemplate(sessionId);
   }
 }

@@ -8,4 +8,7 @@ abstract class TrainingRepository {
   Future<List<Exercise>> getExerciseCatalog();
   Future<void> logTrainingSession(TrainingSession session);
   Future<List<TrainingSession>> getCompletedSessions();
+  Future<List<TrainingSession>> getTemplates();
+  Future<void> saveTemplate(TrainingSession session);
+  Future<void> deleteTemplate(String sessionId);
 }

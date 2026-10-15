@@ -12,6 +12,7 @@ import '../bloc/training_bloc.dart';
 import '../bloc/training_event.dart';
 import '../bloc/training_state.dart';
 import '../widgets/rest_timer_banner.dart';
+import '../widgets/exercise_picker_bottom_sheet.dart';
 
 class ActiveWorkoutPage extends StatefulWidget {
   const ActiveWorkoutPage({super.key});
@@ -108,7 +109,10 @@ class _ActiveWorkoutPageState extends State<ActiveWorkoutPage> {
     ];
   }
 
-  String _getCarouselThumbnail(int index, String exerciseName) {
+  String _getCarouselThumbnail(int index, String exerciseName, [String? thumbnailURL]) {
+    if (thumbnailURL != null && thumbnailURL.isNotEmpty) {
+      return thumbnailURL;
+    }
     final lower = exerciseName.toLowerCase();
     if (lower.contains('supino') || lower.contains('estrecho')) {
       return AppAssets.gifLatPulldownSupinated;
@@ -222,6 +226,40 @@ class _ActiveWorkoutPageState extends State<ActiveWorkoutPage> {
 
                           // 6. Set Table
                           _buildSetTable(context, safeIndex, currentExercise),
+
+                          const SizedBox(height: 20),
+
+                          // 7. Add Exercise Button
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 18),
+                            child: OutlinedButton.icon(
+                              onPressed: () => _openAddExercisePicker(
+                                effectiveExercises.length,
+                              ),
+                              style: OutlinedButton.styleFrom(
+                                side: const BorderSide(color: Color(0xFF26262B)),
+                                backgroundColor: const Color(0xFF141416),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                                padding: const EdgeInsets.symmetric(vertical: 14),
+                              ),
+                              icon: const Icon(
+                                Icons.add_rounded,
+                                color: AppColors.primaryBlue,
+                                size: 20,
+                              ),
+                              label: const Text(
+                                'Añadir ejercicio',
+                                style: TextStyle(
+                                  fontFamily: AppTheme.fontAlbert,
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -330,6 +368,15 @@ class _ActiveWorkoutPageState extends State<ActiveWorkoutPage> {
     );
   }
 
+  Future<void> _openAddExercisePicker(int newIndex) async {
+    final chosen = await ExercisePickerBottomSheet.show(context);
+    if (!mounted || chosen == null) return;
+    context.read<TrainingBloc>().add(AddExerciseToSessionEvent(chosen));
+    setState(() {
+      _currentExerciseIndex = newIndex;
+    });
+  }
+
   Widget _buildExerciseCarousel(List<Exercise> exercises) {
     return SizedBox(
       height: 82,
@@ -337,10 +384,37 @@ class _ActiveWorkoutPageState extends State<ActiveWorkoutPage> {
         scrollDirection: Axis.horizontal,
         physics: const BouncingScrollPhysics(),
         padding: const EdgeInsets.symmetric(horizontal: 18),
-        itemCount: exercises.length,
+        itemCount: exercises.length + 1,
         itemBuilder: (context, index) {
+          if (index == exercises.length) {
+            return GestureDetector(
+              onTap: () => _openAddExercisePicker(exercises.length),
+              child: Container(
+                width: 78,
+                height: 78,
+                margin: const EdgeInsets.only(right: 14),
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: const Color(0xFF141416),
+                  border: Border.all(color: const Color(0xFF26262B), width: 1.0),
+                ),
+                child: const Center(
+                  child: Icon(
+                    Icons.add_rounded,
+                    color: Colors.white70,
+                    size: 28,
+                  ),
+                ),
+              ),
+            );
+          }
+
           final isSelected = index == _currentExerciseIndex;
-          final thumbAsset = _getCarouselThumbnail(index, exercises[index].name);
+          final thumbAsset = _getCarouselThumbnail(
+            index,
+            exercises[index].name,
+            exercises[index].thumbnailURL,
+          );
 
           return GestureDetector(
             onTap: () {
@@ -390,7 +464,10 @@ class _ActiveWorkoutPageState extends State<ActiveWorkoutPage> {
           // Center athlete render with authentic animated GIF projected via ExtendedImage
           SymmetryExtendedImage(
             source: _getCarouselThumbnail(
-                _currentExerciseIndex, currentExercise.name),
+              _currentExerciseIndex,
+              currentExercise.name,
+              currentExercise.thumbnailURL,
+            ),
             fit: BoxFit.contain,
             errorWidget: const Center(
               child: Icon(

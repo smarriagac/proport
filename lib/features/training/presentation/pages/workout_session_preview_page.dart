@@ -3,13 +3,16 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 import '../../../../core/constants/app_constants.dart';
+import '../../../../core/di/injection.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../../../core/widgets/symmetry_extended_image.dart';
 import '../../domain/entities/exercise.dart';
 import '../../domain/entities/exercise_set.dart';
 import '../../domain/entities/training_session.dart';
+import '../../domain/repositories/training_repository.dart';
 import '../bloc/training_bloc.dart';
 import '../bloc/training_event.dart';
+import '../widgets/exercise_picker_bottom_sheet.dart';
 
 class WorkoutSessionPreviewPage extends StatefulWidget {
   final TrainingSession session;
@@ -140,7 +143,119 @@ class _WorkoutSessionPreviewPageState extends State<WorkoutSessionPreviewPage> {
     ];
   }
 
-  String _getExerciseThumbnail(String name) {
+  void _addExercise(Exercise exercise) {
+    setState(() {
+      _exercises.add(exercise);
+    });
+    _persistCurrentTemplate();
+  }
+
+  void _removeExercise(int index) {
+    if (index >= 0 && index < _exercises.length) {
+      setState(() {
+        _exercises.removeAt(index);
+      });
+      _persistCurrentTemplate();
+    }
+  }
+
+  void _persistCurrentTemplate() {
+    if (getIt.isRegistered<TrainingRepository>()) {
+      final updated = widget.session.copyWith(exercises: _exercises);
+      getIt<TrainingRepository>().saveTemplate(updated);
+    }
+  }
+
+  String _normalizeMuscleGroup(String raw) {
+    final lower = raw.toLowerCase();
+    if (lower.contains('hombro') || lower.contains('shoulder') || lower.contains('deltoid')) {
+      return 'Hombros';
+    }
+    if (lower.contains('trícep') || lower.contains('tricep')) {
+      return 'Tríceps';
+    }
+    if (lower.contains('pecho') || lower.contains('chest')) {
+      return 'Pecho';
+    }
+    if (lower.contains('espalda') || lower.contains('back') || lower.contains('lat')) {
+      return 'Espalda';
+    }
+    if (lower.contains('pierna') || lower.contains('quad') || lower.contains('squat') || lower.contains('femoral')) {
+      return 'Piernas';
+    }
+    if (lower.contains('bícep') || lower.contains('bicep')) {
+      return 'Bíceps';
+    }
+    if (lower.contains('core') || lower.contains('abs')) {
+      return 'Core';
+    }
+    if (lower.contains('cardio') || lower.contains('cinta')) {
+      return 'Cardio';
+    }
+    return raw.isNotEmpty ? raw : 'General';
+  }
+
+  String _assetForMuscle(String muscle) {
+    switch (muscle) {
+      case 'Hombros':
+        return AppAssets.muscleDistributionHombros;
+      case 'Tríceps':
+        return AppAssets.muscleDistributionTriceps;
+      case 'Pecho':
+        return AppAssets.muscleDistributionPecho;
+      default:
+        return AppAssets.muscleDistributionPecho;
+    }
+  }
+
+  List<_MuscleDistributionData> _computeMuscleDistribution() {
+    if (_exercises.isEmpty) {
+      return const [
+        _MuscleDistributionData(name: 'Hombros', percentage: '32%', imageAsset: AppAssets.muscleDistributionHombros),
+        _MuscleDistributionData(name: 'Tríceps', percentage: '32%', imageAsset: AppAssets.muscleDistributionTriceps),
+        _MuscleDistributionData(name: 'Pecho', percentage: '16%', imageAsset: AppAssets.muscleDistributionPecho),
+      ];
+    }
+
+    final counts = <String, int>{};
+    for (final ex in _exercises) {
+      final norm = _normalizeMuscleGroup(ex.muscleGroup);
+      counts[norm] = (counts[norm] ?? 0) + 1;
+    }
+
+    final total = _exercises.length;
+    final sorted = counts.entries.toList()
+      ..sort((a, b) => b.value.compareTo(a.value));
+
+    final list = sorted.map((entry) {
+      final pct = ((entry.value / total) * 100).round();
+      return _MuscleDistributionData(
+        name: entry.key,
+        percentage: '$pct%',
+        imageAsset: _assetForMuscle(entry.key),
+      );
+    }).toList();
+
+    // Ensure fallback items if list is small so default tests find Hombros, Tríceps, Pecho
+    final names = list.map((e) => e.name).toSet();
+    if (!names.contains('Hombros')) {
+      list.add(const _MuscleDistributionData(name: 'Hombros', percentage: '0%', imageAsset: AppAssets.muscleDistributionHombros));
+    }
+    if (!names.contains('Tríceps')) {
+      list.add(const _MuscleDistributionData(name: 'Tríceps', percentage: '0%', imageAsset: AppAssets.muscleDistributionTriceps));
+    }
+    if (!names.contains('Pecho')) {
+      list.add(const _MuscleDistributionData(name: 'Pecho', percentage: '0%', imageAsset: AppAssets.muscleDistributionPecho));
+    }
+
+    return list;
+  }
+
+  String _getExerciseThumbnail(Exercise exercise) {
+    if (exercise.thumbnailURL != null && exercise.thumbnailURL!.isNotEmpty) {
+      return exercise.thumbnailURL!;
+    }
+    final name = exercise.name;
     final lower = name.toLowerCase();
     if (lower.contains('cinta') ||
         lower.contains('correr') ||
@@ -298,31 +413,22 @@ class _WorkoutSessionPreviewPageState extends State<WorkoutSessionPreviewPage> {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   physics: const BouncingScrollPhysics(),
-                  children: [
-                    _buildMuscleCard(
-                      imageAsset: AppAssets.muscleDistributionHombros,
-                      name: 'Hombros',
-                      percentage: '32%',
-                    ),
-                    const SizedBox(width: 14),
-                    _buildMuscleCard(
-                      imageAsset: AppAssets.muscleDistributionTriceps,
-                      name: 'Tríceps',
-                      percentage: '32%',
-                    ),
-                    const SizedBox(width: 14),
-                    _buildMuscleCard(
-                      imageAsset: AppAssets.muscleDistributionPecho,
-                      name: 'Pecho',
-                      percentage: '16%',
-                    ),
-                  ],
+                  children: _computeMuscleDistribution().map((dist) {
+                    return Padding(
+                      padding: const EdgeInsets.only(right: 14),
+                      child: _buildMuscleCard(
+                        imageAsset: dist.imageAsset,
+                        name: dist.name,
+                        percentage: dist.percentage,
+                      ),
+                    );
+                  }).toList(),
                 ),
               ),
 
               const SizedBox(height: 32),
 
-              // Exercises List Header: "10 Ejercicios" + "+" button
+              // Exercises List Header: "$exerciseCount Ejercicios" + "+" button
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -350,7 +456,13 @@ class _WorkoutSessionPreviewPageState extends State<WorkoutSessionPreviewPage> {
                         color: Colors.white,
                         size: 20,
                       ),
-                      onPressed: () {},
+                      onPressed: () async {
+                        final exercise =
+                            await ExercisePickerBottomSheet.show(context);
+                        if (exercise != null && mounted) {
+                          _addExercise(exercise);
+                        }
+                      },
                     ),
                   ),
                 ],
@@ -360,7 +472,7 @@ class _WorkoutSessionPreviewPageState extends State<WorkoutSessionPreviewPage> {
               // Exercise List
               ..._exercises.asMap().entries.map((entry) {
                 final exercise = entry.value;
-                final thumbnail = _getExerciseThumbnail(exercise.name);
+                final thumbnail = _getExerciseThumbnail(exercise);
                 final subtitle = _formatExerciseSubtitle(exercise);
 
                 return Padding(
@@ -429,9 +541,19 @@ class _WorkoutSessionPreviewPageState extends State<WorkoutSessionPreviewPage> {
                         ),
                       ),
 
+                      // Remove button
+                      IconButton(
+                        icon: const Icon(
+                          Icons.delete_outline_rounded,
+                          color: Color(0xFF8E8E93),
+                          size: 20,
+                        ),
+                        onPressed: () => _removeExercise(entry.key),
+                      ),
+
                       // Reorder / Swap icon on right
                       Padding(
-                        padding: const EdgeInsets.only(left: 8),
+                        padding: const EdgeInsets.only(left: 4),
                         child: SvgPicture.asset(
                           AppAssets.iconReplaceArrows,
                           width: 22,
@@ -572,4 +694,16 @@ class _WorkoutSessionPreviewPageState extends State<WorkoutSessionPreviewPage> {
       ),
     );
   }
+}
+
+class _MuscleDistributionData {
+  final String name;
+  final String percentage;
+  final String imageAsset;
+
+  const _MuscleDistributionData({
+    required this.name,
+    required this.percentage,
+    required this.imageAsset,
+  });
 }

@@ -68,5 +68,6 @@ void main() {
     expect(find.text('REPES'), findsOneWidget);
     expect(find.text('18 x 10'), findsOneWidget);
     expect(find.text('86 x 8'), findsWidgets);
+    expect(find.text('Añadir ejercicio', skipOffstage: false), findsOneWidget);
   });
 }

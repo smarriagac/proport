@@ -20,12 +20,13 @@ abstract class ExerciseModel with _$ExerciseModel {
   factory ExerciseModel.fromJson(Map<String, dynamic> json) =>
       _$ExerciseModelFromJson(json);
 
-  Exercise toDomain({String? fallbackName}) {
+  Exercise toDomain({String? fallbackName, String? thumbnailURL}) {
     return Exercise(
       exerciseTemplateId: exerciseTemplateId,
       name: name.isNotEmpty ? name : (fallbackName ?? 'Exercise #$exerciseTemplateId'),
       note: note,
       muscleGroup: muscleGroup,
+      thumbnailURL: thumbnailURL,
       sets: sets.asMap().entries.map((entry) {
         final idx = entry.key + 1;
         final s = entry.value.toDomain();

@@ -6,6 +6,7 @@ class Exercise extends Equatable {
   final String name;
   final String? note;
   final String muscleGroup;
+  final String? thumbnailURL;
   final List<ExerciseSet> sets;
 
   const Exercise({
@@ -13,6 +14,7 @@ class Exercise extends Equatable {
     required this.name,
     this.note,
     this.muscleGroup = 'General',
+    this.thumbnailURL,
     this.sets = const [],
   });
 
@@ -21,6 +23,7 @@ class Exercise extends Equatable {
     String? name,
     String? note,
     String? muscleGroup,
+    String? thumbnailURL,
     List<ExerciseSet>? sets,
   }) {
     return Exercise(
@@ -28,10 +31,18 @@ class Exercise extends Equatable {
       name: name ?? this.name,
       note: note ?? this.note,
       muscleGroup: muscleGroup ?? this.muscleGroup,
+      thumbnailURL: thumbnailURL ?? this.thumbnailURL,
       sets: sets ?? this.sets,
     );
   }
 
   @override
-  List<Object?> get props => [exerciseTemplateId, name, note, muscleGroup, sets];
+  List<Object?> get props => [
+        exerciseTemplateId,
+        name,
+        note,
+        muscleGroup,
+        thumbnailURL,
+        sets,
+      ];
 }

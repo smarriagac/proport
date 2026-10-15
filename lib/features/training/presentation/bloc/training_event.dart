@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 import '../../domain/entities/training_session.dart';
+import '../../domain/entities/exercise.dart';
 
 abstract class TrainingEvent extends Equatable {
   const TrainingEvent();
@@ -26,6 +27,14 @@ class StartWorkoutSessionEvent extends TrainingEvent {
 
   @override
   List<Object?> get props => [session];
+}
+
+class AddExerciseToSessionEvent extends TrainingEvent {
+  final Exercise exercise;
+  const AddExerciseToSessionEvent(this.exercise);
+
+  @override
+  List<Object?> get props => [exercise];
 }
 
 class ToggleSetCompletionEvent extends TrainingEvent {

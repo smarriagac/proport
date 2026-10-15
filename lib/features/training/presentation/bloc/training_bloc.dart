@@ -20,6 +20,7 @@ class TrainingBloc extends Bloc<TrainingEvent, TrainingState> {
     on<LoadWorkoutPlansEvent>(_onLoadWorkoutPlans);
     on<SelectWorkoutPlanEvent>(_onSelectWorkoutPlan);
     on<StartWorkoutSessionEvent>(_onStartWorkoutSession);
+    on<AddExerciseToSessionEvent>(_onAddExerciseToSession);
     on<ToggleSetCompletionEvent>(_onToggleSetCompletion);
     on<AddSetEvent>(_onAddSet);
     on<FinishWorkoutSessionEvent>(_onFinishWorkoutSession);
@@ -78,6 +79,34 @@ class TrainingBloc extends Bloc<TrainingEvent, TrainingState> {
           activeSession: event.session,
           restTimerSeconds: 0,
           isRestTimerActive: false,
+          completedSessions: completed,
+        ));
+      },
+      orElse: () {},
+    );
+  }
+
+  void _onAddExerciseToSession(
+    AddExerciseToSessionEvent event,
+    Emitter<TrainingState> emit,
+  ) {
+    state.maybeWhen(
+      loaded: (plans, selectedPlan, activeSession, restSec, isRestActive, completed) {
+        final currentSession = activeSession ??
+            TrainingSession(
+              dayOfWeek: DateTime.now().weekday,
+              name: 'Entrenamiento Libre',
+              description: '',
+              exercises: const [],
+            );
+        final updatedExercises = List<Exercise>.from(currentSession.exercises)..add(event.exercise);
+        final updatedSession = currentSession.copyWith(exercises: updatedExercises);
+        emit(TrainingState.loaded(
+          plans: plans,
+          selectedPlan: selectedPlan,
+          activeSession: updatedSession,
+          restTimerSeconds: restSec,
+          isRestTimerActive: isRestActive,
           completedSessions: completed,
         ));
       },
