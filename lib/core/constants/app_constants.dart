@@ -126,6 +126,25 @@ class AppAssets {
   static const String iconPlay = 'assets/icons/play_icon.svg';
   static const String iconCrown = 'assets/icons/crown_icon.svg';
   static const String iconSettings = 'assets/icons/gw_redesign_settings.svg';
-  static const String iconMuscle = 'assets/icons/icon_muscle.png';
   static const String iconAdd = 'assets/icons/icon_add.svg';
+  static const String iconReplaceArrows =
+      'assets/icons/controls/icon_replace_arrows.svg';
+
+  // Muscle Distribution & Exercise Preview Thumbnails
+  static const String muscleDistributionHombros =
+      'assets/images/muscles/distribution_hombros.png';
+  static const String muscleDistributionTriceps =
+      'assets/images/muscles/distribution_triceps.png';
+  static const String muscleDistributionPecho =
+      'assets/images/muscles/distribution_pecho.png';
+
+  static const String exTreadmill = 'assets/images/exercises/ex_treadmill.png';
+  static const String exInclineBench =
+      'assets/images/exercises/ex_incline_bench.png';
+  static const String exCableCrossover =
+      'assets/images/exercises/ex_cable_crossover.png';
+  static const String exShoulderPress =
+      'assets/images/exercises/ex_shoulder_press.png';
+  static const String exLateralRaise =
+      'assets/images/exercises/ex_lateral_raise.png';
 }

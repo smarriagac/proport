@@ -4,9 +4,11 @@ import 'package:go_router/go_router.dart';
 import '../../core/constants/app_constants.dart';
 import '../../core/theme/app_theme.dart';
 import '../../features/social/presentation/pages/friends_page.dart';
+import '../../features/training/domain/entities/training_session.dart';
 import '../../features/training/domain/entities/workout_plan.dart';
 import '../../features/training/presentation/pages/training_dashboard_page.dart';
 import '../../features/training/presentation/pages/workout_detail_page.dart';
+import '../../features/training/presentation/pages/workout_session_preview_page.dart';
 import '../../features/training/presentation/pages/active_workout_page.dart';
 import '../../features/intelligence/presentation/pages/ai_workout_generator_page.dart';
 import '../../features/statistics/presentation/pages/statistics_page.dart';
@@ -80,6 +82,14 @@ final appRouter = GoRouter(
                   builder: (context, state) {
                     final plan = state.extra as WorkoutPlan;
                     return WorkoutDetailPage(plan: plan);
+                  },
+                ),
+                GoRoute(
+                  path: 'session-preview',
+                  parentNavigatorKey: _rootNavigatorKey,
+                  builder: (context, state) {
+                    final session = state.extra as TrainingSession;
+                    return WorkoutSessionPreviewPage(session: session);
                   },
                 ),
                 GoRoute(

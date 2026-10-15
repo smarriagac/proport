@@ -262,13 +262,13 @@ class TrainingDashboardPage extends StatelessWidget {
                                 ),
                               ),
                               onPressed: () {
-                                context
-                                    .read<TrainingBloc>()
-                                    .add(StartWorkoutSessionEvent(session));
-                                context.push('/training/active-workout');
+                                context.push(
+                                  '/training/session-preview',
+                                  extra: session,
+                                );
                               },
                               child: const Text(
-                                'Iniciar',
+                                'Ver',
                                 style: TextStyle(
                                   fontFamily: AppTheme.fontAlbert,
                                   fontWeight: FontWeight.w700,
@@ -276,6 +276,12 @@ class TrainingDashboardPage extends StatelessWidget {
                                 ),
                               ),
                             ),
+                            onTap: () {
+                              context.push(
+                                '/training/session-preview',
+                                extra: session,
+                              );
+                            },
                           ),
                         );
                       }),
@@ -466,17 +472,20 @@ class TrainingDashboardPage extends StatelessWidget {
                             ),
                           ),
                           onPressed: () {
-                            if (session != null) {
-                              context
-                                  .read<TrainingBloc>()
-                                  .add(StartWorkoutSessionEvent(session));
-                              context.push('/training/active-workout');
-                            } else if (activePlan != null && activePlan.trainingSessions.isNotEmpty) {
-                              context
-                                  .read<TrainingBloc>()
-                                  .add(StartWorkoutSessionEvent(activePlan.trainingSessions.first));
-                              context.push('/training/active-workout');
-                            }
+                            final targetSession = session ??
+                                (activePlan != null && activePlan.trainingSessions.isNotEmpty
+                                    ? activePlan.trainingSessions.first
+                                    : const TrainingSession(
+                                        dayOfWeek: 5,
+                                        name: 'Entrenamiento Pro',
+                                        description: 'Sesión de Empuje completa',
+                                        durationMinutes: 120,
+                                        exercises: [],
+                                      ));
+                            context.push(
+                              '/training/session-preview',
+                              extra: targetSession,
+                            );
                           },
                           child: const Text(
                             'Ver',
