@@ -147,4 +147,16 @@ class AppAssets {
       'assets/images/exercises/ex_shoulder_press.png';
   static const String exLateralRaise =
       'assets/images/exercises/ex_lateral_raise.png';
+
+  // Active Workout Guider Assets
+  static const String heroLatPulldown =
+      'assets/images/exercises/hero_lat_pulldown.png';
+  static const String carouselLatPulldown =
+      'assets/images/exercises/carousel_lat_pulldown.png';
+  static const String carouselPulldownVar =
+      'assets/images/exercises/carousel_pulldown_var.png';
+  static const String carouselSeatedRow =
+      'assets/images/exercises/carousel_seated_row.png';
+  static const String rankDiamondBadge =
+      'assets/icons/ranking/base/rank=diamond.svg';
 }
