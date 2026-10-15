@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../../../core/constants/app_constants.dart';
 import '../../../../core/theme/app_theme.dart';
+import '../widgets/proport_animated_logo.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -17,43 +17,46 @@ class _SplashPageState extends State<SplashPage>
     with SingleTickerProviderStateMixin {
   late final AnimationController _controller;
   late final Animation<double> _scaleAnimation;
-  late final Animation<double> _fadeAnimation;
   late final Animation<double> _textFadeAnimation;
-  late final Animation<double> _glowAnimation;
+  late final Animation<Offset> _textSlideAnimation;
 
   @override
   void initState() {
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 1400),
+      duration: const Duration(milliseconds: 1700),
     );
 
-    _scaleAnimation = Tween<double>(begin: 0.85, end: 1.0).animate(
-      CurvedAnimation(
-        parent: _controller,
-        curve: const Interval(0.0, 0.7, curve: Curves.easeOutCubic),
+    // Subtle breathing entrance and settling scale
+    _scaleAnimation = TweenSequence<double>([
+      TweenSequenceItem(
+        tween: Tween<double>(begin: 0.88, end: 1.03)
+            .chain(CurveTween(curve: Curves.easeOutCubic)),
+        weight: 65,
       ),
-    );
-
-    _fadeAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
-      CurvedAnimation(
-        parent: _controller,
-        curve: const Interval(0.0, 0.6, curve: Curves.easeIn),
+      TweenSequenceItem(
+        tween: Tween<double>(begin: 1.03, end: 1.00)
+            .chain(CurveTween(curve: Curves.easeInOut)),
+        weight: 35,
       ),
-    );
+    ]).animate(_controller);
 
+    // Text slides up and fades in after logo facets begin to solidify
     _textFadeAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
       CurvedAnimation(
         parent: _controller,
-        curve: const Interval(0.4, 1.0, curve: Curves.easeIn),
+        curve: const Interval(0.60, 0.92, curve: Curves.easeOut),
       ),
     );
 
-    _glowAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
+    _textSlideAnimation = Tween<Offset>(
+      begin: const Offset(0, 0.22),
+      end: Offset.zero,
+    ).animate(
       CurvedAnimation(
         parent: _controller,
-        curve: const Interval(0.2, 0.9, curve: Curves.easeInOut),
+        curve: const Interval(0.60, 0.92, curve: Curves.easeOutCubic),
       ),
     );
 
@@ -68,7 +71,7 @@ class _SplashPageState extends State<SplashPage>
         prefs.getBool('has_completed_onboarding') ?? false;
 
     final elapsed = DateTime.now().difference(startTime);
-    final remaining = 1800 - elapsed.inMilliseconds;
+    final remaining = 1850 - elapsed.inMilliseconds;
     if (remaining > 0) {
       await Future.delayed(Duration(milliseconds: remaining));
     }
@@ -96,70 +99,55 @@ class _SplashPageState extends State<SplashPage>
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Logo with scale + fade + ambient blue breathing glow
+            // Choreographed Animated Logo: lines first, then fills & ambient glow
             AnimatedBuilder(
               animation: _controller,
               builder: (context, child) {
                 return Transform.scale(
                   scale: _scaleAnimation.value,
-                  child: Opacity(
-                    opacity: _fadeAnimation.value,
-                    child: Container(
-                      width: 120,
-                      height: 120,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        boxShadow: [
-                          BoxShadow(
-                            color: const Color(0xFF3875FF).withValues(
-                              alpha: 0.45 * _glowAnimation.value,
-                            ),
-                            blurRadius: 36,
-                            spreadRadius: 8,
-                          ),
-                        ],
-                      ),
-                      child: Center(
-                        child: SvgPicture.asset(
-                          AppAssets.proportLogoSvg,
-                          width: 88,
-                          height: 88,
-                        ),
-                      ),
-                    ),
+                  child: ProportAnimatedLogo(
+                    progress: _controller.value,
+                    size: 110,
+                    glowColor: const Color(0xFF3875FF),
                   ),
                 );
               },
             ),
-            const SizedBox(height: 28),
+            const SizedBox(height: 32),
 
-            // Title "PROPORT"
-            FadeTransition(
-              opacity: _textFadeAnimation,
-              child: const Text(
-                'PROPORT',
-                style: TextStyle(
-                  fontFamily: AppTheme.fontAlbert,
-                  fontSize: 28,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.white,
-                  letterSpacing: -0.5,
+            // Title "PROPORT" with slide + fade transition
+            SlideTransition(
+              position: _textSlideAnimation,
+              child: FadeTransition(
+                opacity: _textFadeAnimation,
+                child: const Text(
+                  'PROPORT',
+                  style: TextStyle(
+                    fontFamily: AppTheme.fontAlbert,
+                    fontSize: 28,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                    letterSpacing: -0.5,
+                  ),
                 ),
               ),
             ),
             const SizedBox(height: 8),
 
             // Subtitle "PROPORTION · SYMMETRY · PERFORMANCE"
-            FadeTransition(
-              opacity: _textFadeAnimation,
-              child: const Text(
-                'PROPORTION · SYMMETRY · PERFORMANCE',
-                style: TextStyle(
-                  fontFamily: AppTheme.fontDM,
-                  fontSize: 11,
-                  fontWeight: FontWeight.w600,
-                  color: Color(0xFF8E8E93),
-                  letterSpacing: 2.0,
+            SlideTransition(
+              position: _textSlideAnimation,
+              child: FadeTransition(
+                opacity: _textFadeAnimation,
+                child: const Text(
+                  'PROPORTION · SYMMETRY · PERFORMANCE',
+                  style: TextStyle(
+                    fontFamily: AppTheme.fontDM,
+                    fontSize: 11,
+                    fontWeight: FontWeight.w600,
+                    color: Color(0xFF8E8E93),
+                    letterSpacing: 2.0,
+                  ),
                 ),
               ),
             ),
