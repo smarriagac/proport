@@ -71,7 +71,8 @@ class AppAssets {
   static const String navTrain = 'assets/icons/navigation_bar/redesign/train.svg';
   static const String navFiveTabsTrain = 'assets/icons/navigation_bar/redesign/five_tabs_train.svg';
   static const String navLibrary = 'assets/icons/navigation_bar/redesign/library.svg';
-  static const String navProfile = 'assets/icons/navigation_bar/profile_icon.svg';
+  static const String navProfile = 'assets/icons/navigation_bar/redesign/profile.svg';
+  static const String iconList = 'assets/icons/lucide_list.svg';
 
   // Streak & Action SVGs
   static const String streakFlameLit = 'assets/icons/streak/flame_lit.svg';

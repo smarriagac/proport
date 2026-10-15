@@ -11,7 +11,7 @@ class LibraryPage extends StatefulWidget {
 }
 
 class _LibraryPageState extends State<LibraryPage> {
-  int _selectedChipIndex = 1; // 0: Tu plan inteligente, 1: Programas, 2: Plantillas, 3: Ejercicios
+  int _selectedChipIndex = 0; // 0: Tu plan inteligente, 1: Programas, 2: Plantillas, 3: Ejercicios
 
   static const List<_LibraryTemplateItem> _templates = [
     _LibraryTemplateItem(
@@ -19,9 +19,9 @@ class _LibraryPageState extends State<LibraryPage> {
       subtitle: 'Plantilla',
       sketchTypes: [
         _SketchType.legPress,
-        _SketchType.legExtension,
-        _SketchType.seatedRow,
         _SketchType.chestPress,
+        _SketchType.legExtension,
+        _SketchType.latPulldown,
       ],
     ),
     _LibraryTemplateItem(
@@ -31,11 +31,11 @@ class _LibraryPageState extends State<LibraryPage> {
         _SketchType.latPulldown,
         _SketchType.seatedRow,
         _SketchType.bicepCurl,
-        _SketchType.shoulderPress,
+        _SketchType.uprightRow,
       ],
     ),
     _LibraryTemplateItem(
-      title: 'Sábado de Empuje 😤',
+      title: 'Sábado de Empuje 🫣',
       subtitle: 'Plantilla · 10 ejercicios',
       sketchTypes: [
         _SketchType.inclineBench,
@@ -71,7 +71,7 @@ class _LibraryPageState extends State<LibraryPage> {
         _SketchType.legPress,
         _SketchType.legExtension,
         _SketchType.shoulderPress,
-        _SketchType.legPress,
+        _SketchType.lateralRaise,
       ],
     ),
   ];
@@ -153,7 +153,7 @@ class _LibraryPageState extends State<LibraryPage> {
 
           const SliverToBoxAdapter(child: SizedBox(height: 16)),
 
-          // 3. Bottom Action Cards: 'Explorar programas' & 'Crear programa'
+          // 3. Bottom Action Card: 'Explorar programas' (authentic single card layout)
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -163,13 +163,6 @@ class _LibraryPageState extends State<LibraryPage> {
                     title: 'Explorar programas',
                     subtitle: 'Elige de entre 80+ programas distintos',
                     svgAsset: AppAssets.libraryExplorePrograms,
-                    onTap: () {},
-                  ),
-                  const SizedBox(height: 12),
-                  _buildBottomActionCard(
-                    title: 'Crear programa',
-                    subtitle: 'Arma tu plan para seguir semanalmente',
-                    svgAsset: AppAssets.libraryCreateProgram,
                     onTap: () {},
                   ),
                   const SizedBox(height: 24),
@@ -315,12 +308,16 @@ class _LibraryPageState extends State<LibraryPage> {
                   const SizedBox(height: 6),
                   Row(
                     children: [
-                      const Icon(
-                        Icons.edit_note_rounded,
-                        size: 16,
-                        color: Color(0xFF8E8E93),
+                      SvgPicture.asset(
+                        AppAssets.iconList,
+                        width: 13,
+                        height: 13,
+                        colorFilter: const ColorFilter.mode(
+                          Color(0xFF8E8E93),
+                          BlendMode.srcIn,
+                        ),
                       ),
-                      const SizedBox(width: 4),
+                      const SizedBox(width: 5),
                       Text(
                         item.subtitle,
                         style: const TextStyle(
@@ -343,20 +340,13 @@ class _LibraryPageState extends State<LibraryPage> {
 
   Widget _buildSketchGridCard(List<_SketchType> types) {
     return Container(
-      width: 66,
-      height: 66,
+      width: 64,
+      height: 64,
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(14),
-        boxShadow: const [
-          BoxShadow(
-            color: Colors.black26,
-            blurRadius: 4,
-            offset: Offset(0, 2),
-          ),
-        ],
+        borderRadius: BorderRadius.circular(16),
       ),
-      padding: const EdgeInsets.all(4),
+      padding: const EdgeInsets.all(5),
       child: Column(
         children: [
           Expanded(
@@ -481,6 +471,8 @@ enum _SketchType {
   legExtension,
   shoulderPress,
   bicepCurl,
+  uprightRow,
+  lateralRaise,
 }
 
 class _LibraryTemplateItem {
@@ -656,6 +648,30 @@ class _MiniExerciseSketchPainter extends CustomPainter {
         canvas.drawLine(Offset(w * 0.65, h * 0.5), Offset(w * 0.55, h * 0.38), bodyPaint);
         // Red bicep
         canvas.drawCircle(Offset(w * 0.6, h * 0.45), 2.0, musclePaint);
+        break;
+
+      case _SketchType.uprightRow:
+        // Cable/barbell upright row
+        canvas.drawLine(Offset(w * 0.5, h * 0.4), Offset(w * 0.5, h * 0.75), framePaint);
+        // Standing figure
+        canvas.drawCircle(Offset(w * 0.5, h * 0.25), 2.2, bodyPaint);
+        canvas.drawLine(Offset(w * 0.5, h * 0.33), Offset(w * 0.5, h * 0.8), bodyPaint);
+        // High elbows
+        canvas.drawLine(Offset(w * 0.3, h * 0.4), Offset(w * 0.5, h * 0.45), bodyPaint);
+        canvas.drawLine(Offset(w * 0.7, h * 0.4), Offset(w * 0.5, h * 0.45), bodyPaint);
+        // Red traps
+        canvas.drawCircle(Offset(w * 0.5, h * 0.38), 2.0, musclePaint);
+        break;
+
+      case _SketchType.lateralRaise:
+        // Standing figure with arms raised
+        canvas.drawCircle(Offset(w * 0.5, h * 0.25), 2.2, bodyPaint);
+        canvas.drawLine(Offset(w * 0.5, h * 0.33), Offset(w * 0.5, h * 0.8), bodyPaint);
+        // Arms raised
+        canvas.drawLine(Offset(w * 0.2, h * 0.45), Offset(w * 0.8, h * 0.45), bodyPaint);
+        // Red shoulders
+        canvas.drawCircle(Offset(w * 0.35, h * 0.45), 1.8, musclePaint);
+        canvas.drawCircle(Offset(w * 0.65, h * 0.45), 1.8, musclePaint);
         break;
     }
   }

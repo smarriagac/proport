@@ -63,6 +63,9 @@ flutter:
     - assets/workout_plan_templates/
     - assets/data/
     - assets/quick_workouts/
+    - assets/new_icons/
+    - assets/translations/
+    - assets/specializations/
 
   fonts:
     - family: DMSans

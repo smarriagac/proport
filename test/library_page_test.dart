@@ -23,19 +23,17 @@ void main() {
     // Workout Templates
     expect(find.text('Domingo'), findsOneWidget);
     expect(find.text('Sábado de Tracción 🦍'), findsOneWidget);
-    expect(find.text('Sábado de Empuje 😤'), findsOneWidget);
+    expect(find.text('Sábado de Empuje 🫣'), findsOneWidget);
     expect(find.text('Pecho, Triceps'), findsOneWidget);
     expect(find.text('Espalda, Biceps'), findsOneWidget);
     expect(find.text('Piernas, Hombros'), findsOneWidget);
 
-    // Scroll down to reveal Bottom Action Cards
+    // Scroll down to reveal Bottom Action Card
     await tester.drag(find.byType(CustomScrollView), const Offset(0, -500));
     await tester.pump();
 
-    // Bottom Action Cards
+    // Bottom Action Card
     expect(find.text('Explorar programas'), findsOneWidget);
     expect(find.text('Elige de entre 80+ programas distintos'), findsOneWidget);
-    expect(find.text('Crear programa'), findsOneWidget);
-    expect(find.text('Arma tu plan para seguir semanalmente'), findsOneWidget);
   });
 }
