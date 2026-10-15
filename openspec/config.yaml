@@ -1,0 +1,44 @@
+# openspec/config.yaml
+schema: spec-driven
+
+context: |
+  Project: symmetry
+  Tech stack: Flutter 3.x / Dart 3.x
+  State management: flutter_bloc
+  Architecture: Clean Architecture (Feature-First) with Drift SQLite
+  Images & Media: extended_image (local assets & disk/memory cache)
+  Design System: Symmetry Dark Gym Tech (AlbertSans, DMSans, DMMono)
+
+testing:
+  strict_tdd: true
+  framework: flutter_test
+  unit_command: "flutter test"
+  analyze_command: "flutter analyze"
+  format_command: "dart format --output=none --set-exit-if-changed ."
+
+rules:
+  proposal:
+    - Focus on single bounded work units
+    - Document breaking UI changes and asset dependencies
+  specs:
+    - Use Given/When/Then for user interaction scenarios
+    - Use RFC 2119 keywords (MUST, SHALL, SHOULD, MAY)
+    - Detail 1:1 parity with decompiled Symmetry APK
+  design:
+    - Enforce Clean Architecture layer separation (data, domain, presentation)
+    - Require BLoC pattern for asynchronous and stateful workflows
+  tasks:
+    - Group by architectural layer and test-first sequence
+    - Follow Strict TDD (Red -> Green -> Refactor)
+  apply:
+    guidelines:
+      - Conventional commits only (no AI co-author headers)
+      - Never break existing widget/unit tests
+    tdd: true
+    test_command: "flutter test"
+  verify:
+    test_command: "flutter test"
+    analyze_command: "flutter analyze"
+    coverage_threshold: 0
+  archive:
+    - Preserve audit trail in openspec/changes/archive/
