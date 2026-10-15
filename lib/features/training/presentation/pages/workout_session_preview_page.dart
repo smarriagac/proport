@@ -905,6 +905,42 @@ class _WorkoutSessionPreviewPageState extends State<WorkoutSessionPreviewPage> {
     );
   }
 
+  Future<void> _replaceExercise(int index) async {
+    if (index < 0 || index >= _exercises.length) return;
+    final current = _exercises[index];
+    final replacement = await ExercisePickerBottomSheet.show(
+      context,
+      title: 'Reemplazar Ejercicio',
+    );
+    if (replacement != null && mounted) {
+      setState(() {
+        _exercises[index] = replacement.copyWith(
+          sets: current.sets.isNotEmpty ? current.sets : replacement.sets,
+        );
+      });
+      _persistCurrentTemplate();
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            '${current.name} reemplazado por ${replacement.name}',
+            style: const TextStyle(
+              fontFamily: AppTheme.fontDM,
+              color: Colors.white,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+          backgroundColor: const Color(0xFF1B1B1F),
+          behavior: SnackBarBehavior.floating,
+          duration: const Duration(seconds: 2),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+            side: const BorderSide(color: Color(0xFF26262B)),
+          ),
+        ),
+      );
+    }
+  }
+
   void _showExerciseOptions(int index) {
     showModalBottomSheet<void>(
       context: context,
@@ -958,19 +994,9 @@ class _WorkoutSessionPreviewPageState extends State<WorkoutSessionPreviewPage> {
               ListTile(
                 leading: const Icon(Icons.swap_horiz_rounded, color: AppColors.primaryBlue),
                 title: const Text('Reemplazar por otro ejercicio', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600)),
-                onTap: () async {
+                onTap: () {
                   Navigator.pop(ctx);
-                  final replacement = await ExercisePickerBottomSheet.show(context);
-                  if (replacement != null && mounted) {
-                    setState(() {
-                      _exercises[index] = replacement.copyWith(
-                        sets: _exercises[index].sets.isNotEmpty
-                            ? _exercises[index].sets
-                            : replacement.sets,
-                      );
-                    });
-                    _persistCurrentTemplate();
-                  }
+                  _replaceExercise(index);
                 },
               ),
               ListTile(
@@ -1190,6 +1216,7 @@ class _WorkoutSessionPreviewPageState extends State<WorkoutSessionPreviewPage> {
 
                 return InkWell(
                   onTap: () => _showEditExerciseSetsModal(index),
+                  onLongPress: () => _showExerciseOptions(index),
                   borderRadius: BorderRadius.circular(18),
                   child: Padding(
                     padding: const EdgeInsets.only(bottom: 18),
@@ -1259,6 +1286,7 @@ class _WorkoutSessionPreviewPageState extends State<WorkoutSessionPreviewPage> {
 
                         // Remove button
                         IconButton(
+                          tooltip: 'Eliminar ejercicio',
                           icon: const Icon(
                             Icons.delete_outline_rounded,
                             color: Color(0xFF8E8E93),
@@ -1267,8 +1295,9 @@ class _WorkoutSessionPreviewPageState extends State<WorkoutSessionPreviewPage> {
                           onPressed: () => _removeExercise(index),
                         ),
 
-                        // Reorder / Swap icon on right
+                        // Replace / Swap icon on right (Directly opens exercise catalog)
                         IconButton(
+                          tooltip: 'Reemplazar ejercicio',
                           icon: SvgPicture.asset(
                             AppAssets.iconReplaceArrows,
                             width: 22,
@@ -1278,7 +1307,7 @@ class _WorkoutSessionPreviewPageState extends State<WorkoutSessionPreviewPage> {
                               BlendMode.srcIn,
                             ),
                           ),
-                          onPressed: () => _showExerciseOptions(index),
+                          onPressed: () => _replaceExercise(index),
                         ),
                       ],
                     ),

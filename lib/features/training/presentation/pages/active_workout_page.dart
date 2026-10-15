@@ -220,7 +220,7 @@ class _ActiveWorkoutPageState extends State<ActiveWorkoutPage> {
                           const SizedBox(height: 16),
 
                           // 5. Action Pills Row
-                          _buildActionPillsRow(context),
+                          _buildActionPillsRow(context, safeIndex),
 
                           const SizedBox(height: 24),
 
@@ -377,6 +377,18 @@ class _ActiveWorkoutPageState extends State<ActiveWorkoutPage> {
     });
   }
 
+  Future<void> _openReplaceExercisePicker(int exerciseIndex) async {
+    final chosen = await ExercisePickerBottomSheet.show(
+      context,
+      title: 'Reemplazar Ejercicio',
+    );
+    if (!mounted || chosen == null) return;
+    context.read<TrainingBloc>().add(ReplaceExerciseInSessionEvent(
+      exerciseIndex: exerciseIndex,
+      newExercise: chosen,
+    ));
+  }
+
   Widget _buildExerciseCarousel(List<Exercise> exercises) {
     return SizedBox(
       height: 82,
@@ -525,7 +537,7 @@ class _ActiveWorkoutPageState extends State<ActiveWorkoutPage> {
     );
   }
 
-  Widget _buildActionPillsRow(BuildContext context) {
+  Widget _buildActionPillsRow(BuildContext context, int exerciseIndex) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 18),
       child: Row(
@@ -579,7 +591,7 @@ class _ActiveWorkoutPageState extends State<ActiveWorkoutPage> {
               ),
             ),
             label: 'Reemplazar',
-            onTap: () {},
+            onTap: () => _openReplaceExercisePicker(exerciseIndex),
           ),
           const SizedBox(width: 10),
 

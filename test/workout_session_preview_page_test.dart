@@ -30,4 +30,23 @@ void main() {
     expect(find.text('Press De Banca Inclinado (Barra Recta)'), findsOneWidget);
     expect(find.text('Empezar Entrenamiento'), findsOneWidget);
   });
+
+  testWidgets('WorkoutSessionPreviewPage has replace exercise buttons with tooltips', (tester) async {
+    const testSession = TrainingSession(
+      dayOfWeek: 5,
+      name: 'Entrenamiento Pro',
+      description: 'Sesión Pro',
+      durationMinutes: 120,
+      exercises: [],
+    );
+
+    await tester.pumpWidget(
+      const MaterialApp(
+        home: WorkoutSessionPreviewPage(session: testSession),
+      ),
+    );
+
+    expect(find.byTooltip('Reemplazar ejercicio'), findsWidgets);
+    expect(find.byTooltip('Eliminar ejercicio'), findsWidgets);
+  });
 }

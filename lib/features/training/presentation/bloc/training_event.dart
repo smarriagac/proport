@@ -37,6 +37,18 @@ class AddExerciseToSessionEvent extends TrainingEvent {
   List<Object?> get props => [exercise];
 }
 
+class ReplaceExerciseInSessionEvent extends TrainingEvent {
+  final int exerciseIndex;
+  final Exercise newExercise;
+  const ReplaceExerciseInSessionEvent({
+    required this.exerciseIndex,
+    required this.newExercise,
+  });
+
+  @override
+  List<Object?> get props => [exerciseIndex, newExercise];
+}
+
 class ToggleSetCompletionEvent extends TrainingEvent {
   final int exerciseIndex;
   final int setIndex;

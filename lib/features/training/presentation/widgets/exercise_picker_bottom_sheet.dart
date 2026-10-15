@@ -8,15 +8,23 @@ import '../../domain/entities/exercise_set.dart';
 import '../../domain/repositories/training_repository.dart';
 
 class ExercisePickerBottomSheet extends StatefulWidget {
-  const ExercisePickerBottomSheet({super.key});
+  final String title;
 
-  static Future<Exercise?> show(BuildContext context) {
+  const ExercisePickerBottomSheet({
+    super.key,
+    this.title = 'Añadir Ejercicio',
+  });
+
+  static Future<Exercise?> show(
+    BuildContext context, {
+    String title = 'Añadir Ejercicio',
+  }) {
     return showModalBottomSheet<Exercise?>(
       context: context,
       isScrollControlled: true,
       backgroundColor: Colors.transparent,
       barrierColor: Colors.black.withValues(alpha: 0.7),
-      builder: (context) => const ExercisePickerBottomSheet(),
+      builder: (context) => ExercisePickerBottomSheet(title: title),
     );
   }
 
@@ -326,9 +334,9 @@ class _ExercisePickerBottomSheetState extends State<ExercisePickerBottomSheet> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text(
-                  'Añadir Ejercicio',
-                  style: TextStyle(
+                Text(
+                  widget.title,
+                  style: const TextStyle(
                     fontFamily: AppTheme.fontAlbert,
                     fontWeight: FontWeight.w800,
                     fontSize: 20,

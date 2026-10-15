@@ -21,6 +21,7 @@ class TrainingBloc extends Bloc<TrainingEvent, TrainingState> {
     on<SelectWorkoutPlanEvent>(_onSelectWorkoutPlan);
     on<StartWorkoutSessionEvent>(_onStartWorkoutSession);
     on<AddExerciseToSessionEvent>(_onAddExerciseToSession);
+    on<ReplaceExerciseInSessionEvent>(_onReplaceExerciseInSession);
     on<ToggleSetCompletionEvent>(_onToggleSetCompletion);
     on<AddSetEvent>(_onAddSet);
     on<FinishWorkoutSessionEvent>(_onFinishWorkoutSession);
@@ -101,6 +102,32 @@ class TrainingBloc extends Bloc<TrainingEvent, TrainingState> {
             );
         final updatedExercises = List<Exercise>.from(currentSession.exercises)..add(event.exercise);
         final updatedSession = currentSession.copyWith(exercises: updatedExercises);
+        emit(TrainingState.loaded(
+          plans: plans,
+          selectedPlan: selectedPlan,
+          activeSession: updatedSession,
+          restTimerSeconds: restSec,
+          isRestTimerActive: isRestActive,
+          completedSessions: completed,
+        ));
+      },
+      orElse: () {},
+    );
+  }
+
+  void _onReplaceExerciseInSession(
+    ReplaceExerciseInSessionEvent event,
+    Emitter<TrainingState> emit,
+  ) {
+    state.maybeWhen(
+      loaded: (plans, selectedPlan, activeSession, restSec, isRestActive, completed) {
+        if (activeSession == null || event.exerciseIndex >= activeSession.exercises.length) return;
+        final currentExercises = List<Exercise>.from(activeSession.exercises);
+        final oldExercise = currentExercises[event.exerciseIndex];
+        currentExercises[event.exerciseIndex] = event.newExercise.copyWith(
+          sets: oldExercise.sets.isNotEmpty ? oldExercise.sets : event.newExercise.sets,
+        );
+        final updatedSession = activeSession.copyWith(exercises: currentExercises);
         emit(TrainingState.loaded(
           plans: plans,
           selectedPlan: selectedPlan,
