@@ -3,56 +3,67 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
-  // Pure dark Gym Tech Palette - Authentic Symmetry Decompiled Values
-  static const Color background = Color(0xFF09090A);
-  static const Color surface = Color(0xFF141416);
-  static const Color card = Color(0xFF1A1A1D);
-  static const Color container = Color(0xFF1A1A1D);
-  static const Color cardBorder = Color(0xFF26262B);
-  static const Color cardHover = Color(0xFF222225);
+  // Biometric Precision & Dark Minimalist Palette (Titanium Obsidian)
+  static const Color background = Color(0xFF0D0E12);
+  static const Color surface = Color(0xFF15171D);
+  static const Color card = Color(0xFF1C1E26);
+  static const Color container = Color(0xFF1C1E26);
+  static const Color cardBorder = Color(0xFF282B36);
+  static const Color cardHover = Color(0xFF232630);
 
   // Brand Accents
-  static const Color primaryBlue = Color(0xFF3875FF);
-  static const Color accentBlue = Color(0xFF4A84FF);
-  static const Color flameOrange = Color(0xFFFF6A00);
+  static const Color primaryAccent = Color(0xFFFF8A00);
+  static const Color solarAmber = Color(0xFFFF8A00);
+  static const Color kineticOrange = Color(0xFFFF5500);
+  static const Color primaryBlue = Color(0xFFFF8A00); // Solar Amber primary brand accent
+  static const Color techSlateBlue = Color(0xFF3E7BFA);
+  static const Color accentBlue = Color(0xFFFFA033);
+  static const Color biometricGreen = Color(0xFF00E5A3);
+  static const Color biometricCyan = Color(0xFF00E5D4);
+  static const Color emeraldGreen = Color(0xFF00E5A3);
+  static const Color accentAmber = Color(0xFFFF8A00);
+  static const Color accentEmerald = Color(0xFF00E5A3);
+  static const Color flameOrange = Color(0xFFFF8A00);
   static const Color flameYellow = Color(0xFFFFB300);
-  static const Color emeraldGreen = Color(0xFF00E599);
-
-  // Authenticated Decompiled Aliases
-  static const Color accentFlame = Color(0xFFFF7A00);
-  static const Color accentGold = Color(0xFFFFB800);
-  static const Color accentEmerald = Color(0xFF00E599);
-  static const Color streakOrange = Color(0xFFFF6A00);
+  static const Color streakOrange = Color(0xFFFF8A00);
+  static const Color accentFlame = Color(0xFFFF8A00);
+  static const Color accentGold = Color(0xFFFFB300);
 
   // Feedback Colors
-  static const Color success = Color(0xFF00E599);
+  static const Color success = Color(0xFF00E5A3);
   static const Color warning = Color(0xFFFFB300);
   static const Color error = Color(0xFFEF4444);
-  static const Color info = Color(0xFF4A84FF);
+  static const Color info = Color(0xFF3E7BFA);
 
   // Typography
   static const Color textPrimary = Color(0xFFFFFFFF);
-  static const Color textSecondary = Color(0xFF9E9EA7);
-  static const Color textMuted = Color(0xFF63636E);
-  static const Color textDisabled = Color(0xFF404048);
+  static const Color textSecondary = Color(0xFF9EA3B0);
+  static const Color textMuted = Color(0xFF656A78);
+  static const Color textDisabled = Color(0xFF424754);
 
   // Gradients
   static const LinearGradient primaryGradient = LinearGradient(
-    colors: [primaryBlue, accentBlue],
+    colors: [Color(0xFFFF8A00), Color(0xFFFF5500)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
 
   static const LinearGradient streakGradient = LinearGradient(
-    colors: [flameOrange, flameYellow],
+    colors: [Color(0xFFFF8A00), Color(0xFFFF5500)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
 
   static const LinearGradient cardGlowGradient = LinearGradient(
-    colors: [Color(0x333875FF), Color(0x00141416)],
+    colors: [Color(0x33FF8A00), Color(0x0015171D)],
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
+  );
+
+  static const LinearGradient biometricGradient = LinearGradient(
+    colors: [Color(0xFF00E5A3), Color(0xFF00BFA5)],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
   );
 }
 

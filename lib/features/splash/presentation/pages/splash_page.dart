@@ -108,7 +108,7 @@ class _SplashPageState extends State<SplashPage>
                   child: ProportAnimatedLogo(
                     progress: _controller.value,
                     size: 110,
-                    glowColor: const Color(0xFF3875FF),
+                    glowColor: AppColors.primaryAccent,
                   ),
                 );
               },

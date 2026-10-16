@@ -44,7 +44,7 @@ class ProportAnimatedLogo extends StatelessWidget {
     super.key,
     required this.progress,
     this.size = 120.0,
-    this.glowColor = const Color(0xFF3875FF),
+    this.glowColor = const Color(0xFFFF8A00),
   });
 
   @override
@@ -129,7 +129,7 @@ class _ProportLogoPainter extends CustomPainter {
       fillStart: 0.52,
       fillEnd: 0.76,
     ),
-    // 4: Upper Loop - Dynamic Outer Face (Proport Electric Blue)
+    // 4: Upper Loop - Dynamic Outer Face (Solar Amber)
     _FacetConfig(
       points: [
         Offset(368, 165),
@@ -137,13 +137,13 @@ class _ProportLogoPainter extends CustomPainter {
         Offset(406, 293),
         Offset(368, 271),
       ],
-      fillColor: Color(0xFF3875FF),
+      fillColor: Color(0xFFFF8A00),
       strokeStart: 0.22,
       strokeEnd: 0.50,
       fillStart: 0.56,
       fillEnd: 0.80,
     ),
-    // 5: Upper Loop - Return Bottom Facet (Deep Royal Blue)
+    // 5: Upper Loop - Return Bottom Facet (Kinetic Orange)
     _FacetConfig(
       points: [
         Offset(358, 277),
@@ -151,7 +151,7 @@ class _ProportLogoPainter extends CustomPainter {
         Offset(310, 348),
         Offset(272, 326),
       ],
-      fillColor: Color(0xFF2050CC),
+      fillColor: Color(0xFFFF5500),
       strokeStart: 0.26,
       strokeEnd: 0.54,
       fillStart: 0.60,

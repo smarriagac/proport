@@ -55,47 +55,54 @@ class TrainingDashboardPage extends StatelessWidget {
                 children: [
                   // PRO badge
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 4),
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                     decoration: BoxDecoration(
-                      color: const Color(0xFFC7E2FE),
+                      color: AppColors.card,
                       borderRadius: BorderRadius.circular(100),
+                      border: Border.all(
+                        color: AppColors.primaryAccent.withValues(alpha: 0.6),
+                        width: 1.0,
+                      ),
                     ),
                     child: const Text(
                       'PRO',
                       style: TextStyle(
                         fontFamily: AppTheme.fontAlbert,
                         fontWeight: FontWeight.w800,
-                        fontSize: 12,
-                        color: Colors.black,
-                        letterSpacing: 0.5,
+                        fontSize: 11,
+                        color: AppColors.primaryAccent,
+                        letterSpacing: 0.8,
                       ),
                     ),
                   ),
-                  const SizedBox(width: 14),
-                  // Streak badge
-                  Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      SvgPicture.asset(
-                        AppAssets.streakFlameLit,
-                        width: 18,
-                        height: 18,
-                        colorFilter: const ColorFilter.mode(
-                          Color(0xFF8E8E93),
-                          BlendMode.srcIn,
+                  const SizedBox(width: 12),
+                  // Precision streak badge
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                    decoration: BoxDecoration(
+                      color: AppColors.card,
+                      borderRadius: BorderRadius.circular(100),
+                      border: Border.all(color: AppColors.cardBorder),
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const Icon(
+                          Icons.bolt_rounded,
+                          color: AppColors.primaryAccent,
+                          size: 16,
                         ),
-                      ),
-                      const SizedBox(width: 5),
-                      Text(
-                        '$streakDays',
-                        style: const TextStyle(
-                          fontFamily: AppTheme.fontAlbert,
-                          fontWeight: FontWeight.w700,
-                          fontSize: 16,
-                          color: Color(0xFF8E8E93),
+                        const SizedBox(width: 4),
+                        Text(
+                          '$streakDays d',
+                          style: AppTheme.mono(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.white,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                   const SizedBox(width: 16),
                 ],
@@ -454,13 +461,25 @@ class TrainingDashboardPage extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 18),
-                      SizedBox(
+                      Container(
                         width: double.infinity,
                         height: 52,
+                        decoration: BoxDecoration(
+                          gradient: AppColors.primaryGradient,
+                          borderRadius: BorderRadius.circular(100),
+                          boxShadow: [
+                            BoxShadow(
+                              color: AppColors.primaryAccent.withValues(alpha: 0.35),
+                              blurRadius: 16,
+                              offset: const Offset(0, 4),
+                            ),
+                          ],
+                        ),
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.white,
+                            backgroundColor: Colors.transparent,
                             foregroundColor: Colors.black,
+                            shadowColor: Colors.transparent,
                             elevation: 0,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(100),
@@ -486,9 +505,10 @@ class TrainingDashboardPage extends StatelessWidget {
                             'Ver',
                             style: TextStyle(
                               fontFamily: AppTheme.fontAlbert,
-                              fontWeight: FontWeight.w700,
+                              fontWeight: FontWeight.w800,
                               fontSize: 16,
                               color: Colors.black,
+                              letterSpacing: 0.5,
                             ),
                           ),
                         ),
@@ -525,9 +545,9 @@ class TrainingDashboardPage extends StatelessWidget {
         // Grouped Card Container with 3 options
         Container(
           decoration: BoxDecoration(
-            color: const Color(0xFF141416),
+            color: AppColors.card,
             borderRadius: BorderRadius.circular(24),
-            border: Border.all(color: const Color(0xFF26262B), width: 1),
+            border: Border.all(color: AppColors.cardBorder, width: 1),
           ),
           child: Column(
             children: [

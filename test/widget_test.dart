@@ -27,7 +27,7 @@ void main() {
 
     // Verify 5 authentic navigation tabs exist
     expect(find.text('Amigos'), findsOneWidget);
-    expect(find.text('Rangos'), findsNWidgets(2)); // Sub-tab and Bottom Nav Tab
+    expect(find.text('Proporción'), findsNWidgets(2)); // Sub-tab and Bottom Nav Tab
     expect(find.text('Entrenar'), findsOneWidget);
     expect(find.text('Biblioteca'), findsOneWidget);
     expect(find.text('Perfil'), findsOneWidget);

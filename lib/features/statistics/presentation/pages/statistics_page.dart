@@ -19,15 +19,15 @@ class StatisticsPage extends StatefulWidget {
 }
 
 class _StatisticsPageState extends State<StatisticsPage> {
-  int _selectedSubTab = 0; // 0: Rangos, 1: Calculadora
+  int _selectedSubTab = 0; // 0: Proporción, 1: Calculadora
   final Set<String> _expandedMuscles = {};
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: AppColors.background,
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.background,
         elevation: 0,
         titleSpacing: 16,
         scrolledUnderElevation: 0,
@@ -52,59 +52,70 @@ class _StatisticsPageState extends State<StatisticsPage> {
           ],
         ),
         actions: [
-          // PRO pill badge
+          // PRO pill badge (sleek dark titanium with amber outline)
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 4),
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
             decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(14),
+              color: AppColors.surface,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
+                color: AppColors.primaryAccent.withValues(alpha: 0.5),
+                width: 1,
+              ),
             ),
             child: const Text(
               'PRO',
               style: TextStyle(
                 fontFamily: AppTheme.fontAlbert,
                 fontWeight: FontWeight.w900,
-                fontSize: 12,
-                color: Colors.black,
+                fontSize: 11,
+                color: AppColors.primaryAccent,
                 letterSpacing: 0.8,
               ),
             ),
           ),
-          const SizedBox(width: 12),
+          const SizedBox(width: 10),
 
-          // Flame streak badge
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              SvgPicture.asset(
-                AppAssets.streakFlameGrey,
-                width: 18,
-                height: 18,
-              ),
-              const SizedBox(width: 4),
-              const Text(
-                '50',
-                style: TextStyle(
-                  fontFamily: AppTheme.fontMono,
-                  fontWeight: FontWeight.w700,
-                  fontSize: 16,
-                  color: Color(0xFFD1D1D6),
+          // Precision streak badge
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+            decoration: BoxDecoration(
+              color: AppColors.surface,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(color: AppColors.cardBorder, width: 1),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(
+                  Icons.bolt_rounded,
+                  size: 16,
+                  color: AppColors.primaryAccent,
                 ),
-              ),
-            ],
+                const SizedBox(width: 4),
+                Text(
+                  '50',
+                  style: AppTheme.mono(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 14,
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            ),
           ),
           const SizedBox(width: 16),
         ],
       ),
       body: Column(
         children: [
-          // Top Sub-Tabs Bar: 'Rangos' | 'Calculadora'
+          // Top Sub-Tabs Bar: 'Proporción' | 'Calculadora'
           _buildTopSubTabsBar(),
 
           // Body Content
           Expanded(
             child: _selectedSubTab == 0
-                ? _buildRangosTabContent()
+                ? _buildProporcionTabContent()
                 : const RankCalculatorTabContent(),
           ),
         ],
@@ -117,7 +128,7 @@ class _StatisticsPageState extends State<StatisticsPage> {
       children: [
         Row(
           children: [
-            // Tab 0: Rangos
+            // Tab 0: Proporción
             Expanded(
               child: InkWell(
                 onTap: () => setState(() => _selectedSubTab = 0),
@@ -128,24 +139,24 @@ class _StatisticsPageState extends State<StatisticsPage> {
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 12),
                       child: Text(
-                        'Rangos',
+                        'Proporción',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontFamily: AppTheme.fontAlbert,
                           fontWeight: _selectedSubTab == 0
-                              ? FontWeight.w700
+                              ? FontWeight.w800
                               : FontWeight.w500,
                           fontSize: 15,
                           color: _selectedSubTab == 0
                               ? Colors.white
-                              : const Color(0xFF8E8E93),
+                              : AppColors.textMuted,
                         ),
                       ),
                     ),
                     if (_selectedSubTab == 0)
                       Container(
                         height: 2.0,
-                        color: Colors.white,
+                        color: AppColors.primaryAccent,
                       )
                     else
                       const SizedBox(height: 2.0),
@@ -170,19 +181,19 @@ class _StatisticsPageState extends State<StatisticsPage> {
                         style: TextStyle(
                           fontFamily: AppTheme.fontAlbert,
                           fontWeight: _selectedSubTab == 1
-                              ? FontWeight.w700
+                              ? FontWeight.w800
                               : FontWeight.w500,
                           fontSize: 15,
                           color: _selectedSubTab == 1
                               ? Colors.white
-                              : const Color(0xFF8E8E93),
+                              : AppColors.textMuted,
                         ),
                       ),
                     ),
                     if (_selectedSubTab == 1)
                       Container(
                         height: 2.0,
-                        color: Colors.white,
+                        color: AppColors.primaryAccent,
                       )
                     else
                       const SizedBox(height: 2.0),
@@ -194,21 +205,21 @@ class _StatisticsPageState extends State<StatisticsPage> {
         ),
         Container(
           height: 1.0,
-          color: const Color(0xFF1E1E22),
+          color: AppColors.cardBorder,
         ),
       ],
     );
   }
 
-  Widget _buildRangosTabContent() {
+  Widget _buildProporcionTabContent() {
     return BlocBuilder<StatisticsBloc, StatisticsState>(
       builder: (context, state) {
         return state.when(
           initial: () => const Center(
-            child: CircularProgressIndicator(color: AppColors.primaryBlue),
+            child: CircularProgressIndicator(color: AppColors.primaryAccent),
           ),
           loading: () => const Center(
-            child: CircularProgressIndicator(color: AppColors.primaryBlue),
+            child: CircularProgressIndicator(color: AppColors.primaryAccent),
           ),
           error: (msg) => Center(
             child: Text(
@@ -218,16 +229,16 @@ class _StatisticsPageState extends State<StatisticsPage> {
           ),
           loaded: (score, ranks, volumes) {
             return RefreshIndicator(
-              color: AppColors.primaryBlue,
+              color: AppColors.primaryAccent,
               backgroundColor: AppColors.surface,
               onRefresh: () async {
                 context.read<StatisticsBloc>().add(const LoadStatisticsEvent());
               },
               child: ListView(
-                padding: const EdgeInsets.only(top: 8, bottom: 24),
+                padding: const EdgeInsets.only(top: 12, bottom: 28),
                 children: [
-                  // 1. 'RANGO SYMMETRY' Gold Card
-                  _buildRangoSymmetryGoldCard(),
+                  // 1. Hero Card: 'ÍNDICE DE PROPORCIÓN' / 'PROPORT SCORE'
+                  _buildIndiceProporcionHeroCard(),
 
                   const SizedBox(height: 16),
 
@@ -236,7 +247,7 @@ class _StatisticsPageState extends State<StatisticsPage> {
 
                   const SizedBox(height: 24),
 
-                  // 3. Section 'Rankings Musculares'
+                  // 3. Section 'Balance por Grupo Muscular'
                   _buildRankingsMuscularesSection(ranks: ranks),
 
                   const SizedBox(height: 24),
@@ -269,8 +280,8 @@ class _StatisticsPageState extends State<StatisticsPage> {
                           style: const TextStyle(
                             fontFamily: AppTheme.fontDM,
                             fontSize: 12,
-                            color: AppColors.accentBlue,
-                            fontWeight: FontWeight.w600,
+                            color: AppColors.primaryAccent,
+                            fontWeight: FontWeight.w700,
                           ),
                         ),
                       ],
@@ -295,78 +306,220 @@ class _StatisticsPageState extends State<StatisticsPage> {
     );
   }
 
-  Widget _buildRangoSymmetryGoldCard() {
+  Widget _buildIndiceProporcionHeroCard() {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 16),
-      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: const Color(0xFF131315),
-        borderRadius: BorderRadius.circular(20),
+        color: AppColors.card,
+        borderRadius: BorderRadius.circular(22),
         border: Border.all(
-          color: const Color(0xFFE5A93C),
+          color: AppColors.primaryAccent.withValues(alpha: 0.35),
           width: 1.2,
         ),
+        boxShadow: [
+          BoxShadow(
+            color: AppColors.primaryAccent.withValues(alpha: 0.08),
+            blurRadius: 24,
+            spreadRadius: 0,
+            offset: const Offset(0, 8),
+          ),
+        ],
       ),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  mainAxisSize: MainAxisSize.min,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'RANGO SYMMETRY',
-                      style: TextStyle(
-                        fontFamily: AppTheme.fontAlbert,
-                        fontWeight: FontWeight.w700,
-                        fontSize: 11,
-                        letterSpacing: 0.8,
-                        color: Color(0xFF8E8E93),
+                    Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          width: 8,
+                          height: 8,
+                          decoration: const BoxDecoration(
+                            color: AppColors.biometricGreen,
+                            shape: BoxShape.circle,
+                            boxShadow: [
+                              BoxShadow(
+                                color: Color(0x6600E5A3),
+                                blurRadius: 6,
+                                spreadRadius: 1,
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        const Text(
+                          'ÍNDICE DE PROPORCIÓN · PROPORT SCORE',
+                          style: TextStyle(
+                            fontFamily: AppTheme.fontAlbert,
+                            fontWeight: FontWeight.w800,
+                            fontSize: 11,
+                            letterSpacing: 0.8,
+                            color: AppColors.textSecondary,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 8),
+                    RichText(
+                      text: TextSpan(
+                        text: '94.2%',
+                        style: AppTheme.mono(
+                          fontWeight: FontWeight.w800,
+                          fontSize: 32,
+                          letterSpacing: -1.0,
+                          color: Colors.white,
+                        ),
+                        children: const [
+                          TextSpan(
+                            text: ' · BALANCE ÓPTIMO',
+                            style: TextStyle(
+                              fontFamily: AppTheme.fontAlbert,
+                              fontWeight: FontWeight.w800,
+                              fontSize: 13,
+                              letterSpacing: 0.5,
+                              color: AppColors.biometricGreen,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    SizedBox(width: 4),
-                    Icon(
-                      Icons.info_outline_rounded,
-                      size: 14,
-                      color: Color(0xFF8E8E93),
+                    const SizedBox(height: 6),
+                    const Text(
+                      'Simetría neuromuscular y ratio áureo en rango de élite',
+                      style: TextStyle(
+                        fontFamily: AppTheme.fontDM,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 13,
+                        color: AppColors.textSecondary,
+                      ),
                     ),
                   ],
                 ),
-                SizedBox(height: 4),
-                Text(
-                  'ORO III',
-                  style: TextStyle(
-                    fontFamily: AppTheme.fontAlbert,
-                    fontWeight: FontWeight.w900,
-                    fontSize: 32,
-                    color: Color(0xFFF5A623),
-                    letterSpacing: -0.5,
+              ),
+              const SizedBox(width: 12),
+              // Golden ratio / Biometric gauge icon badge
+              Container(
+                width: 58,
+                height: 58,
+                decoration: BoxDecoration(
+                  gradient: const LinearGradient(
+                    colors: [Color(0x26FF8A00), Color(0x10FF5500)],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(
+                    color: AppColors.primaryAccent.withValues(alpha: 0.5),
+                    width: 1.2,
                   ),
                 ),
-                SizedBox(height: 4),
-                Text(
-                  'Eres parte del top 35% más fuerte',
-                  style: TextStyle(
-                    fontFamily: AppTheme.fontDM,
-                    fontWeight: FontWeight.w500,
-                    fontSize: 13,
-                    color: Color(0xFFE5A93C),
-                  ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text(
+                      'Φ',
+                      style: TextStyle(
+                        fontFamily: AppTheme.fontAlbert,
+                        fontWeight: FontWeight.w800,
+                        fontSize: 22,
+                        color: AppColors.primaryAccent,
+                        height: 1.0,
+                      ),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      '1.618',
+                      style: AppTheme.mono(
+                        fontSize: 9,
+                        fontWeight: FontWeight.w700,
+                        color: AppColors.textSecondary,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          // Precision Biometric Metrics Row
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+            decoration: BoxDecoration(
+              color: AppColors.surface,
+              borderRadius: BorderRadius.circular(14),
+              border: Border.all(color: AppColors.cardBorder, width: 1),
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                _buildBiometricMetricItem(
+                  label: 'Simetría Corporal',
+                  value: '96.4%',
+                  isPositive: true,
+                ),
+                Container(
+                  width: 1,
+                  height: 26,
+                  color: AppColors.cardBorder,
+                ),
+                _buildBiometricMetricItem(
+                  label: 'Ratio Hombro-Cintura',
+                  value: '1.61 Φ',
+                  isPositive: true,
+                ),
+                Container(
+                  width: 1,
+                  height: 26,
+                  color: AppColors.cardBorder,
+                ),
+                _buildBiometricMetricItem(
+                  label: 'Balance Agonista',
+                  value: '91.8%',
+                  isPositive: true,
                 ),
               ],
             ),
           ),
-          Image.asset(
-            AppAssets.symmetryGold3WingsBadge,
-            width: 72,
-            height: 72,
-            fit: BoxFit.contain,
-          ),
         ],
       ),
+    );
+  }
+
+  Widget _buildBiometricMetricItem({
+    required String label,
+    required String value,
+    required bool isPositive,
+  }) {
+    return Column(
+      children: [
+        Text(
+          value,
+          style: AppTheme.mono(
+            fontSize: 14,
+            fontWeight: FontWeight.w700,
+            color: isPositive ? AppColors.biometricGreen : Colors.white,
+          ),
+        ),
+        const SizedBox(height: 2),
+        Text(
+          label,
+          style: const TextStyle(
+            fontFamily: AppTheme.fontDM,
+            fontSize: 10,
+            fontWeight: FontWeight.w500,
+            color: AppColors.textMuted,
+          ),
+        ),
+      ],
     );
   }
 
@@ -374,9 +527,14 @@ class _StatisticsPageState extends State<StatisticsPage> {
     return Container(
       height: 380,
       width: double.infinity,
-      color: Colors.black,
+      margin: const EdgeInsets.symmetric(horizontal: 16),
+      decoration: BoxDecoration(
+        color: AppColors.card,
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: AppColors.cardBorder),
+      ),
       alignment: Alignment.center,
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       child: Image.asset(
         AppAssets.symmetryRankedBodyDiagram,
         fit: BoxFit.contain,
@@ -389,7 +547,7 @@ class _StatisticsPageState extends State<StatisticsPage> {
       _MuscleAccordionData(
         key: 'brazos',
         name: 'Brazos',
-        subtitle: 'PLATA III · 3/3',
+        subtitle: 'SIMETRÍA 92% · 3/3 CALIBRADOS',
         exercises: ranks
             .where((r) => r.exerciseName.toLowerCase().contains('curl'))
             .toList(),
@@ -397,7 +555,7 @@ class _StatisticsPageState extends State<StatisticsPage> {
       _MuscleAccordionData(
         key: 'pecho',
         name: 'Pecho',
-        subtitle: 'ORO II · 2/2',
+        subtitle: 'BALANCE ÁUREO 95% · 2/2 CALIBRADOS',
         exercises: ranks
             .where((r) => r.exerciseName.toLowerCase().contains('banca'))
             .toList(),
@@ -405,7 +563,7 @@ class _StatisticsPageState extends State<StatisticsPage> {
       _MuscleAccordionData(
         key: 'espalda',
         name: 'Espalda',
-        subtitle: 'ORO III · 3/3',
+        subtitle: 'RATIO TRACCIÓN 96% · 3/3 CALIBRADOS',
         exercises: ranks
             .where((r) => r.exerciseName.toLowerCase().contains('muerto'))
             .toList(),
@@ -413,7 +571,7 @@ class _StatisticsPageState extends State<StatisticsPage> {
       _MuscleAccordionData(
         key: 'piernas',
         name: 'Piernas',
-        subtitle: 'ORO I · 4/4',
+        subtitle: 'EQUILIBRIO BILATERAL 94% · 4/4 CALIBRADOS',
         exercises: ranks
             .where((r) => r.exerciseName.toLowerCase().contains('sentadilla'))
             .toList(),
@@ -421,7 +579,7 @@ class _StatisticsPageState extends State<StatisticsPage> {
       _MuscleAccordionData(
         key: 'hombros',
         name: 'Hombros',
-        subtitle: 'PLATA II · 2/2',
+        subtitle: 'RATIO DELTOIDES 93% · 2/2 CALIBRADOS',
         exercises: ranks
             .where((r) => r.exerciseName.toLowerCase().contains('militar'))
             .toList(),
@@ -434,7 +592,7 @@ class _StatisticsPageState extends State<StatisticsPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            'Rankings Musculares',
+            'Balance por Grupo Muscular',
             style: TextStyle(
               fontFamily: AppTheme.fontAlbert,
               fontWeight: FontWeight.w800,
@@ -455,9 +613,9 @@ class _StatisticsPageState extends State<StatisticsPage> {
     return Container(
       margin: const EdgeInsets.only(bottom: 10),
       decoration: BoxDecoration(
-        color: const Color(0xFF141416),
+        color: AppColors.card,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: const Color(0xFF26262B)),
+        border: Border.all(color: AppColors.cardBorder),
       ),
       child: Column(
         children: [
@@ -501,9 +659,9 @@ class _StatisticsPageState extends State<StatisticsPage> {
                           cat.subtitle,
                           style: const TextStyle(
                             fontFamily: AppTheme.fontAlbert,
-                            fontSize: 12,
-                            fontWeight: FontWeight.w600,
-                            color: Color(0xFF8E8E93),
+                            fontSize: 11,
+                            fontWeight: FontWeight.w700,
+                            color: AppColors.biometricGreen,
                             letterSpacing: 0.5,
                           ),
                         ),
@@ -514,7 +672,7 @@ class _StatisticsPageState extends State<StatisticsPage> {
                     isExpanded
                         ? Icons.keyboard_arrow_up_rounded
                         : Icons.keyboard_arrow_down_rounded,
-                    color: const Color(0xFF8E8E93),
+                    color: AppColors.textSecondary,
                     size: 24,
                   ),
                 ],
@@ -522,7 +680,7 @@ class _StatisticsPageState extends State<StatisticsPage> {
             ),
           ),
           if (isExpanded) ...[
-            const Divider(height: 1, color: Color(0xFF26262B)),
+            const Divider(height: 1, color: AppColors.cardBorder),
             Padding(
               padding: const EdgeInsets.all(14),
               child: Column(
@@ -548,7 +706,7 @@ class _StatisticsPageState extends State<StatisticsPage> {
                                 style: AppTheme.mono(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w700,
-                                  color: AppColors.accentBlue,
+                                  color: AppColors.biometricGreen,
                                 ),
                               ),
                             ],
@@ -563,7 +721,7 @@ class _StatisticsPageState extends State<StatisticsPage> {
                             style: TextStyle(
                               fontFamily: AppTheme.fontDM,
                               fontSize: 12,
-                              color: Color(0xFF8E8E93),
+                              color: AppColors.textMuted,
                             ),
                           ),
                         ),

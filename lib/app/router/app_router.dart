@@ -71,7 +71,7 @@ final appRouter = GoRouter(
           ],
         ),
 
-        // Tab 1: Rangos (Initial Tab matching authentic screenshot)
+        // Tab 1: Proporción (Initial Tab matching authentic screenshot)
         StatefulShellBranch(
           routes: [
             GoRoute(
@@ -161,12 +161,12 @@ class ScaffoldWithNavBar extends StatelessWidget {
     return Scaffold(
       body: navigationShell,
       bottomNavigationBar: Container(
-        height: 60 + bottomPadding,
+        height: 62 + bottomPadding,
         padding: EdgeInsets.only(bottom: bottomPadding),
         decoration: const BoxDecoration(
-          color: Color(0xFF0B0B0C),
+          color: Color(0xFF101217),
           border: Border(
-            top: BorderSide(color: Color(0xFF1E1E22), width: 0.8),
+            top: BorderSide(color: Color(0xFF20232C), width: 1.0),
           ),
         ),
         child: Row(
@@ -181,11 +181,11 @@ class ScaffoldWithNavBar extends StatelessWidget {
               onTap: () => _onTabSelected(0),
             ),
 
-            // Tab 1: Rangos (Selected by default)
+            // Tab 1: Proporción (Selected by default)
             _buildNavItem(
               index: 1,
               currentIndex: currentIndex,
-              label: 'Rangos',
+              label: 'Proporción',
               iconPath: AppAssets.navRanks,
               onTap: () => _onTabSelected(1),
             ),
@@ -237,8 +237,8 @@ class ScaffoldWithNavBar extends StatelessWidget {
     required VoidCallback onTap,
   }) {
     final isSelected = currentIndex == index;
-    const activeColor = Colors.white;
-    const inactiveColor = Color(0xFF8E8E93);
+    const activeColor = AppColors.primaryAccent;
+    const inactiveColor = Color(0xFF656A78);
 
     return Expanded(
       child: InkWell(
@@ -263,11 +263,30 @@ class ScaffoldWithNavBar extends StatelessWidget {
               style: TextStyle(
                 fontFamily: isSelected ? AppTheme.fontAlbert : AppTheme.fontDM,
                 fontSize: 10,
-                fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
+                fontWeight: isSelected ? FontWeight.w800 : FontWeight.w500,
                 color: isSelected ? activeColor : inactiveColor,
                 letterSpacing: 0.1,
               ),
             ),
+            if (isSelected)
+              Container(
+                margin: const EdgeInsets.only(top: 3),
+                width: 4,
+                height: 4,
+                decoration: const BoxDecoration(
+                  color: AppColors.primaryAccent,
+                  shape: BoxShape.circle,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Color(0x66FF8A00),
+                      blurRadius: 4,
+                      spreadRadius: 1,
+                    ),
+                  ],
+                ),
+              )
+            else
+              const SizedBox(height: 7),
           ],
         ),
       ),
